@@ -1,6 +1,6 @@
 <?php
 
-class ArticuloController extends Controller
+class AutorController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -32,12 +32,12 @@ class ArticuloController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('agregar','update'),
-				'users'=>array('*'),
+				'actions'=>array('create','update'),
+				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('*'),
+				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -60,20 +60,18 @@ class ArticuloController extends Controller
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
-	public function actionAgregar()
+	public function actionCreate()
 	{
-		$model=new Articulo;
+		$model=new Autor;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Articulo']))
+		if(isset($_POST['Autor']))
 		{
-
-			$model->attributes=$_POST['Articulo'];
-			
+			$model->attributes=$_POST['Autor'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id_articulo));
+				$this->redirect(array('view','id'=>$model->id_autor));
 		}
 
 		$this->render('create',array(
@@ -93,11 +91,11 @@ class ArticuloController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Articulo']))
+		if(isset($_POST['Autor']))
 		{
-			$model->attributes=$_POST['Articulo'];
+			$model->attributes=$_POST['Autor'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id_articulo));
+				$this->redirect(array('view','id'=>$model->id_autor));
 		}
 
 		$this->render('update',array(
@@ -124,7 +122,7 @@ class ArticuloController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Articulo');
+		$dataProvider=new CActiveDataProvider('Autor');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -135,10 +133,10 @@ class ArticuloController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Articulo('search');
+		$model=new Autor('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Articulo']))
-			$model->attributes=$_GET['Articulo'];
+		if(isset($_GET['Autor']))
+			$model->attributes=$_GET['Autor'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -149,12 +147,12 @@ class ArticuloController extends Controller
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return Articulo the loaded model
+	 * @return Autor the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=Articulo::model()->findByPk($id);
+		$model=Autor::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -162,11 +160,11 @@ class ArticuloController extends Controller
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param Articulo $model the model to be validated
+	 * @param Autor $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='articulo-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='autor-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
