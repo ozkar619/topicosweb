@@ -139,3 +139,48 @@ Stack trace:
 #34 {main}
 REQUEST_URI=/topicos/06030450/revista/index.php?r=articulo
 ---
+2015/02/19 00:19:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "revista/admin".' in C:\xampp\htdocs\topicos\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\topicos\framework\web\CWebApplication.php(141): CWebApplication->runController('revista/admin')
+#1 C:\xampp\htdocs\topicos\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\topicos\06030450\revista\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/topicos/06030450/revista/?r=revista/admin
+HTTP_REFERER=http://localhost/topicos/06030450/revista/?r=articulo/agregar
+---
+2015/02/19 00:19:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "revista/admin".' in C:\xampp\htdocs\topicos\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\topicos\framework\web\CWebApplication.php(141): CWebApplication->runController('revista/admin')
+#1 C:\xampp\htdocs\topicos\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\topicos\06030450\revista\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/topicos/06030450/revista/?r=revista/admin
+HTTP_REFERER=http://localhost/topicos/06030450/revista/?r=articulo/agregar
+---
+2015/02/19 00:20:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "revista/admin".' in C:\xampp\htdocs\topicos\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\topicos\framework\web\CWebApplication.php(141): CWebApplication->runController('revista/admin')
+#1 C:\xampp\htdocs\topicos\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\topicos\06030450\revista\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/topicos/06030450/revista/?r=revista/admin
+HTTP_REFERER=http://localhost/topicos/06030450/revista/?r=articulo/agregar
+---
+2015/02/19 00:26:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ator/admin".' in C:\xampp\htdocs\topicos\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\topicos\framework\web\CWebApplication.php(141): CWebApplication->runController('ator/admin')
+#1 C:\xampp\htdocs\topicos\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\topicos\06030450\revista\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/topicos/06030450/revista/index.php?r=ator/admin
+HTTP_REFERER=http://localhost/topicos/06030450/revista/index.php?r=autor/admin
+---
+2015/02/19 00:26:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ator/admin".' in C:\xampp\htdocs\topicos\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\topicos\framework\web\CWebApplication.php(141): CWebApplication->runController('ator/admin')
+#1 C:\xampp\htdocs\topicos\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\topicos\06030450\revista\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/topicos/06030450/revista/index.php?r=ator/admin
+HTTP_REFERER=http://localhost/topicos/06030450/revista/index.php?r=autor/admin
+---
