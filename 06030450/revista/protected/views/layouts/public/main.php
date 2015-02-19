@@ -82,7 +82,7 @@
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
 
-            <li class="active"><a href="?r=site/index">Inicio <span class="sr-only">(current)</span></a></li>
+            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
             <li><a href="?r=articulo/agregar">Articulos</a></li>
             <li><a href="?r=revista/admin">Revistas</a></li>
             <li><a href="?r=autor/admin">Autores</a></li>
@@ -92,7 +92,7 @@
   
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1 class="page-header text-center"><?php echo CHtml::encode(Yii::app()->name); ?></h1>
+          <h1 class="page-header text-center">Vista publica</h1>
           
             <?php echo $content; ?>
           
