@@ -210,3 +210,12 @@ Stack trace:
 REQUEST_URI=/topicosweb/11130587/revista/?r=autor/admin
 HTTP_REFERER=http://localhost/topicosweb/11130587/revista/?r=autor/admin
 ---
+2015/02/19 01:00:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "autor/admin".' in C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('autor/admin')
+#1 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\topicosweb\11130587\revista\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/topicosweb/11130587/revista/?r=autor/admin
+HTTP_REFERER=http://localhost/topicosweb/11130587/revista/?r=articulo/admin
+---
