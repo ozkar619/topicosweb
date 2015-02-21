@@ -58,12 +58,12 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'directorio'); ?>
-		<?php echo $form->textArea($model,'directorio',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textArea($model,'directorio',array('rows'=>6, 'cols'=>50,'class'=>'form-control')); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'editorial'); ?>
-		<?php echo $form->textArea($model,'editorial',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textArea($model,'editorial',array('rows'=>6, 'cols'=>50,'class'=>'form-control')); ?>
 	</div>
 
 	<div class="row">
