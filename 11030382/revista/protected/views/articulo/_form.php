@@ -66,7 +66,7 @@
 		<?php //echo $form->textField($model,'id_status',array('class'=>'form-control'));
 			echo $form->dropDownList($model, 'id_status', 
 				CHtml::listData($modelStatus, 'id_status', 'status'),
-				array('empty'=> 'Selecciona un estatus','class'=>'form-control'););
+				array('empty'=> 'Selecciona un estatus','class'=>'form-control'));
 		?>
 		<?php echo $form->error($model,'id_status'); ?>
 	</div>
