@@ -8,8 +8,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List ContenidoExtra', 'url'=>array('index')),
-	array('label'=>'Manage ContenidoExtra', 'url'=>array('admin')),
+	array('label'=>'Lista ContenidoExtra', 'url'=>array('index')),
+	array('label'=>'Administrar ContenidoExtra', 'url'=>array('admin')),
 );
 ?>
 

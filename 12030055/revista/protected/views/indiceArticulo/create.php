@@ -8,8 +8,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List IndiceArticulo', 'url'=>array('index')),
-	array('label'=>'Manage IndiceArticulo', 'url'=>array('admin')),
+	array('label'=>'Lista IndiceArticulo', 'url'=>array('index')),
+	array('label'=>'Administrar IndiceArticulo', 'url'=>array('admin')),
 );
 ?>
 

@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Revista', 'url'=>array('index')),
-	array('label'=>'Create Revista', 'url'=>array('create')),
-	array('label'=>'Update Revista', 'url'=>array('update', 'id'=>$model->id_revista)),
-	array('label'=>'Delete Revista', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_revista),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Revista', 'url'=>array('admin')),
+	array('label'=>'Lista Revista', 'url'=>array('index')),
+	array('label'=>'Ingresar Revista', 'url'=>array('create')),
+	array('label'=>'Actualizar Revista', 'url'=>array('update', 'id'=>$model->id_revista)),
+	array('label'=>'Borrar Revista', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_revista),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Administrar Revista', 'url'=>array('admin')),
 );
 ?>
 

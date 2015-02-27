@@ -84,15 +84,21 @@
             <li class="active"><a href="?r=site/index">Inicio <span class="sr-only">(current)</span></a></li>
             <li><a href="?r=articulo/create">Articulo</a></li>
             <li><a href="?r=status/create">Status</a></li>
-            <li><a href="?r=revista/admin">Revista</a></li>
-            <li><a href="?r=autor/admin">Autor</a></li>
+            <li><a href="?r=revista/create">Revista</a></li>
+            <li><a href="?r=articuloautor/create">Articulo Autor</a></li>
+            <li><a href="?r=autor/create">Autor</a></li>
+            <li><a href="?r=contenidoextra/create">Contenido Extra</a></li>
+            <li><a href="?r=indice/create">Indice</a></li>
+            <li><a href="?r=indicearticulo/create">Indice Articulo</a></li>
+            <li><a href="?r=recursos/create">Recursos</a></li>
+            <li><a href="?r=tipocontenido/create">Tipo de contenido</a></li>
           </ul>
           
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <h1 class="page-header"><?php echo CHtml::encode(Yii::app()->name); ?></h1>
           <?php echo $content; ?>
-          <h2 class="sub-header">Section title</h2>
+          <h2 class="sub-header"></h2>
           <div class="table-responsive">
         
           </div>

@@ -9,10 +9,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List ContenidoExtra', 'url'=>array('index')),
-	array('label'=>'Create ContenidoExtra', 'url'=>array('create')),
-	array('label'=>'View ContenidoExtra', 'url'=>array('view', 'id'=>$model->id_contenido_extra)),
-	array('label'=>'Manage ContenidoExtra', 'url'=>array('admin')),
+	array('label'=>'Lista ContenidoExtra', 'url'=>array('index')),
+	array('label'=>'Ingresar ContenidoExtra', 'url'=>array('create')),
+	array('label'=>'Ver ContenidoExtra', 'url'=>array('view', 'id'=>$model->id_contenido_extra)),
+	array('label'=>'Administrar ContenidoExtra', 'url'=>array('admin')),
 );
 ?>
 

@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List ContenidoExtra', 'url'=>array('index')),
-	array('label'=>'Create ContenidoExtra', 'url'=>array('create')),
-	array('label'=>'Update ContenidoExtra', 'url'=>array('update', 'id'=>$model->id_contenido_extra)),
-	array('label'=>'Delete ContenidoExtra', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_contenido_extra),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage ContenidoExtra', 'url'=>array('admin')),
+	array('label'=>'Lista ContenidoExtra', 'url'=>array('index')),
+	array('label'=>'Ingresar ContenidoExtra', 'url'=>array('create')),
+	array('label'=>'Actualizar ContenidoExtra', 'url'=>array('update', 'id'=>$model->id_contenido_extra)),
+	array('label'=>'Borrar ContenidoExtra', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_contenido_extra),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Administrar ContenidoExtra', 'url'=>array('admin')),
 );
 ?>
 

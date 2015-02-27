@@ -7,8 +7,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create Recursos', 'url'=>array('create')),
-	array('label'=>'Manage Recursos', 'url'=>array('admin')),
+	array('label'=>'Ingresar Recursos', 'url'=>array('create')),
+	array('label'=>'Administrar Recursos', 'url'=>array('admin')),
 );
 ?>
 

@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Recursos', 'url'=>array('index')),
-	array('label'=>'Create Recursos', 'url'=>array('create')),
-	array('label'=>'Update Recursos', 'url'=>array('update', 'id'=>$model->id_recurso)),
-	array('label'=>'Delete Recursos', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_recurso),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Recursos', 'url'=>array('admin')),
+	array('label'=>'Lista Recursos', 'url'=>array('index')),
+	array('label'=>'Ingresar Recursos', 'url'=>array('create')),
+	array('label'=>'Actualizar Recursos', 'url'=>array('update', 'id'=>$model->id_recurso)),
+	array('label'=>'Borrar Recursos', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_recurso),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Administrar Recursos', 'url'=>array('admin')),
 );
 ?>
 
