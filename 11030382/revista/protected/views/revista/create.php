@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Revista', 'url'=>array('index')),
-	array('label'=>'Manage Revista', 'url'=>array('admin')),
+	array('label'=>'Lista de Revista', 'url'=>array('index')),
+	array('label'=>'Administrar Revista', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Revista</h1>
+<h1>Crear Revista</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

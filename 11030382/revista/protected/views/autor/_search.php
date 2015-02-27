@@ -13,22 +13,22 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'id_autor'); ?>
-		<?php echo $form->textField($model,'id_autor'); ?>
+		<?php echo $form->textField($model,'id_autor',array('class'=>'form-control')); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'nombre'); ?>
-		<?php echo $form->textField($model,'nombre',array('size'=>60,'maxlength'=>100,'class'=>'form-control')); ?>
+		<?php echo $form->textField($model,'nombre',array('size'=>60,'maxlength'=>100, 'class'=>'form-control')); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'apellidos'); ?>
-		<?php echo $form->textField($model,'apellidos',array('size'=>60,'maxlength'=>200,'class'=>'form-control')); ?>
+		<?php echo $form->textField($model,'apellidos',array('size'=>60,'maxlength'=>200, 'class'=>'form-control')); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'email'); ?>
-		<?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>100,'class'=>'form-control')); ?>
+		<?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>100, 'class'=>'form-control')); ?>
 	</div>
 
 	<div class="row buttons">

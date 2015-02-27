@@ -61,17 +61,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">Revista Playboy</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Help</a></li>
+            <li><a href="#">Ajustes</a></li>
+            <li><a href="#">Perfil</a></li>
+            <li><a href="#">Ayuda</a></li>
           </ul>
           <form class="navbar-form navbar-right">
-            <input type="text" class="form-control" placeholder="Search...">
+            <input type="text" class="form-control" placeholder="Buscar...">
           </form>
         </div>
       </div>
@@ -82,17 +82,19 @@
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
             <li class="active"><a href="?r=site/index">Inicio <span class="sr-only">(current)</span></a></li>
-            <li><a href="?r=articulo/create">Articulo</a></li>
-            <li><a href="?r=status/create">Status</a></li>
-            <li><a href="?r=revista/admin">Revista</a></li>
-            <li><a href="?r=autor/admin">Autor</a></li>
+            <li><a href="?r=articulo/create">Art&iacute;culo</a></li>
+            <li><a href="?r=estatus/create">Estatus</a></li>
+            <li><a href="?r=revista/create">Revista</a></li>
+            <li><a href="?r=indice/create">&Iacute;ndice</a></li>
+            <li><a href="?r=recursos/create">Recursos</a></li>
+            <li><a href="?r=autor/create">Autor</a></li>
           </ul>
           
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <h1 class="page-header"><?php echo CHtml::encode(Yii::app()->name); ?></h1>
           <?php echo $content; ?>
-          <h2 class="sub-header">Section title</h2>
+          <h2 class="sub-header">T&iacute;tulo de la secci&oacute;n</h2>
           <div class="table-responsive">
         
           </div>

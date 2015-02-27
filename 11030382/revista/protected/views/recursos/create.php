@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Recursos', 'url'=>array('index')),
-	array('label'=>'Manage Recursos', 'url'=>array('admin')),
+	array('label'=>'Lista de Recursos', 'url'=>array('index')),
+	array('label'=>'Administrar Recursos', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Recursos</h1>
+<h1>Crear Recursos</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

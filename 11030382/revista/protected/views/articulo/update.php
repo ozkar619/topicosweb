@@ -9,13 +9,13 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Articulo', 'url'=>array('index')),
-	array('label'=>'Create Articulo', 'url'=>array('create')),
-	array('label'=>'View Articulo', 'url'=>array('view', 'id'=>$model->id_articulo)),
-	array('label'=>'Manage Articulo', 'url'=>array('admin')),
+	array('label'=>'Lista de Articulo', 'url'=>array('index')),
+	array('label'=>'Crear Articulo', 'url'=>array('create')),
+	array('label'=>'Vista de Articulo', 'url'=>array('view', 'id'=>$model->id_articulo)),
+	array('label'=>'Administrar Articulo', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update Articulo <?php echo $model->id_articulo; ?></h1>
+<h1>Acutalizar Articulo <?php echo $model->id_articulo; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

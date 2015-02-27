@@ -7,8 +7,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create Indice', 'url'=>array('create')),
-	array('label'=>'Manage Indice', 'url'=>array('admin')),
+	array('label'=>'Crear Indice', 'url'=>array('create')),
+	array('label'=>'Administrar Indice', 'url'=>array('admin')),
 );
 ?>
 

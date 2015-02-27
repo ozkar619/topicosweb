@@ -19,7 +19,7 @@
  *
  * The followings are the available model relations:
  * @property Indice[] $indices
- * @property Status $idStatus
+ * @property Estatus $idStatus
  */
 class Revista extends CActiveRecord
 {
@@ -61,7 +61,7 @@ class Revista extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'indices' => array(self::HAS_MANY, 'Indice', 'id_revista'),
-			'idStatus' => array(self::BELONGS_TO, 'Status', 'id_status'),
+			'idStatus' => array(self::BELONGS_TO, 'Estatus', 'id_status'),
 		);
 	}
 

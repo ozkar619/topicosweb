@@ -9,13 +9,13 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List ContenidoExtra', 'url'=>array('index')),
-	array('label'=>'Create ContenidoExtra', 'url'=>array('create')),
-	array('label'=>'View ContenidoExtra', 'url'=>array('view', 'id'=>$model->id_contenido_extra)),
-	array('label'=>'Manage ContenidoExtra', 'url'=>array('admin')),
+	array('label'=>'Lista de ContenidoExtra', 'url'=>array('index')),
+	array('label'=>'Crear ContenidoExtra', 'url'=>array('create')),
+	array('label'=>'Vista de ContenidoExtra', 'url'=>array('view', 'id'=>$model->id_contenido_extra)),
+	array('label'=>'Administrar ContenidoExtra', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update ContenidoExtra <?php echo $model->id_contenido_extra; ?></h1>
+<h1>Acutalizar ContenidoExtra <?php echo $model->id_contenido_extra; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

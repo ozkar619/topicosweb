@@ -21,7 +21,7 @@
  *
  * The followings are the available model relations:
  * @property IndiceArticulo $idIndiceArticulo
- * @property Status $idStatus
+ * @property Estatus $idStatus
  * @property ArticuloAutor[] $articuloAutors
  */
 class Articulo extends CActiveRecord
@@ -62,7 +62,7 @@ class Articulo extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'idIndiceArticulo' => array(self::BELONGS_TO, 'IndiceArticulo', 'id_indice_articulo'),
-			'idStatus' => array(self::BELONGS_TO, 'Status', 'id_status'),
+			'idStatus' => array(self::BELONGS_TO, 'Estatus', 'id_status'),
 			'articuloAutors' => array(self::HAS_MANY, 'ArticuloAutor', 'id_articulo'),
 		);
 	}
