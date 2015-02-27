@@ -15,42 +15,42 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="note">Campos con <span class="required">*</span> son requeridos.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
+	<div class="form-group">
 		<?php echo $form->labelEx($model,'nombre'); ?>
-		<?php echo $form->textArea($model,'nombre',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textArea($model,'nombre',array('rows'=>6, 'cols'=>50,'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'nombre'); ?>
 	</div>
 
-	<div class="row">
+	<div class="form-group">
 		<?php echo $form->labelEx($model,'archivo_pdf'); ?>
-		<?php echo $form->textField($model,'archivo_pdf',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->textField($model,'archivo_pdf',array('size'=>60,'maxlength'=>100,'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'archivo_pdf'); ?>
 	</div>
 
-	<div class="row">
+	<div class="form-group">
 		<?php echo $form->labelEx($model,'id_tipo_contenido'); ?>
-		<?php echo $form->textField($model,'id_tipo_contenido'); ?>
+		<?php echo $form->textField($model,'id_tipo_contenido',array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'id_tipo_contenido'); ?>
 	</div>
 
-	<div class="row">
+	<div class="form-group">
 		<?php echo $form->labelEx($model,'id_indice_articulo'); ?>
-		<?php echo $form->textField($model,'id_indice_articulo'); ?>
+		<?php echo $form->textField($model,'id_indice_articulo',array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'id_indice_articulo'); ?>
 	</div>
 
-	<div class="row">
+	<div class="form-group">
 		<?php echo $form->labelEx($model,'contenido'); ?>
-		<?php echo $form->textArea($model,'contenido',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textArea($model,'contenido',array('rows'=>6, 'cols'=>50,'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'contenido'); ?>
 	</div>
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+	<div class="form-group buttons">
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Ingresar' : 'Save',array('class'=>'btn btn-primary')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

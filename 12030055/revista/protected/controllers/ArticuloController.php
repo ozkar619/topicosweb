@@ -71,13 +71,14 @@ class ArticuloController extends Controller
 		if(isset($_POST['Articulo']))
 		{
 			$model->attributes=$_POST['Articulo'];
+			$model->fecha_creacion = date('Y-m-d');
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id_articulo));
 		}
 
 		$this->render('create',array(
 			'model'=>$model,
-			'modelStatus'=>$modelStatus,
+			'modelStatus'=>$modelStatus, //es aqui :D
 		));
 	}
 
@@ -102,6 +103,7 @@ class ArticuloController extends Controller
 
 		$this->render('update',array(
 			'model'=>$model,
+
 		));
 	}
 

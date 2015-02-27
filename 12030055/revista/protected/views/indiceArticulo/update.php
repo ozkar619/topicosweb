@@ -9,10 +9,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List IndiceArticulo', 'url'=>array('index')),
-	array('label'=>'Create IndiceArticulo', 'url'=>array('create')),
-	array('label'=>'View IndiceArticulo', 'url'=>array('view', 'id'=>$model->id_indice_articulo)),
-	array('label'=>'Manage IndiceArticulo', 'url'=>array('admin')),
+	array('label'=>'Lista IndiceArticulo', 'url'=>array('index')),
+	array('label'=>'Ingresar IndiceArticulo', 'url'=>array('create')),
+	array('label'=>'Ver IndiceArticulo', 'url'=>array('view', 'id'=>$model->id_indice_articulo)),
+	array('label'=>'Administrar IndiceArticulo', 'url'=>array('admin')),
 );
 ?>
 

@@ -8,8 +8,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Status', 'url'=>array('index')),
-	array('label'=>'Manage Status', 'url'=>array('admin')),
+	array('label'=>'Lista Status', 'url'=>array('index')),
+	array('label'=>'Administrar Status', 'url'=>array('admin')),
 );
 ?>
 

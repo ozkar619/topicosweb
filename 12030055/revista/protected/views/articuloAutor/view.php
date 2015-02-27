@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List ArticuloAutor', 'url'=>array('index')),
-	array('label'=>'Create ArticuloAutor', 'url'=>array('create')),
-	array('label'=>'Update ArticuloAutor', 'url'=>array('update', 'id'=>$model->id_articulo_autor)),
-	array('label'=>'Delete ArticuloAutor', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_articulo_autor),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage ArticuloAutor', 'url'=>array('admin')),
+	array('label'=>'Lista ArticuloAutor', 'url'=>array('index')),
+	array('label'=>'Ingresar ArticuloAutor', 'url'=>array('create')),
+	array('label'=>'Actualizar ArticuloAutor', 'url'=>array('update', 'id'=>$model->id_articulo_autor)),
+	array('label'=>'Borrar ArticuloAutor', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_articulo_autor),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Administrar ArticuloAutor', 'url'=>array('admin')),
 );
 ?>
 

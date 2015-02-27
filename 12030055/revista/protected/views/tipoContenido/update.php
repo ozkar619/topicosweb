@@ -9,10 +9,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List TipoContenido', 'url'=>array('index')),
-	array('label'=>'Create TipoContenido', 'url'=>array('create')),
-	array('label'=>'View TipoContenido', 'url'=>array('view', 'id'=>$model->id_tipo_contenido)),
-	array('label'=>'Manage TipoContenido', 'url'=>array('admin')),
+	array('label'=>'Lista TipoContenido', 'url'=>array('index')),
+	array('label'=>'Ingresar TipoContenido', 'url'=>array('create')),
+	array('label'=>'Ver TipoContenido', 'url'=>array('view', 'id'=>$model->id_tipo_contenido)),
+	array('label'=>'Administrar TipoContenido', 'url'=>array('admin')),
 );
 ?>
 

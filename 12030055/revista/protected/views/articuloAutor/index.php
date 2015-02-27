@@ -7,8 +7,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create ArticuloAutor', 'url'=>array('create')),
-	array('label'=>'Manage ArticuloAutor', 'url'=>array('admin')),
+	array('label'=>'Ingresar ArticuloAutor', 'url'=>array('create')),
+	array('label'=>'Administrar ArticuloAutor', 'url'=>array('admin')),
 );
 ?>
 

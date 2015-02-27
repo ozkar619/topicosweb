@@ -13,16 +13,16 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'id_status'); ?>
-		<?php echo $form->textField($model,'id_status'); ?>
+		<?php echo $form->textField($model,'id_status',array('class'=>'form-control')); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'status'); ?>
-		<?php echo $form->textField($model,'status',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->textField($model,'status',array('size'=>45,'maxlength'=>45,'class'=>'form-control')); ?>
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+		<?php echo CHtml::submitButton('Buscar'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

@@ -7,8 +7,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create TipoContenido', 'url'=>array('create')),
-	array('label'=>'Manage TipoContenido', 'url'=>array('admin')),
+	array('label'=>'Ingresar TipoContenido', 'url'=>array('create')),
+	array('label'=>'Administrar TipoContenido', 'url'=>array('admin')),
 );
 ?>
 

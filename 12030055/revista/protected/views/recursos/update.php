@@ -9,10 +9,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Recursos', 'url'=>array('index')),
-	array('label'=>'Create Recursos', 'url'=>array('create')),
-	array('label'=>'View Recursos', 'url'=>array('view', 'id'=>$model->id_recurso)),
-	array('label'=>'Manage Recursos', 'url'=>array('admin')),
+	array('label'=>'Lista Recursos', 'url'=>array('index')),
+	array('label'=>'Ingresar Recursos', 'url'=>array('create')),
+	array('label'=>'Ver Recursos', 'url'=>array('view', 'id'=>$model->id_recurso)),
+	array('label'=>'Administrar Recursos', 'url'=>array('admin')),
 );
 ?>
 

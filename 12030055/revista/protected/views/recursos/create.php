@@ -8,8 +8,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Recursos', 'url'=>array('index')),
-	array('label'=>'Manage Recursos', 'url'=>array('admin')),
+	array('label'=>'Lista Recursos', 'url'=>array('index')),
+	array('label'=>'Administrar Recursos', 'url'=>array('admin')),
 );
 ?>
 

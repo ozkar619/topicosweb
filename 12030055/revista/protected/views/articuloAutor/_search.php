@@ -13,21 +13,21 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'id_articulo_autor'); ?>
-		<?php echo $form->textField($model,'id_articulo_autor'); ?>
+		<?php echo $form->textField($model,'id_articulo_autor',array('class'=>'form-control')); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'id_articulo'); ?>
-		<?php echo $form->textField($model,'id_articulo'); ?>
+		<?php echo $form->textField($model,'id_articulo',array('class'=>'form-control')); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'id_autor'); ?>
-		<?php echo $form->textField($model,'id_autor'); ?>
+		<?php echo $form->textField($model,'id_autor',array('class'=>'form-control')); ?>
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+		<?php echo CHtml::submitButton('Buscar'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List TipoContenido', 'url'=>array('index')),
-	array('label'=>'Create TipoContenido', 'url'=>array('create')),
-	array('label'=>'Update TipoContenido', 'url'=>array('update', 'id'=>$model->id_tipo_contenido)),
-	array('label'=>'Delete TipoContenido', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_tipo_contenido),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage TipoContenido', 'url'=>array('admin')),
+	array('label'=>'Lista TipoContenido', 'url'=>array('index')),
+	array('label'=>'Ingresar TipoContenido', 'url'=>array('create')),
+	array('label'=>'Actualizar TipoContenido', 'url'=>array('update', 'id'=>$model->id_tipo_contenido)),
+	array('label'=>'Borrar TipoContenido', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_tipo_contenido),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Administrar TipoContenido', 'url'=>array('admin')),
 );
 ?>
 

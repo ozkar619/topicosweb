@@ -8,8 +8,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List ArticuloAutor', 'url'=>array('index')),
-	array('label'=>'Manage ArticuloAutor', 'url'=>array('admin')),
+	array('label'=>'Lista ArticuloAutor', 'url'=>array('index')),
+	array('label'=>'Administrar ArticuloAutor', 'url'=>array('admin')),
 );
 ?>
 

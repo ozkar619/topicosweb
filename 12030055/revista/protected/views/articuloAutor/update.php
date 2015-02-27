@@ -9,10 +9,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List ArticuloAutor', 'url'=>array('index')),
-	array('label'=>'Create ArticuloAutor', 'url'=>array('create')),
-	array('label'=>'View ArticuloAutor', 'url'=>array('view', 'id'=>$model->id_articulo_autor)),
-	array('label'=>'Manage ArticuloAutor', 'url'=>array('admin')),
+	array('label'=>'Lista ArticuloAutor', 'url'=>array('index')),
+	array('label'=>'Ingresar ArticuloAutor', 'url'=>array('create')),
+	array('label'=>'Ver ArticuloAutor', 'url'=>array('view', 'id'=>$model->id_articulo_autor)),
+	array('label'=>'Administrar ArticuloAutor', 'url'=>array('admin')),
 );
 ?>
 

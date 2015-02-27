@@ -9,10 +9,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Indice', 'url'=>array('index')),
-	array('label'=>'Create Indice', 'url'=>array('create')),
-	array('label'=>'View Indice', 'url'=>array('view', 'id'=>$model->id_indice)),
-	array('label'=>'Manage Indice', 'url'=>array('admin')),
+	array('label'=>'Lista Indice', 'url'=>array('index')),
+	array('label'=>'Ingresar Indice', 'url'=>array('create')),
+	array('label'=>'Ver Indice', 'url'=>array('view', 'id'=>$model->id_indice)),
+	array('label'=>'Administrar Indice', 'url'=>array('admin')),
 );
 ?>
 

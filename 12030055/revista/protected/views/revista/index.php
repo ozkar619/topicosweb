@@ -7,8 +7,8 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create Revista', 'url'=>array('create')),
-	array('label'=>'Manage Revista', 'url'=>array('admin')),
+	array('label'=>'Ingresar Revista', 'url'=>array('create')),
+	array('label'=>'Administrar Revista', 'url'=>array('admin')),
 );
 ?>
 

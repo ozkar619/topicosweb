@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Indice', 'url'=>array('index')),
-	array('label'=>'Create Indice', 'url'=>array('create')),
-	array('label'=>'Update Indice', 'url'=>array('update', 'id'=>$model->id_indice)),
-	array('label'=>'Delete Indice', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_indice),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Indice', 'url'=>array('admin')),
+	array('label'=>'Lista Indice', 'url'=>array('index')),
+	array('label'=>'Ingresar Indice', 'url'=>array('create')),
+	array('label'=>'Actualizar Indice', 'url'=>array('update', 'id'=>$model->id_indice)),
+	array('label'=>'Borrar Indice', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_indice),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Administrar Indice', 'url'=>array('admin')),
 );
 ?>
 

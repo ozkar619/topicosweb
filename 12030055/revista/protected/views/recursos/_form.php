@@ -15,30 +15,30 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="note">Campos con <span class="required">*</span> son requeridos.</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
+	<div class="form-group">
 		<?php echo $form->labelEx($model,'nombre_recurso'); ?>
-		<?php echo $form->textField($model,'nombre_recurso',array('size'=>30,'maxlength'=>30)); ?>
+		<?php echo $form->textField($model,'nombre_recurso',array('size'=>30,'maxlength'=>30,'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'nombre_recurso'); ?>
 	</div>
 
-	<div class="row">
+	<div class="form-group">
 		<?php echo $form->labelEx($model,'url_recurso'); ?>
-		<?php echo $form->textField($model,'url_recurso',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->textField($model,'url_recurso',array('size'=>60,'maxlength'=>100,'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'url_recurso'); ?>
 	</div>
 
-	<div class="row">
+	<div class="form-group">
 		<?php echo $form->labelEx($model,'id_usuario'); ?>
-		<?php echo $form->textField($model,'id_usuario',array('size'=>20,'maxlength'=>20)); ?>
+		<?php echo $form->textField($model,'id_usuario',array('size'=>20,'maxlength'=>20,'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'id_usuario'); ?>
 	</div>
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+	<div class="form-group buttons">
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Ingresar' : 'Save',array('class'=>'btn btn-primary')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

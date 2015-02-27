@@ -9,10 +9,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Revista', 'url'=>array('index')),
-	array('label'=>'Create Revista', 'url'=>array('create')),
-	array('label'=>'View Revista', 'url'=>array('view', 'id'=>$model->id_revista)),
-	array('label'=>'Manage Revista', 'url'=>array('admin')),
+	array('label'=>'Lista Revista', 'url'=>array('index')),
+	array('label'=>'Ingresar Revista', 'url'=>array('create')),
+	array('label'=>'Ver Revista', 'url'=>array('view', 'id'=>$model->id_revista)),
+	array('label'=>'Administrar Revista', 'url'=>array('admin')),
 );
 ?>
 

@@ -13,26 +13,26 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'id_indice'); ?>
-		<?php echo $form->textField($model,'id_indice'); ?>
+		<?php echo $form->textField($model,'id_indice',array('class'=>'form-control')); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'titulo'); ?>
-		<?php echo $form->textField($model,'titulo',array('size'=>60,'maxlength'=>500)); ?>
+		<?php echo $form->textField($model,'titulo',array('size'=>60,'maxlength'=>500,'class'=>'form-control')); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'numero'); ?>
-		<?php echo $form->textField($model,'numero'); ?>
+		<?php echo $form->textField($model,'numero',array('class'=>'form-control')); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'id_revista'); ?>
-		<?php echo $form->textField($model,'id_revista'); ?>
+		<?php echo $form->textField($model,'id_revista',array('class'=>'form-control')); ?>
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+		<?php echo CHtml::submitButton('Buscar'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
