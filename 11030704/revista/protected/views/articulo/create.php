@@ -13,6 +13,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Create Articulo</h1>
+<h1>Crear Articulo</h1>
 
-<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+<?php $this->renderPartial('_form', array('model'=>$model,'modelStatus'=>$modelStatus)); ?>
