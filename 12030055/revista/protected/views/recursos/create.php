@@ -1,0 +1,18 @@
+<?php
+/* @var $this RecursosController */
+/* @var $model Recursos */
+
+$this->breadcrumbs=array(
+	'Recursoses'=>array('index'),
+	'Create',
+);
+
+$this->menu=array(
+	array('label'=>'Lista Recursos', 'url'=>array('index')),
+	array('label'=>'Administrar Recursos', 'url'=>array('admin')),
+);
+?>
+
+<h1>Create Recursos</h1>
+
+<?php $this->renderPartial('_form', array('model'=>$model)); ?>
