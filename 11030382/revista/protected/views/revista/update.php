@@ -9,13 +9,13 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Revista', 'url'=>array('index')),
-	array('label'=>'Create Revista', 'url'=>array('create')),
-	array('label'=>'View Revista', 'url'=>array('view', 'id'=>$model->id_revista)),
-	array('label'=>'Manage Revista', 'url'=>array('admin')),
+	array('label'=>'Lista de Revista', 'url'=>array('index')),
+	array('label'=>'Crear Revista', 'url'=>array('create')),
+	array('label'=>'Vista de Revista', 'url'=>array('view', 'id'=>$model->id_revista)),
+	array('label'=>'Administrar Revista', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update Revista <?php echo $model->id_revista; ?></h1>
+<h1>Acutalizar Revista <?php echo $model->id_revista; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

@@ -89,12 +89,6 @@
 		<?php echo $form->error($model,'referencias'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'id_indice_articulo'); ?>
-		<?php echo $form->textField($model,'id_indice_articulo',array('size'=>60,'maxlength'=>500,'class'=>'form-control')); ?>
-		<?php echo $form->error($model,'id_indice_articulo'); ?>
-	</div>
-
 	<div class="row buttons">
 		<button class="btn btn-default" type="submit">Crear</button>
 		<?php CHtml::submitButton($model->isNewRecord ? 'Crear' : 'Guardar'); ?>

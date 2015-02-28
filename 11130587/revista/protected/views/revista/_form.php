@@ -31,6 +31,25 @@
 		<?php echo $form->error($model,'portada'); ?>
 	</div>
 
+		<div class="form-group">
+		<?php echo $form->labelEx($model,'fecha'); ?>
+		<?php 
+		echo $this->widget('zii.widgets.jui.CJuiDatePicker',
+			array(
+				'model'=>$model,
+				'attribute'=>'fecha',
+				'language'=>'es',
+				'options'=>array(),
+				'htmlOptions'=>array(
+					'class'=>'form-control'
+					)
+					)
+					,true);
+					?>
+		<?php echo $form->error($model,'fecha'); ?>
+	</div>
+
+
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'volumen'); ?>
 		<?php echo $form->textField($model,'volumen',array('size'=>45,'maxlength'=>45,'class'=>'form-control')); ?>

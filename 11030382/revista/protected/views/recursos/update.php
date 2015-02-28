@@ -9,13 +9,13 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Recursos', 'url'=>array('index')),
-	array('label'=>'Create Recursos', 'url'=>array('create')),
-	array('label'=>'View Recursos', 'url'=>array('view', 'id'=>$model->id_recurso)),
-	array('label'=>'Manage Recursos', 'url'=>array('admin')),
+	array('label'=>'Lista de Recursos', 'url'=>array('index')),
+	array('label'=>'Crear Recursos', 'url'=>array('create')),
+	array('label'=>'Vista de Recursos', 'url'=>array('view', 'id'=>$model->id_recurso)),
+	array('label'=>'Administrar Recursos', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update Recursos <?php echo $model->id_recurso; ?></h1>
+<h1>Acutalizar Recursos <?php echo $model->id_recurso; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

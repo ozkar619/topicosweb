@@ -8,15 +8,15 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Articulo', 'url'=>array('index')),
-	array('label'=>'Create Articulo', 'url'=>array('create')),
-	array('label'=>'Update Articulo', 'url'=>array('update', 'id'=>$model->id_articulo)),
-	array('label'=>'Delete Articulo', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_articulo),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Articulo', 'url'=>array('admin')),
+	array('label'=>'Lista de Articulo', 'url'=>array('index')),
+	array('label'=>'Crear Articulo', 'url'=>array('create')),
+	array('label'=>'Actualizar Articulo', 'url'=>array('update', 'id'=>$model->id_articulo)),
+	array('label'=>'Eliminar Articulo', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_articulo),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Administrar Articulo', 'url'=>array('admin')),
 );
 ?>
 
-<h1>View Articulo #<?php echo $model->id_articulo; ?></h1>
+<h1>Vista de Articulo #<?php echo $model->id_articulo; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

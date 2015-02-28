@@ -8,15 +8,15 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Recursos', 'url'=>array('index')),
-	array('label'=>'Create Recursos', 'url'=>array('create')),
-	array('label'=>'Update Recursos', 'url'=>array('update', 'id'=>$model->id_recurso)),
-	array('label'=>'Delete Recursos', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_recurso),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Recursos', 'url'=>array('admin')),
+	array('label'=>'Lista de Recursos', 'url'=>array('index')),
+	array('label'=>'Crear Recursos', 'url'=>array('create')),
+	array('label'=>'Actualizar Recursos', 'url'=>array('update', 'id'=>$model->id_recurso)),
+	array('label'=>'Eliminar Recursos', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_recurso),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Administrar Recursos', 'url'=>array('admin')),
 );
 ?>
 
-<h1>View Recursos #<?php echo $model->id_recurso; ?></h1>
+<h1>Vista de Recursos #<?php echo $model->id_recurso; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

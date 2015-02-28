@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Autor', 'url'=>array('index')),
-	array('label'=>'Manage Autor', 'url'=>array('admin')),
+	array('label'=>'Lista de Autor', 'url'=>array('index')),
+	array('label'=>'Administrar Autor', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Autor</h1>
+<h1>Crear Autor</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

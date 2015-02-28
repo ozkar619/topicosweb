@@ -13,17 +13,17 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'id_indice_articulo'); ?>
-		<?php echo $form->textField($model,'id_indice_articulo'); ?>
+		<?php echo $form->textField($model,'id_indice_articulo',array('class'=>'form-control')); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'id_indice'); ?>
-		<?php echo $form->textField($model,'id_indice'); ?>
+		<?php echo $form->textField($model,'id_indice',array('class'=>'form-control')); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'numero'); ?>
-		<?php echo $form->textField($model,'numero'); ?>
+		<?php echo $form->textField($model,'numero',array('class'=>'form-control')); ?>
 	</div>
 
 	<div class="row buttons">

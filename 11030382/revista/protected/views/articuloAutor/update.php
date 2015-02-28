@@ -9,13 +9,13 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List ArticuloAutor', 'url'=>array('index')),
-	array('label'=>'Create ArticuloAutor', 'url'=>array('create')),
-	array('label'=>'View ArticuloAutor', 'url'=>array('view', 'id'=>$model->id_articulo_autor)),
-	array('label'=>'Manage ArticuloAutor', 'url'=>array('admin')),
+	array('label'=>'Lista de ArticuloAutor', 'url'=>array('index')),
+	array('label'=>'Crear ArticuloAutor', 'url'=>array('create')),
+	array('label'=>'Vista de ArticuloAutor', 'url'=>array('view', 'id'=>$model->id_articulo_autor)),
+	array('label'=>'Administrar ArticuloAutor', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update ArticuloAutor <?php echo $model->id_articulo_autor; ?></h1>
+<h1>Acutalizar ArticuloAutor <?php echo $model->id_articulo_autor; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

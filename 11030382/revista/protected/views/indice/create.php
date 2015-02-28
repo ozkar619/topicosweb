@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Indice', 'url'=>array('index')),
-	array('label'=>'Manage Indice', 'url'=>array('admin')),
+	array('label'=>'Lista de Indice', 'url'=>array('index')),
+	array('label'=>'Administrar Indice', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Indice</h1>
+<h1>Crear Indice</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
