@@ -33,7 +33,20 @@
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'fecha'); ?>
-		<?php echo $form->textField($model,'fecha'); ?>
+		<?php 
+			echo $this->widget('zii.widgets.jui.CJuiDatePicker',
+					array(
+						'model'=>$model,
+						'attribute'=>'fecha',
+						'language'=>'es',
+						'options'=>array(),
+						'htmlOptions'=>array(
+							'class'=>'form-control'
+						)
+					)
+				,true);				
+
+		 ?>
 		<?php echo $form->error($model,'fecha'); ?>
 	</div>
 
@@ -57,7 +70,7 @@
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'numero'); ?>
-		<?php echo $form->textField($model,'numero'); ?>
+		<?php echo $form->textField($model,'numero',array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'numero'); ?>
 	</div>
 
@@ -69,19 +82,23 @@
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'directorio'); ?>
-		<?php echo $form->textArea($model,'directorio',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textArea($model,'directorio',array('rows'=>6, 'cols'=>50,'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'directorio'); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'editorial'); ?>
-		<?php echo $form->textArea($model,'editorial',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textArea($model,'editorial',array('rows'=>6, 'cols'=>50,'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'editorial'); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'id_status'); ?>
-		<?php echo $form->textField($model,'id_status'); ?>
+		<?php
+			echo $form->dropDownList($model,'id_status',
+				  		CHtml::listData($modelStatus,'id_status','status'),
+				  		array('empty'=>'Selecciona un estatus...','class'=>'form-control')); 
+		 ?>
 		<?php echo $form->error($model,'id_status'); ?>
 	</div>
 
