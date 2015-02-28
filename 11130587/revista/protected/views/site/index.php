@@ -36,6 +36,15 @@ $this->pageTitle=Yii::app()->name;
       </div><!-- /.container -->
     </nav><!-- /.navbar -->
 
+    <?php
+    $this->widget('zii.widgets.CListView', array(
+    'dataProvider'=>$dataProvider,
+    'itemView'=>'_articulo',   // refers to the partial view named '_post'
+    'sortableAttributes'=>array(
+    ),
+));
+?>
+
     <div class="container">
 
       <div class="row row-offcanvas row-offcanvas-right">
