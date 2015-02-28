@@ -69,10 +69,12 @@
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'id_status'); ?>
-		<?php //echo $form->textField($model,'id_status',array('class'=>'form-control')); 
-			  echo $form->dropDownList($model,'id_status',
-			  		CHtml::listData($modelStatus,'id_status','status'),
-			  		array('empty'=>'Selecciona un estatus...','class'=>'form-control')); ?>
+		<?php 
+			echo $form->dropDownList($model,'id_status',
+		  		CHtml::listData($modelStatus,'id_status','status'),
+		  		array('empty'=>'Selecciona un estatus...','class'=>'form-control')
+		  		);
+  		?>
 		<?php echo $form->error($model,'id_status'); ?>
 	</div>
 
@@ -92,12 +94,6 @@
 		<?php echo $form->labelEx($model,'referencias'); ?>
 		<?php echo $form->textArea($model,'referencias',array('rows'=>6, 'cols'=>50,'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'referencias'); ?>
-	</div>
-
-	<div class="form-group">
-		<?php echo $form->labelEx($model,'id_indice_articulo'); ?>
-		<?php echo $form->textField($model,'id_indice_articulo',array('class'=>'form-control')); ?>
-		<?php echo $form->error($model,'id_indice_articulo'); ?>
 	</div>
 
 	<div class="form-group">

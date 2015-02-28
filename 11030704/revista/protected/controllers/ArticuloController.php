@@ -64,7 +64,6 @@ class ArticuloController extends Controller
 	{
 		$model=new Articulo;
 		$modelStatus = Status::model()->findAll();
-
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
