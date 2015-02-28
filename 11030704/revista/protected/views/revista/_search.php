@@ -13,7 +13,7 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'id_revista'); ?>
-		<?php echo $form->textField($model,'id_revista'); ?>
+		<?php echo $form->textField($model,'id_revista',array('class'=>'form-control')); ?>
 	</div>
 
 	<div class="row">
@@ -28,7 +28,7 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'fecha'); ?>
-		<?php echo $form->textField($model,'fecha'); ?>
+		<?php echo $form->textField($model,'fecha',array('class'=>'form-control')); ?>
 	</div>
 
 	<div class="row">
@@ -48,7 +48,7 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'numero'); ?>
-		<?php echo $form->textField($model,'numero'); ?>
+		<?php echo $form->textField($model,'numero',array('class'=>'form-control')); ?>
 	</div>
 
 	<div class="row">
@@ -58,17 +58,17 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'directorio'); ?>
-		<?php echo $form->textArea($model,'directorio',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textArea($model,'directorio',array('rows'=>6, 'cols'=>50,'class'=>'form-control')); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'editorial'); ?>
-		<?php echo $form->textArea($model,'editorial',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textArea($model,'editorial',array('rows'=>6, 'cols'=>50,'class'=>'form-control')); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'id_status'); ?>
-		<?php echo $form->textField($model,'id_status'); ?>
+		<?php echo $form->textField($model,'id_status',array('class'=>'form-control')); ?>
 	</div>
 
 	<div class="row buttons">

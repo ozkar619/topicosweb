@@ -33,7 +33,14 @@
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'fecha'); ?>
-		<?php echo $form->textField($model,'fecha',array('class'=>'form-control')); ?>
+		<?php echo $this->widget('zii.widgets.jui.CJuiDatePicker',
+				array('model'=>$model, 
+					'attribute'=>'fecha',
+					'language'=>'es', 
+					'options'=>array('showAnim'=>'fold'),
+					'htmlOptions'=>array('class'=>'form-control')),
+				true);
+		?>
 		<?php echo $form->error($model,'fecha'); ?>
 	</div>
 
@@ -81,7 +88,10 @@
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'id_status'); ?>
-		<?php echo $form->textField($model,'id_status',array('class'=>'form-control')); ?>
+		<?php echo $form->dropDownList($model, 'id_status', 
+				CHtml::listData($modelStatus, 'id_status', 'status'),
+				array('empty'=> 'Selecciona un estatus','class'=>'form-control'));
+		?>
 		<?php echo $form->error($model,'id_status'); ?>
 	</div>
 

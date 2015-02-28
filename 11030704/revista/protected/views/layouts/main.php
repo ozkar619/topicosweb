@@ -79,7 +79,7 @@
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
             <li class="active"><a href="?r=/site/index">Inicio <span class="sr-only">(current)</span></a></li>
-            <li><a href="?r=articulo/agregar">Articulos</a></li>
+            <li><a href="?r=articulo/create">Articulos</a></li>
             <li><a href="?r=revista/create">Revistas</a></li>
             <li><a href="?r=autor/create">Autores</a></li>
           </ul>
