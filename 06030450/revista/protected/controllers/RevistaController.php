@@ -63,7 +63,7 @@ class RevistaController extends Controller
 	public function actionCreate()
 	{
 		$model=new Revista;
-
+		$modelStatus = Status::model()->findAll();
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
@@ -76,6 +76,7 @@ class RevistaController extends Controller
 
 		$this->render('create',array(
 			'model'=>$model,
+			'modelStatus'=>$modelStatus
 		));
 	}
 
