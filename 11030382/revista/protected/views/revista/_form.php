@@ -20,15 +20,19 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="form-group">
-		<?php echo $form->labelEx($model,'nombre'); ?>
-		<?php echo $form->textField($model,'nombre',array('size'=>60,'maxlength'=>500, 'class'=>'form-control')); ?>
-		<?php echo $form->error($model,'nombre'); ?>
+		<?php echo $form->labelEx($model,'portada'); ?>
+		<?php echo CHtml::activeFileField($model, 'portada'); ?>
+		<?php echo $form->error($model,'portada'); ?>
+	</div>
+	<?php if($model->isNewRecord!='1'){ ?>
+	<div class="form-group">
+    	 <?php echo CHtml::image(Yii::app()->request->baseUrl.'/banner/'.$model->portada,"portada",array("width"=>200)); } ?> 
 	</div>
 
 	<div class="form-group">
-		<?php echo $form->labelEx($model,'portada'); ?>
-		<?php echo $form->textField($model,'portada',array('size'=>60,'maxlength'=>100, 'class'=>'form-control')); ?>
-		<?php echo $form->error($model,'portada'); ?>
+		<?php echo $form->labelEx($model,'nombre'); ?>
+		<?php echo $form->textField($model,'nombre',array('size'=>60,'maxlength'=>500, 'class'=>'form-control')); ?>
+		<?php echo $form->error($model,'nombre'); ?>
 	</div>
 
 	<div class="form-group">

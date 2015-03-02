@@ -23,6 +23,7 @@
  */
 class Revista extends CActiveRecord
 {
+	public $portada;
 	/**
 	 * @return string the associated database table name
 	 */
@@ -46,6 +47,9 @@ class Revista extends CActiveRecord
 			array('volumen, clave', 'length', 'max'=>45),
 			array('titulo, subtitulo', 'length', 'max'=>200),
 			array('directorio, editorial', 'safe'),
+			
+			array('portada', 'file', 'types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
+			//array('nombre', 'portada', 'length', 'max'=>512, 'on'=>'insert,update'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id_revista, nombre, portada, fecha, volumen, titulo, subtitulo, numero, clave, directorio, editorial, id_status', 'safe', 'on'=>'search'),
@@ -73,7 +77,7 @@ class Revista extends CActiveRecord
 		return array(
 			'id_revista' => 'Id Revista',
 			'nombre' => 'Nombre',
-			'portada' => 'Portada',
+			'portada' => null,
 			'fecha' => 'Fecha',
 			'volumen' => 'Volumen',
 			'titulo' => 'Titulo',

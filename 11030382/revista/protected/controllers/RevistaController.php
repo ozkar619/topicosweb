@@ -69,9 +69,16 @@ class RevistaController extends Controller
 
 		if(isset($_POST['Revista']))
 		{
+			$rnd = rand(0,9999);
 			$model->attributes=$_POST['Revista'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id_revista));
+			$uploadedFile=CUploadedFile::getInstance($model,'portada');
+            $fileName = "{$rnd}-{$uploadedFile}";  // numero aleatorio  + nombre de archivo
+            $model->portada = $fileName;
+
+			if($model->save()) {
+				$uploadedFile->saveAs(Yii::app()->basePath.'/../banner/'.$fileName);
+                $this->redirect(array('view','id'=>$model->id_revista));
+			}
 		}
 
 		$this->render('create',array(
@@ -94,9 +101,17 @@ class RevistaController extends Controller
 
 		if(isset($_POST['Revista']))
 		{
+			$_POST['Banner']['portada'] = $model->portada;
 			$model->attributes=$_POST['Revista'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id_revista));
+			$uploadedFile=CUploadedFile::getInstance($model,'portada');
+
+			if($model->save()){
+				if(!empty($uploadedFile))  // checkeamos si el archivo subido esta seteado o no
+                {
+                    $uploadedFile->saveAs(Yii::app()->basePath.'/../banner/'.$model->imagen);
+                }
+                $this->redirect(array('view','id'=>$model->id_revista));
+			}
 		}
 
 		$this->render('update',array(

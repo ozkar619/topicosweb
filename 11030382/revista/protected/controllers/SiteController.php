@@ -32,8 +32,10 @@ class SiteController extends Controller
 		$this->layout = '//layouts/public/column1';
 
 		$dataProvider=new CActiveDataProvider('Articulo');
+		$data=new CActiveDataProvider('Revista');
 
-		$this->render('index', array('dataProvider'=>$dataProvider));
+		$this->render('index', array('dataProvider'=>$dataProvider, 
+			'data'=>$data));
 	}
 
 	/**
