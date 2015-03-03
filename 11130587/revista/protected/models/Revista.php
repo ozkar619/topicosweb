@@ -26,6 +26,7 @@ class Revista extends CActiveRecord
 	/**
 	 * @return string the associated database table name
 	 */
+	public $picture;
 	public function tableName()
 	{
 		return 'revista';
@@ -40,6 +41,7 @@ class Revista extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('nombre, portada, fecha, volumen', 'required'),
+			array('picture','file', 'types'=>'jpg,gif,png'),
 			array('numero, id_status', 'numerical', 'integerOnly'=>true),
 			array('nombre', 'length', 'max'=>500),
 			array('portada', 'length', 'max'=>100),

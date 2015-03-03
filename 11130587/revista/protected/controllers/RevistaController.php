@@ -68,12 +68,15 @@ class RevistaController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
+		$path_picture = realpath(Yii::app()->getBasePath()."/../img/")."/";
+
 		if(isset($_POST['Revista']))
 		{
-			$model->attributes=$_POST['Revista'];
-			$model->fecha = date('Y-m-d'); 
+			$model->attributes=$_POST['Revista']; 
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id_revista));
+
+			$rnd = rand(0,9999)
 		}
 
 		$this->render('create',array(
