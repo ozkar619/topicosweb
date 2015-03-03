@@ -725,3 +725,105 @@ REQUEST_URI=/topicosweb/11130587/revista/?r=site/index
 in C:\xampp\htdocs\topicosweb\11130587\revista\protected\views\site\index.php (46)
 in C:\xampp\htdocs\topicosweb\11130587\revista\protected\controllers\SiteController.php (35)
 in C:\xampp\htdocs\topicosweb\11130587\revista\index.php (13)
+2015/02/28 23:53:27 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "C:\xampp\htdocs\topicosweb\11130587\revista\assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in C:\xampp\htdocs\topicosweb\framework\web\CAssetManager.php:138
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CAssetManager.php(123): CAssetManager->setBasePath('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CAssetManager.php(217): CAssetManager->getBasePath()
+#2 C:\xampp\htdocs\topicosweb\framework\web\CClientScript.php(511): CAssetManager->publish('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\topicosweb\framework\web\CClientScript.php(548): CClientScript->getCoreScriptUrl()
+#4 C:\xampp\htdocs\topicosweb\framework\web\CClientScript.php(349): CClientScript->getPackageBaseUrl('jquery')
+#5 C:\xampp\htdocs\topicosweb\framework\web\CClientScript.php(208): CClientScript->renderCoreScripts()
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(351): CClientScript->render('\r\n\r\n\r\n<!DOCTYPE...')
+#7 C:\xampp\htdocs\topicosweb\framework\web\CController.php(788): CController->processOutput('\r\n\r\n\r\n<!DOCTYPE...')
+#8 C:\xampp\htdocs\topicosweb\11130587\revista\protected\controllers\SiteController.php(101): CController->render('login', Array)
+#9 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#10 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\topicosweb\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('login')
+#14 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#15 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\topicosweb\11130587\revista\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/topicosweb/11130587/revista/index.php?r=site/login
+---
+2015/02/28 23:53:53 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "C:\xampp\htdocs\topicosweb\11130587\revista\assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in C:\xampp\htdocs\topicosweb\framework\web\CAssetManager.php:138
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CAssetManager.php(123): CAssetManager->setBasePath('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CAssetManager.php(217): CAssetManager->getBasePath()
+#2 C:\xampp\htdocs\topicosweb\framework\zii\widgets\CListView.php(217): CAssetManager->publish('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(147): CListView->init()
+#4 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(180): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#5 C:\xampp\htdocs\topicosweb\11130587\revista\protected\views\site\index.php(45): CBaseController->widget('zii.widgets.CLi...', Array)
+#6 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\topicosweb\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#10 C:\xampp\htdocs\topicosweb\11130587\revista\protected\controllers\SiteController.php(35): CController->render('index', Array)
+#11 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#12 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\topicosweb\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('')
+#16 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('site')
+#17 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\topicosweb\11130587\revista\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/topicosweb/11130587/revista/index.php?r=site
+---
+2015/03/01 00:23:04 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "C:\xampp\htdocs\topicosweb\11130587\revista\assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in C:\xampp\htdocs\topicosweb\framework\web\CAssetManager.php:138
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CAssetManager.php(123): CAssetManager->setBasePath('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CAssetManager.php(217): CAssetManager->getBasePath()
+#2 C:\xampp\htdocs\topicosweb\framework\web\CClientScript.php(511): CAssetManager->publish('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\topicosweb\framework\web\CClientScript.php(548): CClientScript->getCoreScriptUrl()
+#4 C:\xampp\htdocs\topicosweb\framework\web\CClientScript.php(349): CClientScript->getPackageBaseUrl('jquery')
+#5 C:\xampp\htdocs\topicosweb\framework\web\CClientScript.php(208): CClientScript->renderCoreScripts()
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(351): CClientScript->render('\r\n\r\n\r\n<!DOCTYPE...')
+#7 C:\xampp\htdocs\topicosweb\framework\web\CController.php(788): CController->processOutput('\r\n\r\n\r\n<!DOCTYPE...')
+#8 C:\xampp\htdocs\topicosweb\11130587\revista\protected\controllers\SiteController.php(101): CController->render('login', Array)
+#9 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#10 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\topicosweb\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('login')
+#14 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#15 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\topicosweb\11130587\revista\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/topicosweb/11130587/revista/index.php?r=site/login
+HTTP_REFERER=http://localhost/topicosweb/11130587/revista/index.php?r=articulo/agregar
+---
+2015/03/01 00:23:10 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "C:\xampp\htdocs\topicosweb\11130587\revista\assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in C:\xampp\htdocs\topicosweb\framework\web\CAssetManager.php:138
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CAssetManager.php(123): CAssetManager->setBasePath('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CAssetManager.php(217): CAssetManager->getBasePath()
+#2 C:\xampp\htdocs\topicosweb\framework\web\CClientScript.php(511): CAssetManager->publish('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\topicosweb\framework\web\CClientScript.php(548): CClientScript->getCoreScriptUrl()
+#4 C:\xampp\htdocs\topicosweb\framework\web\CClientScript.php(349): CClientScript->getPackageBaseUrl('jquery')
+#5 C:\xampp\htdocs\topicosweb\framework\web\CClientScript.php(208): CClientScript->renderCoreScripts()
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(351): CClientScript->render('\r\n\r\n\r\n<!DOCTYPE...')
+#7 C:\xampp\htdocs\topicosweb\framework\web\CController.php(788): CController->processOutput('\r\n\r\n\r\n<!DOCTYPE...')
+#8 C:\xampp\htdocs\topicosweb\11130587\revista\protected\controllers\SiteController.php(101): CController->render('login', Array)
+#9 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#10 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\topicosweb\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('login')
+#14 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#15 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\topicosweb\11130587\revista\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/topicosweb/11130587/revista/index.php?r=site/login
+HTTP_REFERER=http://localhost/topicosweb/11130587/revista/index.php?r=articulo/agregar
+---
+2015/03/01 00:23:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "agregar".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('agregar')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('agregar')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('revista/agregar')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\11130587\revista\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/11130587/revista/index.php?r=revista/agregar
+---
