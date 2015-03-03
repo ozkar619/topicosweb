@@ -7,7 +7,6 @@
     
     <!-- Bootstrap -->
     <link href="<?php echo Yii::app()->request->baseUrl; ?>/css/bootstrap.min.css" rel="stylesheet">
-	    <!-- Custom styles for this template -->
     <link href="<?php echo Yii::app()->request->baseUrl; ?>/css/dashboard.css" rel="stylesheet">
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,41 +17,39 @@
 
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap.min.js"></script>
-
-    <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/docs.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
+<body>
 
-	
-	<?php /*
-	$this->widget('zii.widgets.CMenu',array(
-		'items'=>array(
-			array('label'=>'Home', 'url'=>array('/site/index')),
-			array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-			array('label'=>'Contact', 'url'=>array('/site/contact')),
-			array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-			array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
-		),
-	));*/
-	 ?>
+<div class="container-fluid" >
+
+	<div id="header">
+		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
+	</div><!-- header -->
+
+	<div id="mainmenu">
+		<?php /* $this->widget('zii.widgets.CMenu',array(
+			'items'=>array(
+				array('label'=>'Home', 'url'=>array('/site/index')),
+				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
+				array('label'=>'Contact', 'url'=>array('/site/contact')),
+				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+			),
+		)); */ ?> 
+	</div><!-- mainmenu -->
 	<?php if(isset($this->breadcrumbs)):?>
 		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
 			'links'=>$this->breadcrumbs,
 		)); ?><!-- breadcrumbs -->
 	<?php endif?>
 
-	
 
-	
-<body>
-
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -81,31 +78,33 @@
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-
-            <li class="active"><a href="?r=site/index">Inicio <span class="sr-only">(current)</span></a></li>
-            <li><a href="?r=articulo/agregar">Articulos</a></li>
-            <li><a href="?r=revista/admin">Revistas</a></li>
-            <li><a href="?r=autor/admin">Autores</a></li>
-            <li><a href="?r=articuloAutor/admin">Articulo Autor</a></li>
-            <li><a href="?r=contenidoExtra/admin">Contenido Extra</a></li>
-            <li><a href="?r=indice/admin">Indice</a></li>
-            <li><a href="?r=indiceArticulo/admin">Indice Articulo</a></li>
-            <li><a href="?r=recursos/admin">Recursos</a></li>
-            <li><a href="?r=status/admin">Estado</a></li>
-            <li><a href="?r=tipoContenido/admin">Tipo Contenido</a></li>
-            
+            <li class="active"><a href="?r=/site/index">Inicio <span class="sr-only">(current)</span></a></li>
+            <li><a href="?r=articulo/create">Articulos</a></li>
+            <li><a href="?r=revista/create">Revistas</a></li>
+            <li><a href="?r=autor/create">Autores</a></li>
           </ul>
-
-  
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item</a></li>
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="">Another nav item</a></li>
+            <li><a href="">More navigation</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Nav item again</a></li>
+            <li><a href="">One more nav</a></li>
+            <li><a href="">Another nav item</a></li>
+          </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1 class="page-header text-center"><?php echo CHtml::encode(Yii::app()->name); ?></h1>
-          
-            <?php echo $content; ?>
-          
-          <div class="table-responsive">
-        
+          <h1 class="page-header">Dashboard</h1>
+          	<?php echo $content; ?>
+          <div class="row placeholders">
+            
           </div>
+
+          <h2 class="sub-header">Section title</h2>
+          
         </div>
       </div>
     </div>
@@ -113,7 +112,12 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-
-    
-  </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+ 
+	
+</body>
 </html>
