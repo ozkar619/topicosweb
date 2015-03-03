@@ -5285,3 +5285,156 @@ in C:\xampp\htdocs\TAPW\yii\topicosweb\11030382\revista\protected\views\site\ind
 in C:\xampp\htdocs\TAPW\yii\topicosweb\11030382\revista\protected\controllers\SiteController.php (36)
 in C:\xampp\htdocs\TAPW\yii\topicosweb\11030382\revista\index.php (13)
 >>>>>>> d664bc42fbcbb99ec095d841329317726ad33266
+2015/03/03 05:45:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "estatus/create".' in C:\xampp\htdocs\TAPW\yii\topicosweb\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\TAPW\yii\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('estatus/create')
+#1 C:\xampp\htdocs\TAPW\yii\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\TAPW\yii\topicosweb\11030382\revista\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/TAPW/yii/topicosweb/11030382/revista/index.php?r=estatus/create
+HTTP_REFERER=http://localhost/TAPW/yii/topicosweb/11030382/revista/index.php?r=revista/create
+---
+2015/03/03 05:45:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "estatus/create".' in C:\xampp\htdocs\TAPW\yii\topicosweb\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\TAPW\yii\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('estatus/create')
+#1 C:\xampp\htdocs\TAPW\yii\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\TAPW\yii\topicosweb\11030382\revista\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/TAPW/yii/topicosweb/11030382/revista/index.php?r=estatus/create
+HTTP_REFERER=http://localhost/TAPW/yii/topicosweb/11030382/revista/index.php?r=revista/create
+---
+2015/03/03 05:45:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "estatus/create".' in C:\xampp\htdocs\TAPW\yii\topicosweb\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\TAPW\yii\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('estatus/create')
+#1 C:\xampp\htdocs\TAPW\yii\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\TAPW\yii\topicosweb\11030382\revista\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/TAPW/yii/topicosweb/11030382/revista/index.php?r=estatus/create
+HTTP_REFERER=http://localhost/TAPW/yii/topicosweb/11030382/revista/index.php?r=revista/create
+---
+2015/03/03 05:45:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "estatus/create".' in C:\xampp\htdocs\TAPW\yii\topicosweb\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\TAPW\yii\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('estatus/create')
+#1 C:\xampp\htdocs\TAPW\yii\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\TAPW\yii\topicosweb\11030382\revista\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/TAPW/yii/topicosweb/11030382/revista/index.php?r=estatus/create
+HTTP_REFERER=http://localhost/TAPW/yii/topicosweb/11030382/revista/index.php?r=revista/create
+---
+2015/03/03 05:45:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "estatus/create".' in C:\xampp\htdocs\TAPW\yii\topicosweb\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\TAPW\yii\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('estatus/create')
+#1 C:\xampp\htdocs\TAPW\yii\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\TAPW\yii\topicosweb\11030382\revista\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/TAPW/yii/topicosweb/11030382/revista/index.php?r=estatus/create
+HTTP_REFERER=http://localhost/TAPW/yii/topicosweb/11030382/revista/index.php?r=revista/create
+---
+2015/03/03 05:45:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "estatus/create".' in C:\xampp\htdocs\TAPW\yii\topicosweb\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\TAPW\yii\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('estatus/create')
+#1 C:\xampp\htdocs\TAPW\yii\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\TAPW\yii\topicosweb\11030382\revista\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/TAPW/yii/topicosweb/11030382/revista/index.php?r=estatus/create
+HTTP_REFERER=http://localhost/TAPW/yii/topicosweb/11030382/revista/index.php?r=revista/create
+---
+2015/03/03 05:45:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "estatus/create".' in C:\xampp\htdocs\TAPW\yii\topicosweb\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\TAPW\yii\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('estatus/create')
+#1 C:\xampp\htdocs\TAPW\yii\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\TAPW\yii\topicosweb\11030382\revista\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/TAPW/yii/topicosweb/11030382/revista/index.php?r=estatus/create
+HTTP_REFERER=http://localhost/TAPW/yii/topicosweb/11030382/revista/index.php?r=revista/create
+---
+2015/03/03 05:46:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "estatus/create".' in C:\xampp\htdocs\TAPW\yii\topicosweb\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\TAPW\yii\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('estatus/create')
+#1 C:\xampp\htdocs\TAPW\yii\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\TAPW\yii\topicosweb\11030382\revista\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/TAPW/yii/topicosweb/11030382/revista/index.php?r=estatus/create
+HTTP_REFERER=http://localhost/TAPW/yii/topicosweb/11030382/revista/index.php?r=revista/create
+---
+2015/03/03 05:55:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "estatus/create".' in C:\xampp\htdocs\TAPW\yii\topicosweb\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\TAPW\yii\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('estatus/create')
+#1 C:\xampp\htdocs\TAPW\yii\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\TAPW\yii\topicosweb\11030382\revista\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/TAPW/yii/topicosweb/11030382/revista/index.php?r=estatus/create
+HTTP_REFERER=http://localhost/TAPW/yii/topicosweb/11030382/revista/index.php?r=articulo/create
+---
+2015/03/03 05:55:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "estatus/create".' in C:\xampp\htdocs\TAPW\yii\topicosweb\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\TAPW\yii\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('estatus/create')
+#1 C:\xampp\htdocs\TAPW\yii\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\TAPW\yii\topicosweb\11030382\revista\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/TAPW/yii/topicosweb/11030382/revista/index.php?r=estatus/create
+HTTP_REFERER=http://localhost/TAPW/yii/topicosweb/11030382/revista/index.php?r=estatus/create
+---
+2015/03/03 06:08:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "estatus/create".' in C:\xampp\htdocs\TAPW\yii\topicosweb\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\TAPW\yii\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('estatus/create')
+#1 C:\xampp\htdocs\TAPW\yii\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\TAPW\yii\topicosweb\11030382\revista\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/TAPW/yii/topicosweb/11030382/revista/index.php?r=estatus/create
+HTTP_REFERER=http://localhost/TAPW/yii/topicosweb/11030382/revista/index.php?r=revista/create
+---
+2015/03/03 06:10:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "estatus/create".' in C:\xampp\htdocs\TAPW\yii\topicosweb\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\TAPW\yii\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('estatus/create')
+#1 C:\xampp\htdocs\TAPW\yii\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\TAPW\yii\topicosweb\11030382\revista\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/TAPW/yii/topicosweb/11030382/revista/index.php?r=estatus/create
+HTTP_REFERER=http://localhost/TAPW/yii/topicosweb/11030382/revista/index.php?r=estatus/create
+---
+2015/03/03 06:11:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "estatus/create".' in C:\xampp\htdocs\TAPW\yii\topicosweb\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\TAPW\yii\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('estatus/create')
+#1 C:\xampp\htdocs\TAPW\yii\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\TAPW\yii\topicosweb\11030382\revista\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/TAPW/yii/topicosweb/11030382/revista/index.php?r=estatus/create
+HTTP_REFERER=http://localhost/TAPW/yii/topicosweb/11030382/revista/index.php?r=estatus/create
+---
+2015/03/03 06:16:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "create/articulo".' in C:\xampp\htdocs\TAPW\yii\topicosweb\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\TAPW\yii\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('create/articulo')
+#1 C:\xampp\htdocs\TAPW\yii\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\TAPW\yii\topicosweb\11030382\revista\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/TAPW/yii/topicosweb/11030382/revista/index.php?r=create/articulo
+HTTP_REFERER=http://localhost/TAPW/yii/topicosweb/11030382/revista/index.php?r=site/index
+---
+2015/03/03 06:16:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "create/articulo".' in C:\xampp\htdocs\TAPW\yii\topicosweb\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\TAPW\yii\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('create/articulo')
+#1 C:\xampp\htdocs\TAPW\yii\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\TAPW\yii\topicosweb\11030382\revista\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/TAPW/yii/topicosweb/11030382/revista/index.php?r=create/articulo
+HTTP_REFERER=http://localhost/TAPW/yii/topicosweb/11030382/revista/index.php?r=site/index
+---
+2015/03/03 06:17:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "create/articulo".' in C:\xampp\htdocs\TAPW\yii\topicosweb\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\TAPW\yii\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('create/articulo')
+#1 C:\xampp\htdocs\TAPW\yii\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\TAPW\yii\topicosweb\11030382\revista\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/TAPW/yii/topicosweb/11030382/revista/index.php?r=create/articulo
+HTTP_REFERER=http://localhost/TAPW/yii/topicosweb/11030382/revista/index.php?r=site/index
+---
+2015/03/03 06:17:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "create/articulo".' in C:\xampp\htdocs\TAPW\yii\topicosweb\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\TAPW\yii\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('create/articulo')
+#1 C:\xampp\htdocs\TAPW\yii\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\TAPW\yii\topicosweb\11030382\revista\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/TAPW/yii/topicosweb/11030382/revista/index.php?r=create/articulo
+HTTP_REFERER=http://localhost/TAPW/yii/topicosweb/11030382/revista/index.php?r=site/index
+---
