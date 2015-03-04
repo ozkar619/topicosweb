@@ -99,3 +99,311 @@ Stack trace:
 REQUEST_URI=/topicos/yii/revista/index.php?r=articulo/create
 HTTP_REFERER=http://localhost/topicos/yii/revista/index.php?r=articulo/view&id=4
 ---
+2015/02/19 00:20:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "articulos/create".' in C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('articulos/creat...')
+#1 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\topicosweb\11030704\revista\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/topicosweb/11030704/revista/?r=articulos/create
+HTTP_REFERER=http://localhost/topicosweb/11030704/revista/
+---
+2015/02/19 00:22:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "articulos/create".' in C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('articulos/creat...')
+#1 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\topicosweb\11030704\revista\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/topicosweb/11030704/revista/?r=articulos/create
+HTTP_REFERER=http://localhost/topicosweb/11030704/revista/
+---
+2015/02/19 00:22:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "articulos/create".' in C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('articulos/creat...')
+#1 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\topicosweb\11030704\revista\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/topicosweb/11030704/revista/?r=articulos/create
+HTTP_REFERER=http://localhost/topicosweb/11030704/revista/
+---
+2015/02/19 00:22:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "articulos/create".' in C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('articulos/creat...')
+#1 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\topicosweb\11030704\revista\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/topicosweb/11030704/revista/?r=articulos/create
+HTTP_REFERER=http://localhost/topicosweb/11030704/revista/
+---
+2015/02/19 00:22:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "articulos/create".' in C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('articulos/creat...')
+#1 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\topicosweb\11030704\revista\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/topicosweb/11030704/revista/?r=articulos/create
+HTTP_REFERER=http://localhost/topicosweb/11030704/revista/
+---
+2015/02/19 00:23:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('create')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('create')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('articulo/create')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\11030704\revista\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/11030704/revista/?r=articulo/create
+HTTP_REFERER=http://localhost/topicosweb/11030704/revista/
+---
+2015/02/19 00:23:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('create')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('create')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('articulo/create')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\11030704\revista\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/11030704/revista/?r=articulo/create
+HTTP_REFERER=http://localhost/topicosweb/11030704/revista/
+---
+2015/02/19 00:31:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "agregar".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('agregar')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('agregar')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('revista/agregar')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\11030704\revista\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/11030704/revista/?r=revista/agregar
+HTTP_REFERER=http://localhost/topicosweb/11030704/revista/?r=articulo/agregar
+---
+2015/02/19 00:31:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "crear".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('crear')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('crear')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('revista/crear')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\11030704\revista\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/11030704/revista/?r=revista/crear
+HTTP_REFERER=http://localhost/topicosweb/11030704/revista/??r=autor/agregar
+---
+2015/02/19 00:32:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "crear".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('crear')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('crear')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('revista/crear')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\11030704\revista\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/11030704/revista/?r=revista/crear
+HTTP_REFERER=http://localhost/topicosweb/11030704/revista/??r=autor/agregar
+---
+2015/02/19 00:37:16 [error] [php] Use of undefined constant form - assumed 'form' (C:\xampp\htdocs\topicosweb\11030704\revista\protected\views\autor\_form.php:24)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): AutorController->renderFile()
+#1 C:\xampp\htdocs\topicosweb\11030704\revista\protected\views\autor\create.php(18): AutorController->renderPartial()
+#2 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(95): AutorController->renderInternal()
+#4 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): AutorController->renderFile()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(782): AutorController->renderPartial()
+#6 C:\xampp\htdocs\topicosweb\11030704\revista\protected\controllers\AutorController.php(79): AutorController->render()
+#7 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): AutorController->actionCreate()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): AutorController->runAction()
+#10 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): AutorController->filterAccessControl()
+#13 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): AutorController->runActionWithFilters()
+#16 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): AutorController->run()
+#17 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\topicosweb\11030704\revista\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11030704/revista/index.php?r=autor/create
+in C:\xampp\htdocs\topicosweb\11030704\revista\protected\views\autor\_form.php (24)
+in C:\xampp\htdocs\topicosweb\11030704\revista\protected\views\autor\create.php (18)
+in C:\xampp\htdocs\topicosweb\11030704\revista\protected\controllers\AutorController.php (79)
+2015/02/19 00:38:22 [error] [php] Use of undefined constant form - assumed 'form' (C:\xampp\htdocs\topicosweb\11030704\revista\protected\views\autor\_form.php:24)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): AutorController->renderFile()
+#1 C:\xampp\htdocs\topicosweb\11030704\revista\protected\views\autor\create.php(18): AutorController->renderPartial()
+#2 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(95): AutorController->renderInternal()
+#4 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): AutorController->renderFile()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(782): AutorController->renderPartial()
+#6 C:\xampp\htdocs\topicosweb\11030704\revista\protected\controllers\AutorController.php(79): AutorController->render()
+#7 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): AutorController->actionCreate()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): AutorController->runAction()
+#10 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): AutorController->filterAccessControl()
+#13 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): AutorController->runActionWithFilters()
+#16 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): AutorController->run()
+#17 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\topicosweb\11030704\revista\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11030704/revista/index.php?r=autor/create
+in C:\xampp\htdocs\topicosweb\11030704\revista\protected\views\autor\_form.php (24)
+in C:\xampp\htdocs\topicosweb\11030704\revista\protected\views\autor\create.php (18)
+in C:\xampp\htdocs\topicosweb\11030704\revista\protected\controllers\AutorController.php (79)
+2015/02/19 00:38:32 [error] [php] Use of undefined constant form - assumed 'form' (C:\xampp\htdocs\topicosweb\11030704\revista\protected\views\autor\_form.php:24)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): AutorController->renderFile()
+#1 C:\xampp\htdocs\topicosweb\11030704\revista\protected\views\autor\create.php(18): AutorController->renderPartial()
+#2 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(95): AutorController->renderInternal()
+#4 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): AutorController->renderFile()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(782): AutorController->renderPartial()
+#6 C:\xampp\htdocs\topicosweb\11030704\revista\protected\controllers\AutorController.php(79): AutorController->render()
+#7 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): AutorController->actionCreate()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): AutorController->runAction()
+#10 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): AutorController->filterAccessControl()
+#13 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): AutorController->runActionWithFilters()
+#16 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): AutorController->run()
+#17 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\topicosweb\11030704\revista\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11030704/revista/index.php?r=autor/create
+in C:\xampp\htdocs\topicosweb\11030704\revista\protected\views\autor\_form.php (24)
+in C:\xampp\htdocs\topicosweb\11030704\revista\protected\views\autor\create.php (18)
+in C:\xampp\htdocs\topicosweb\11030704\revista\protected\controllers\AutorController.php (79)
+2015/02/19 00:38:34 [error] [php] Use of undefined constant form - assumed 'form' (C:\xampp\htdocs\topicosweb\11030704\revista\protected\views\autor\_form.php:24)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): AutorController->renderFile()
+#1 C:\xampp\htdocs\topicosweb\11030704\revista\protected\views\autor\create.php(18): AutorController->renderPartial()
+#2 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(95): AutorController->renderInternal()
+#4 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): AutorController->renderFile()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(782): AutorController->renderPartial()
+#6 C:\xampp\htdocs\topicosweb\11030704\revista\protected\controllers\AutorController.php(79): AutorController->render()
+#7 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): AutorController->actionCreate()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): AutorController->runAction()
+#10 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): AutorController->filterAccessControl()
+#13 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): AutorController->runActionWithFilters()
+#16 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): AutorController->run()
+#17 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\topicosweb\11030704\revista\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11030704/revista/index.php?r=autor/create
+in C:\xampp\htdocs\topicosweb\11030704\revista\protected\views\autor\_form.php (24)
+in C:\xampp\htdocs\topicosweb\11030704\revista\protected\views\autor\create.php (18)
+in C:\xampp\htdocs\topicosweb\11030704\revista\protected\controllers\AutorController.php (79)
+2015/02/19 00:38:45 [error] [php] Use of undefined constant form - assumed 'form' (C:\xampp\htdocs\topicosweb\11030704\revista\protected\views\autor\_form.php:24)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): AutorController->renderFile()
+#1 C:\xampp\htdocs\topicosweb\11030704\revista\protected\views\autor\create.php(18): AutorController->renderPartial()
+#2 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(95): AutorController->renderInternal()
+#4 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): AutorController->renderFile()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(782): AutorController->renderPartial()
+#6 C:\xampp\htdocs\topicosweb\11030704\revista\protected\controllers\AutorController.php(79): AutorController->render()
+#7 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): AutorController->actionCreate()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): AutorController->runAction()
+#10 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): AutorController->filterAccessControl()
+#13 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): AutorController->runActionWithFilters()
+#16 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): AutorController->run()
+#17 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\topicosweb\11030704\revista\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11030704/revista/index.php?r=autor/create
+in C:\xampp\htdocs\topicosweb\11030704\revista\protected\views\autor\_form.php (24)
+in C:\xampp\htdocs\topicosweb\11030704\revista\protected\views\autor\create.php (18)
+in C:\xampp\htdocs\topicosweb\11030704\revista\protected\controllers\AutorController.php (79)
+2015/02/19 00:38:48 [error] [php] Use of undefined constant form - assumed 'form' (C:\xampp\htdocs\topicosweb\11030704\revista\protected\views\autor\_form.php:24)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): AutorController->renderFile()
+#1 C:\xampp\htdocs\topicosweb\11030704\revista\protected\views\autor\create.php(18): AutorController->renderPartial()
+#2 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(95): AutorController->renderInternal()
+#4 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): AutorController->renderFile()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(782): AutorController->renderPartial()
+#6 C:\xampp\htdocs\topicosweb\11030704\revista\protected\controllers\AutorController.php(79): AutorController->render()
+#7 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): AutorController->actionCreate()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): AutorController->runAction()
+#10 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): AutorController->filterAccessControl()
+#13 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): AutorController->runActionWithFilters()
+#16 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): AutorController->run()
+#17 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\topicosweb\11030704\revista\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11030704/revista/index.php?r=autor/create
+in C:\xampp\htdocs\topicosweb\11030704\revista\protected\views\autor\_form.php (24)
+in C:\xampp\htdocs\topicosweb\11030704\revista\protected\views\autor\create.php (18)
+in C:\xampp\htdocs\topicosweb\11030704\revista\protected\controllers\AutorController.php (79)
+2015/02/19 00:40:03 [error] [php] Use of undefined constant form - assumed 'form' (C:\xampp\htdocs\topicosweb\11030704\revista\protected\views\autor\_form.php:36)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): AutorController->renderFile()
+#1 C:\xampp\htdocs\topicosweb\11030704\revista\protected\views\autor\create.php(18): AutorController->renderPartial()
+#2 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(95): AutorController->renderInternal()
+#4 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): AutorController->renderFile()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(782): AutorController->renderPartial()
+#6 C:\xampp\htdocs\topicosweb\11030704\revista\protected\controllers\AutorController.php(79): AutorController->render()
+#7 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): AutorController->actionCreate()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): AutorController->runAction()
+#10 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): AutorController->filterAccessControl()
+#13 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): AutorController->runActionWithFilters()
+#16 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): AutorController->run()
+#17 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\topicosweb\11030704\revista\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11030704/revista/index.php?r=autor/create
+in C:\xampp\htdocs\topicosweb\11030704\revista\protected\views\autor\_form.php (36)
+in C:\xampp\htdocs\topicosweb\11030704\revista\protected\views\autor\create.php (18)
+in C:\xampp\htdocs\topicosweb\11030704\revista\protected\controllers\AutorController.php (79)
+2015/02/19 00:40:07 [error] [php] Use of undefined constant form - assumed 'form' (C:\xampp\htdocs\topicosweb\11030704\revista\protected\views\autor\_form.php:36)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): AutorController->renderFile()
+#1 C:\xampp\htdocs\topicosweb\11030704\revista\protected\views\autor\create.php(18): AutorController->renderPartial()
+#2 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(95): AutorController->renderInternal()
+#4 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): AutorController->renderFile()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(782): AutorController->renderPartial()
+#6 C:\xampp\htdocs\topicosweb\11030704\revista\protected\controllers\AutorController.php(79): AutorController->render()
+#7 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): AutorController->actionCreate()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): AutorController->runAction()
+#10 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): AutorController->filterAccessControl()
+#13 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): AutorController->runActionWithFilters()
+#16 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): AutorController->run()
+#17 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\topicosweb\11030704\revista\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11030704/revista/index.php?r=autor/create
+in C:\xampp\htdocs\topicosweb\11030704\revista\protected\views\autor\_form.php (36)
+in C:\xampp\htdocs\topicosweb\11030704\revista\protected\views\autor\create.php (18)
+in C:\xampp\htdocs\topicosweb\11030704\revista\protected\controllers\AutorController.php (79)
