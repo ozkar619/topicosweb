@@ -30,7 +30,14 @@ class SiteController extends Controller
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
 		$this->layout = '//layouts/public/column1';
-		$this->render('index');
+
+		$dataProvider = new  CActiveDataProvider('Revista');
+	    $dataProviderArticulo = new  CActiveDataProvider('Articulo');
+
+		$this->render('index',array(
+			'dataProvider'=>$dataProvider,
+		    'dataProviderArticulo'=>$dataProviderArticulo,
+			));
 	}
 
 	/**
