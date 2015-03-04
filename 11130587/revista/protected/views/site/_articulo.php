@@ -1,4 +1,3 @@
-<<<<<<< HEAD
     <div class="container">
       <div class="row row-offcanvas row-offcanvas-right">
         <div class="col-xs-12 col-sm-9">
@@ -43,13 +42,3 @@
       </footer>
 
     </div><!--/.container-->
-=======
-<hr>
-
-<?php
-echo $data->nombre;
-
-?>
-
-<hr>
->>>>>>> 25a6c1e3701d7f193795c0824aa86f9015003f02

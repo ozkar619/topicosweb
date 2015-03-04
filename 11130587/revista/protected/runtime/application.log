@@ -2028,3 +2028,61 @@ in C:\xampp\htdocs\topicosweb\11130587\revista\protected\views\site\index.php (4
 in C:\xampp\htdocs\topicosweb\11130587\revista\protected\controllers\SiteController.php (35)
 in C:\xampp\htdocs\topicosweb\11130587\revista\index.php (13)
 >>>>>>> 25a6c1e3701d7f193795c0824aa86f9015003f02
+2015/03/04 13:07:46 [error] [php] Undefined variable: uploadedFile (C:\xampp\htdocs\topicosweb\11130587\revista\protected\controllers\RevistaController.php:80)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): RevistaController->runAction()
+#1 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): RevistaController->filterAccessControl()
+#4 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): RevistaController->runActionWithFilters()
+#7 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): RevistaController->run()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\topicosweb\11130587\revista\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11130587/revista/index.php?r=revista/create
+in C:\xampp\htdocs\topicosweb\11130587\revista\protected\controllers\RevistaController.php (80)
+in C:\xampp\htdocs\topicosweb\11130587\revista\index.php (13)
+2015/03/04 13:13:10 [error] [exception.CException] exception 'CException' with message 'Property "Revista.imagen" is not defined.' in C:\xampp\htdocs\topicosweb\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\db\ar\CActiveRecord.php(161): CComponent->__set('imagen', '')
+#1 C:\xampp\htdocs\topicosweb\11130587\revista\protected\controllers\RevistaController.php(81): CActiveRecord->__set('imagen', '')
+#2 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): RevistaController->actionCreate()
+#3 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('revista/create')
+#13 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\topicosweb\11130587\revista\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/topicosweb/11130587/revista/index.php?r=revista/create
+HTTP_REFERER=http://localhost/topicosweb/11130587/revista/index.php?r=revista/create
+---
+2015/03/04 14:05:26 [error] [exception.CException] exception 'CException' with message 'Property "Revista.imagen" is not defined.' in C:\xampp\htdocs\topicosweb\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\db\ar\CActiveRecord.php(161): CComponent->__set('imagen', '')
+#1 C:\xampp\htdocs\topicosweb\11130587\revista\protected\controllers\RevistaController.php(80): CActiveRecord->__set('imagen', '')
+#2 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): RevistaController->actionCreate()
+#3 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('revista/create')
+#13 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\topicosweb\11130587\revista\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/topicosweb/11130587/revista/index.php?r=revista/create
+HTTP_REFERER=http://localhost/topicosweb/11130587/revista/index.php?r=revista/create
+---
