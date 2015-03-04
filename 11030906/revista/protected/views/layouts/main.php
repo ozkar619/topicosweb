@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -80,14 +79,11 @@
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
             <li class="active"><a href="?r=/site/index">Inicio <span class="sr-only">(current)</span></a></li>
-            <li><a href="?r=articulo/admin">Articulos</a></li>
-            <li><a href="?r=revista/admin">Revistas</a></li>
-            <li><a href="?r=autor/admin">Autores</a></li>
-            <li><a href="?r=indice/admin">Indice</a></li>
-            <li><a href="?r=recursos/admin">Recursos</a></li>
-            <li><a href="?r=status/admin">Status</a></li>
-            <li><a href="?r=tipocontenido/admin">Tipo de contenido</a></li>
+            <li><a href="?r=articulo/create">Articulos</a></li>
+            <li><a href="?r=revista/create">Revistas</a></li>
+            <li><a href="?r=autor/create">Autores</a></li>
           </ul>
+          
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <h1 class="page-header">Dashboard</h1>
@@ -96,7 +92,7 @@
             
           </div>
 
-          
+          <h2 class="sub-header">Section title</h2>
           
         </div>
       </div>

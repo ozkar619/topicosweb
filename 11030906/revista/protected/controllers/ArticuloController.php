@@ -64,15 +64,15 @@ class ArticuloController extends Controller
 	{
 		$model=new Articulo;
 		$modelStatus = Status::model()->findAll();
+		
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['Articulo']))
 		{
-
 			$model->attributes=$_POST['Articulo'];
-			$model->fecha_creacion = date('Y-m-d'); 
+			$model->fecha_creacion =date('y-m-d');
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id_articulo));
 		}
@@ -80,7 +80,8 @@ class ArticuloController extends Controller
 		$this->render('create',array(
 			'model'=>$model,
 			'modelStatus'=>$modelStatus,
-			));
+
+		));
 	}
 
 	/**

@@ -47,11 +47,6 @@ $('.fileinput').fileinput();
 </div>
 	
 
-
-
-
-
-
 	<div class="form-group">
 
 		<?php echo $form->labelEx($model,'fecha'); ?>

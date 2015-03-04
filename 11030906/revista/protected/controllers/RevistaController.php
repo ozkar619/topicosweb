@@ -1,4 +1,5 @@
 <?php
+
 class RevistaController extends Controller
 {
 	/**
@@ -62,27 +63,21 @@ class RevistaController extends Controller
 	public function actionCreate()
 	{
 		$model=new Revista;
-		$modelStatus=Status::model()->findAll();
+		$modelStatus = Status::model()->findAll();
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-		//$path_picture = realpath(yii::app()->getBasePath()"")
 
 		if(isset($_POST['Revista']))
 		{
 			$model->attributes=$_POST['Revista'];
-			$model->fecha = date('Y-m-d'); 
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id_revista));
-
-		//	$rnd=rand(0,999);
-		//	$uploadFile=CUpLoadedFile::getInstance($model,'picture');
-		//	$filename="(rnd)-{$uploadedFile{}";
 		}
 
 		$this->render('create',array(
 			'model'=>$model,
-			'modelStatus'=>$modelStatus
+			'modelStatus'=>$modelStatus,
 		));
 	}
 
@@ -107,6 +102,7 @@ class RevistaController extends Controller
 
 		$this->render('update',array(
 			'model'=>$model,
+
 		));
 	}
 

@@ -13,12 +13,12 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'id_articulo'); ?>
-		<?php echo $form->textField($model,'id_articulo',array('class'=>'form-control')); ?>
+		<?php echo $form->textField($model,'id_articulo', array('class'=>'form-control')); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'nombre'); ?>
-		<?php echo $form->textField($model,'nombre',array('size'=>60,'maxlength'=>500,'class'=>'form-control')); ?>
+		<?php echo $form->textField($model,'nombre',array('size'=>60,'maxlength'=>500,'class'=> 'form-control')); ?>
 	</div>
 
 	<div class="row">
@@ -48,17 +48,17 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'fecha_creacion'); ?>
-		<?php echo $form->textField($model,'fecha_creacion',array('class'=>'form-control')); ?>
+		<?php echo $form->textField($model,'fecha_creacion', array('class'=>'form-control')); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'archivo_pdf'); ?>
-		<?php echo $form->textField($model,'archivo_pdf',array('size'=>60,'maxlength'=>100,'class'=>'form-control')); ?>
+		<?php echo $form->textField($model,'archivo_pdf',array('size'=>60,'maxlength'=>100,'class'=> 'form-control')); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'id_status'); ?>
-		<?php echo $form->textField($model,'id_status',array('class'=>'form-control')); ?>
+		<?php echo $form->textField($model,'id_status', array('class'=>'form-control')); ?>
 	</div>
 
 	<div class="row">
@@ -78,7 +78,7 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'id_indice_articulo'); ?>
-		<?php echo $form->textField($model,'id_indice_articulo',array('class'=>'form-control')); ?>
+		<?php echo $form->textField($model,'id_indice_articulo', array('class'=>'form-control')); ?>
 	</div>
 
 	<div class="row buttons">
