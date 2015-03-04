@@ -83,7 +83,7 @@
           <ul class="nav nav-sidebar">
             <li class="active"><a href="?r=site/index">Inicio <span class="sr-only">(current)</span></a></li>
             <li><a href="?r=articulo/create">Art&iacute;culo</a></li>
-            <li><a href="?r=estatus/create">Estatus</a></li>
+            <li><a href="?r=status/create">Estatus</a></li>
             <li><a href="?r=revista/create">Revista</a></li>
             <li><a href="?r=indice/create">&Iacute;ndice</a></li>
             <li><a href="?r=recursos/create">Recursos</a></li>

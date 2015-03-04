@@ -93,11 +93,6 @@
 		<?php echo $form->error($model,'referencias'); ?>
 	</div>
 
-	<div class="form-group">
-		<?php echo $form->labelEx($model,'id_indice_articulo'); ?>
-		<?php echo $form->textField($model,'id_indice_articulo',array('class'=>'form-control')); ?>
-		<?php echo $form->error($model,'id_indice_articulo'); ?>
-	</div>
 
 	<div class="form-group buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Ingresar' : 'Save',array('class'=>'btn btn-primary')); ?>
