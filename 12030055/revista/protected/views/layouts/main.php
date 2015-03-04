@@ -92,7 +92,6 @@
             <li><a href="?r=indicearticulo/create">Indice Articulo</a></li>
             <li><a href="?r=recursos/create">Recursos</a></li>
             <li><a href="?r=tipocontenido/create">Tipo de contenido</a></li>
-            <li><a href="?r=usuario/create">user</a></li>
           </ul>
           
         </div>
