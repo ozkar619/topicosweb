@@ -18,12 +18,12 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'nombre'); ?>
-		<?php echo $form->textField($model,'nombre',array('size'=>60,'maxlength'=>500)); ?>
+		<?php echo $form->textField($model,'nombre',array('size'=>60,'maxlength'=>500,'class'=>'form-control')); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'portada'); ?>
-		<?php echo $form->textField($model,'portada',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->textField($model,'portada',array('size'=>60,'maxlength'=>100,'class'=>'form-control')); ?>
 	</div>
 
 	<div class="row">
@@ -33,17 +33,17 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'volumen'); ?>
-		<?php echo $form->textField($model,'volumen',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->textField($model,'volumen',array('size'=>45,'maxlength'=>45,'class'=>'form-control')); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'titulo'); ?>
-		<?php echo $form->textField($model,'titulo',array('size'=>60,'maxlength'=>200)); ?>
+		<?php echo $form->textField($model,'titulo',array('size'=>60,'maxlength'=>200,'class'=>'form-control')); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'subtitulo'); ?>
-		<?php echo $form->textField($model,'subtitulo',array('size'=>60,'maxlength'=>200)); ?>
+		<?php echo $form->textField($model,'subtitulo',array('size'=>60,'maxlength'=>200,'class'=>'form-control')); ?>
 	</div>
 
 	<div class="row">
@@ -53,7 +53,7 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'clave'); ?>
-		<?php echo $form->textField($model,'clave',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->textField($model,'clave',array('size'=>45,'maxlength'=>45,'class'=>'form-control')); ?>
 	</div>
 
 	<div class="row">

@@ -32,7 +32,7 @@ class ArticuloController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('agregar','update'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -60,10 +60,10 @@ class ArticuloController extends Controller
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
-	public function actionCreate()
+	public function actionAgregar()
 	{
 		$model=new Articulo;
-
+        $modelStatus= Status::model()->findAll();
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
@@ -76,6 +76,7 @@ class ArticuloController extends Controller
 
 		$this->render('create',array(
 			'model'=>$model,
+			'modelStatus'=>$modelStatus,
 		));
 	}
 

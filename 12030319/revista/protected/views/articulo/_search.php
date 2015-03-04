@@ -18,7 +18,7 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'nombre'); ?>
-		<?php echo $form->textField($model,'nombre',array('size'=>60,'maxlength'=>500)); ?>
+		<?php echo $form->textField($model,'nombre',array('size'=>60,'maxlength'=>500,'class'=>'form-control')); ?>
 	</div>
 
 	<div class="row">
@@ -53,7 +53,7 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'archivo_pdf'); ?>
-		<?php echo $form->textField($model,'archivo_pdf',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->textField($model,'archivo_pdf',array('size'=>60,'maxlength'=>100,'class'=>'form-control')); ?>
 	</div>
 
 	<div class="row">
