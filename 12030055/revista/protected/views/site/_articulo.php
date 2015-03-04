@@ -1,5 +1,5 @@
   <div class="col-xs-6 col-lg-4">
-  <h2><?php echo $data->nombre;?></h2>
+  <h1><?php echo $data->nombre?></h1>
               <p>
               <?php echo $data->resumen;?>
               </p>

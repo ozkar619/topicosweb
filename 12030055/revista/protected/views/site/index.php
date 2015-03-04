@@ -1,14 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
 <?php
 $this->widget('zii.widgets.CListView', array(
     'dataProvider'=>$dataProvider,
@@ -17,9 +7,9 @@ $this->widget('zii.widgets.CListView', array(
 ));
 
 $this->widget('zii.widgets.CListView', array(
-    'dataProvider'=>$dataProviderArticulo,
-    'itemView'=>'_articulo',   // refers to the partial view named '_post'
-    'sortableAttributes'=>array(),
+   'dataProvider'=>$dataProviderArti,
+   'itemView'=>'_articulo',   // refers to the partial view named '_post'
+   'sortableAttributes'=>array(),
 ));
 
 ?>

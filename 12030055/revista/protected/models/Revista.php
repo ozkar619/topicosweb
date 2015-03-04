@@ -43,11 +43,10 @@ class Revista extends CActiveRecord
 			array('nombre, portada, fecha, volumen', 'required'),
 			array('numero, id_status', 'numerical', 'integerOnly'=>true),
 			array('nombre', 'length', 'max'=>500),
-			array('portada', 'file', 'types'=>'jpg, gif, png'),
+			array('portada','file', 'types'=>'jpg, gif, png'),
 			array('volumen, clave', 'length', 'max'=>45),
 			array('titulo, subtitulo', 'length', 'max'=>200),
 			array('directorio, editorial', 'safe'),
-			//array('image','file', 'types'=>'jpg, gif, png'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id_revista, nombre, portada, fecha, volumen, titulo, subtitulo, numero, clave, directorio, editorial, id_status', 'safe', 'on'=>'search'),
