@@ -73,7 +73,7 @@ class Revista extends CActiveRecord
 		return array(
 			'id_revista' => 'Id Revista',
 			'nombre' => 'Nombre',
-			'portada' => 'Portada',
+			'portada' => null,
 			'fecha' => 'Fecha',
 			'volumen' => 'Volumen',
 			'titulo' => 'Titulo',

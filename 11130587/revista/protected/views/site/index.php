@@ -1,3 +1,72 @@
+<<<<<<< HEAD
+<?php
+/* @var $this SiteController */
+
+$this->pageTitle=Yii::app()->name;
+?>
+
+<!-- <h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
+
+<p>Congratulations! You have successfully created your Yii application.</p>
+
+<p>You may change the content of this page by modifying the following two files:</p>
+<ul>
+	<li>View file: <code><?php echo __FILE__; ?></code></li>
+	<li>Layout file: <code><?php echo $this->getLayoutFile('main'); ?></code></li>
+</ul> -->
+
+  <body>
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+
+    <?php
+    $this->widget('zii.widgets.CListView', array(
+    'dataProvider'=>$dataProvider,
+    'itemView'=>'_articulo',   // refers to the partial view named '_post'
+    'sortableAttributes'=>array(
+    ),
+));
+?>
+
+    <?php
+    $this->widget('zii.widgets.CListView', array(
+    'dataProvider'=>$dataProviderRevista,
+    'itemView'=>'_revista',   // refers to the partial view named '_post'
+    'sortableAttributes'=>array(
+    ),
+));
+?>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <script src="offcanvas.js"></script>
+=======
 <?php
 /* @var $this SiteController */
 
@@ -126,4 +195,5 @@ $this->pageTitle=Yii::app()->name;
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 
     <script src="offcanvas.js"></script>
+>>>>>>> 25a6c1e3701d7f193795c0824aa86f9015003f02
   </body>

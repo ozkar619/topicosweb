@@ -60,12 +60,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Revista Playboy</a>
+          <a class="navbar-brand" href="#">Playboy</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Inicio</a></li>
-            <li><a href="#about">Acerca Det</a></li>
+            <li><a href="#about">Acerca De</a></li>
             <li><a href="#contact">Contacto</a></li>
           </ul>
         </div><!-- /.nav-collapse -->
@@ -92,7 +92,7 @@
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
           <div class="list-group">
             <a href="?r=site/index" class="list-group-item active">Inicio</a>
-            <a href="?r=articulo/create" class="list-group-item">Articulo</a>
+            <a href="?r=articulo/create" class="list-group-item">Art&iacute;culo</a>
             <a href="?r=status/create" class="list-group-item">Estatus</a>
             <a href="?r=revista/create" class="list-group-item">Revista</a>
             <a href="?r=autor/create" class="list-group-item">Autor</a>
@@ -103,7 +103,7 @@
       <hr>
 
       <footer>
-        <p>&copy; Company 2014</p>
+        <p>&copy; 2015 Playboy, Company</p>
       </footer>
 
     </div><!--/.container-->
