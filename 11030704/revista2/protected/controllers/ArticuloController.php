@@ -1,6 +1,6 @@
 <?php
 
-class RevistaController extends Controller
+class ArticuloController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -62,38 +62,19 @@ class RevistaController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Revista;
+		$model=new Articulo;
 		$modelStatus = Status::model()->findAll();
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-//**************************************************************************************************************
 
-       //$model=new Item;  // this is my model related to table
-        $path_picture = realpath( Yii::app( )->getBasePath( )."/../images/uploads" )."/";//ruta final de la imagen
- 
-        
-		if(isset($_POST['Revista']))
+		if(isset($_POST['Articulo']))
 		{
-			$model->attributes=$_POST['Revista'];
+			$model->attributes=$_POST['Articulo'];
+			$model->archivo_pdf=CUploadedFile::getInstance($model,'archivo_pdf');
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id_revista));
-
-			 $rnd = rand(0,9999);  // generate random number between 0-9999
-            $uploadedFile=CUploadedFile::getInstance($model,'picture');
-            $fileName = "{$rnd}-{$uploadedFile}";  // random number + file name or puedes usar: $fileName=$uploadedFile->getName();
-             
-            if(!empty($uploadedFile))  // check if uploaded file is set or not
-            {
-                //$uploadedFile->saveAs(Yii::app()->basePath.'/../banner/'.$fileName);  // image will uplode to rootDirectory/banner/
-                $uploadedFile->saveAs($path_picture.$fileName);
-                $model->portada= $fileName;
-            }
-            if($model->save())
-            {
-                 
-                $this->redirect(array('admin'));
-            }
+				$this->redirect(array('view','id'=>$model->id_articulo));
 		}
+
 		$this->render('create',array(
 			'model'=>$model,
 			'modelStatus'=>$modelStatus,
@@ -112,11 +93,11 @@ class RevistaController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Revista']))
+		if(isset($_POST['Articulo']))
 		{
-			$model->attributes=$_POST['Revista'];
+			$model->attributes=$_POST['Articulo'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id_revista));
+				$this->redirect(array('view','id'=>$model->id_articulo));
 		}
 
 		$this->render('update',array(
@@ -143,7 +124,7 @@ class RevistaController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Revista');
+		$dataProvider=new CActiveDataProvider('Articulo');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -154,10 +135,10 @@ class RevistaController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Revista('search');
+		$model=new Articulo('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Revista']))
-			$model->attributes=$_GET['Revista'];
+		if(isset($_GET['Articulo']))
+			$model->attributes=$_GET['Articulo'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -168,12 +149,12 @@ class RevistaController extends Controller
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return Revista the loaded model
+	 * @return Articulo the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=Revista::model()->findByPk($id);
+		$model=Articulo::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -181,11 +162,11 @@ class RevistaController extends Controller
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param Revista $model the model to be validated
+	 * @param Articulo $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='revista-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='articulo-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();

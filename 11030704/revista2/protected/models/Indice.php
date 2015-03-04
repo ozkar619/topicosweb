@@ -1,35 +1,26 @@
 <?php
 
 /**
- * This is the model class for table "revista".
+ * This is the model class for table "indice".
  *
- * The followings are the available columns in table 'revista':
- * @property integer $id_revista
- * @property string $nombre
- * @property string $portada
- * @property string $fecha
- * @property string $volumen
+ * The followings are the available columns in table 'indice':
+ * @property integer $id_indice
  * @property string $titulo
- * @property string $subtitulo
  * @property integer $numero
- * @property string $clave
- * @property string $directorio
- * @property string $editorial
- * @property integer $id_status
+ * @property integer $id_revista
  *
  * The followings are the available model relations:
- * @property Indice[] $indices
- * @property Status $idStatus
+ * @property Revista $idRevista
+ * @property IndiceArticulo[] $indiceArticulos
  */
-class Revista extends CActiveRecord
+class Indice extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
-  public $picture;
 	public function tableName()
 	{
-		return 'revista';
+		return 'indice';
 	}
 
 	/**
@@ -40,17 +31,12 @@ class Revista extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('nombre,portada,fecha, volumen', 'required'),
-			array('picture', 'file', 'types'=>'jpg, gif, png'),
-			array('numero, id_status', 'numerical', 'integerOnly'=>true),
-			array('nombre', 'length', 'max'=>500),
-			//array('portada', 'length', 'max'=>100),
-			array('volumen, clave', 'length', 'max'=>45),
-			array('titulo, subtitulo', 'length', 'max'=>200),
-			array('directorio, editorial', 'safe'),
+			array('titulo', 'required'),
+			array('numero, id_revista', 'numerical', 'integerOnly'=>true),
+			array('titulo', 'length', 'max'=>500),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id_revista, nombre, portada, fecha, volumen, titulo, subtitulo, numero, clave, directorio, editorial, id_status', 'safe', 'on'=>'search'),
+			array('id_indice, titulo, numero, id_revista', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -62,8 +48,8 @@ class Revista extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'indices' => array(self::HAS_MANY, 'Indice', 'id_revista'),
-			'idStatus' => array(self::BELONGS_TO, 'Status', 'id_status'),
+			'idRevista' => array(self::BELONGS_TO, 'Revista', 'id_revista'),
+			'indiceArticulos' => array(self::HAS_MANY, 'IndiceArticulo', 'id_indice'),
 		);
 	}
 
@@ -73,18 +59,10 @@ class Revista extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id_revista' => 'Id Revista',
-			'nombre' => 'Nombre',
-			'portada' => 'Portada',
-			'fecha' => 'Fecha',
-			'volumen' => 'Volumen',
+			'id_indice' => 'Id Indice',
 			'titulo' => 'Titulo',
-			'subtitulo' => 'Subtitulo',
 			'numero' => 'Numero',
-			'clave' => 'Clave',
-			'directorio' => 'Directorio',
-			'editorial' => 'Editorial',
-			'id_status' => 'Id Status',
+			'id_revista' => 'Id Revista',
 		);
 	}
 
@@ -106,18 +84,10 @@ class Revista extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('id_revista',$this->id_revista);
-		$criteria->compare('nombre',$this->nombre,true);
-		$criteria->compare('portada',$this->portada,true);
-		$criteria->compare('fecha',$this->fecha,true);
-		$criteria->compare('volumen',$this->volumen,true);
+		$criteria->compare('id_indice',$this->id_indice);
 		$criteria->compare('titulo',$this->titulo,true);
-		$criteria->compare('subtitulo',$this->subtitulo,true);
 		$criteria->compare('numero',$this->numero);
-		$criteria->compare('clave',$this->clave,true);
-		$criteria->compare('directorio',$this->directorio,true);
-		$criteria->compare('editorial',$this->editorial,true);
-		$criteria->compare('id_status',$this->id_status);
+		$criteria->compare('id_revista',$this->id_revista);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -128,7 +98,7 @@ class Revista extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Revista the static model class
+	 * @return Indice the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

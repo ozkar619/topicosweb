@@ -26,7 +26,6 @@ class Revista extends CActiveRecord
 	/**
 	 * @return string the associated database table name
 	 */
-  public $picture;
 	public function tableName()
 	{
 		return 'revista';
@@ -40,11 +39,10 @@ class Revista extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('nombre,portada,fecha, volumen', 'required'),
-			array('picture', 'file', 'types'=>'jpg, gif, png'),
+			array('nombre, fecha, volumen', 'required'),
 			array('numero, id_status', 'numerical', 'integerOnly'=>true),
 			array('nombre', 'length', 'max'=>500),
-			//array('portada', 'length', 'max'=>100),
+			array('portada', 'file', 'types'=>'jpg, gif, png','allowEmpty'=>true, 'on'=>'update'),
 			array('volumen, clave', 'length', 'max'=>45),
 			array('titulo, subtitulo', 'length', 'max'=>200),
 			array('directorio, editorial', 'safe'),
@@ -84,7 +82,7 @@ class Revista extends CActiveRecord
 			'clave' => 'Clave',
 			'directorio' => 'Directorio',
 			'editorial' => 'Editorial',
-			'id_status' => 'Id Status',
+			'id_status' => 'Status',
 		);
 	}
 
