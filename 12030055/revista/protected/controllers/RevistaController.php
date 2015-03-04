@@ -63,19 +63,26 @@ class RevistaController extends Controller
 	public function actionCreate()
 	{
 		$model=new Revista;
+		$modelStatus = Status::model()->findAll();
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['Revista']))
 		{
+
 			$model->attributes=$_POST['Revista'];
+			$model->portada=CUploadedFile::getInstance($model,'portada');
 			if($model->save())
+			{
+				$model->portada->saveAs('..\12030055\imagenes');
 				$this->redirect(array('view','id'=>$model->id_revista));
+			}
 		}
 
 		$this->render('create',array(
 			'model'=>$model,
+		    'modelStatus'=>$modelStatus,
 		));
 	}
 
