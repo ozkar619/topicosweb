@@ -61,14 +61,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Revista Playboy</a>
+          <a class="navbar-brand" href="#">Playboy</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Ajustes</a></li>
-            <li><a href="#">Perfil</a></li>
-            <li><a href="#">Ayuda</a></li>
+            <?php if (Yii::app()->user->isGuest): ?>
+            <li><a href="?r=site/login">Sesi&oacute;n</a></li>
+          <?php else: ?>
+            <li><a href="?r=site/logout">logOut</a></li>
+          <?php endif; ?>
           </ul>
           <form class="navbar-form navbar-right">
             <input type="text" class="form-control" placeholder="Buscar...">
@@ -88,6 +89,7 @@
             <li><a href="?r=indice/create">&Iacute;ndice</a></li>
             <li><a href="?r=recursos/create">Recursos</a></li>
             <li><a href="?r=autor/create">Autor</a></li>
+            <li><a href="?r=users/create">Usuarios</a></li>
           </ul>
           
         </div>
