@@ -63,7 +63,7 @@
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'archivo_pdf'); ?>
-		<?php echo $form->textField($model,'archivo_pdf',array('size'=>60,'maxlength'=>100,'class'=>'form-control')); ?>
+		<?php echo CHtml::activeFileField($model, 'archivo_pdf'); ?>
 		<?php echo $form->error($model,'archivo_pdf'); ?>
 	</div>
 
