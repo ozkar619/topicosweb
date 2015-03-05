@@ -27,7 +27,7 @@
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'portada'); ?>
-    <?php echo CHtml::activeFileField($model, 'portada'); ?>
+        <?php echo CHtml::activeFileField($model, 'portada'); ?>
 		<?php echo $form->error($model,'portada'); ?>
 	</div>
 

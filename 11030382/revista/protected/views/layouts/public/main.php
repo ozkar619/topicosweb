@@ -64,7 +64,11 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Inicio</a></li>
+            <?php if (Yii::app()->user->isGuest): ?>
+            <li><a href="?r=site/login">Sesi&oacute;n</a></li>
+          <?php else: ?>
+            <li><a href="?r=site/logout">logOut</a></li>
+          <?php endif; ?>
             <li><a href="#about">Acerca De</a></li>
             <li><a href="#contact">Contacto</a></li>
           </ul>

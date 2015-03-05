@@ -31,6 +31,10 @@ $this->pageTitle=Yii::app()->name;
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="?r=site/login">LogIn</a></li>
+            <li><a href="?r=site/logout">LogOut</a></li>
+
+
           </ul>
         </div><!-- /.nav-collapse -->
       </div><!-- /.container -->
