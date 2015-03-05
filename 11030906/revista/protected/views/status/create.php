@@ -15,4 +15,4 @@ $this->menu=array(
 
 <h1>Create Status</h1>
 
-<?php $this->renderPartial('_form', array('model'=>$model,'modelStatus'=>$modelStatus)); ?>
+<?php $this->renderPartial('_form', array('model'=>$model)); ?>
