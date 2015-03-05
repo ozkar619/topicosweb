@@ -65,10 +65,11 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Help</a></li>
+            <?php if(Yii::app()->user->isGuest): ?>
+            <li class="active"><a href="?r=site/login">Login</a></li>
+            <?php else: ?>
+            <li><a href="?r=site/logout">Logout</a></li>
+          <?php endif;?>
           </ul>
           <form class="navbar-form navbar-right">
             <input type="text" class="form-control" placeholder="Search...">
@@ -92,6 +93,8 @@
             <li><a href="?r=indicearticulo/create">Indice Articulo</a></li>
             <li><a href="?r=recursos/create">Recursos</a></li>
             <li><a href="?r=tipocontenido/create">Tipo de contenido</a></li>
+            <li><a href="?r=users/create">Users</a></li>
+          </ul>
           </ul>
           
         </div>
