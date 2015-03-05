@@ -33,13 +33,15 @@ class SiteController extends Controller
 		$this->render('index');
 =======
 		$this->layout='//layouts/public/column1';
-	//	$dataprovider = new CActiveDataProvider('Articulo')
 		$this->render('index');
+<<<<<<< HEAD
 		// array(
 		//	'dataprovider'=>$dataprovider,
 
 		//	));
 >>>>>>> 8fac4e8427c70af79aedd102932bbe52dccb1688
+=======
+>>>>>>> d6f4b950a745d83fe77b6fc64056c9f811e786b1
 	}
 
 	/**

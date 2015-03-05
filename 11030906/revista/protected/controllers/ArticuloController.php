@@ -32,6 +32,7 @@ class ArticuloController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
+<<<<<<< HEAD
 				'actions'=>array('create','update'),
 <<<<<<< HEAD
 				'users'=>array('*'),
@@ -40,6 +41,9 @@ class ArticuloController extends Controller
 				'actions'=>array('admin','delete'),
 				'users'=>array('*'),
 =======
+=======
+				'actions'=>array('agregar','update'),
+>>>>>>> d6f4b950a745d83fe77b6fc64056c9f811e786b1
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -68,15 +72,19 @@ class ArticuloController extends Controller
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
-	public function actionCreate()
+	public function actionAgregar()
 	{
 		$model=new Articulo;
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 		$modelStatus = Status::model()->findAll();
 		
 >>>>>>> 8fac4e8427c70af79aedd102932bbe52dccb1688
 
+=======
+        $modelStatus= Status::model()->findAll();
+>>>>>>> d6f4b950a745d83fe77b6fc64056c9f811e786b1
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
@@ -84,9 +92,12 @@ class ArticuloController extends Controller
 		{
 			$model->attributes=$_POST['Articulo'];
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 			$model->fecha_creacion =date('y-m-d');
 >>>>>>> 8fac4e8427c70af79aedd102932bbe52dccb1688
+=======
+>>>>>>> d6f4b950a745d83fe77b6fc64056c9f811e786b1
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id_articulo));
 		}
@@ -96,8 +107,11 @@ class ArticuloController extends Controller
 <<<<<<< HEAD
 =======
 			'modelStatus'=>$modelStatus,
+<<<<<<< HEAD
 
 >>>>>>> 8fac4e8427c70af79aedd102932bbe52dccb1688
+=======
+>>>>>>> d6f4b950a745d83fe77b6fc64056c9f811e786b1
 		));
 	}
 

@@ -129,8 +129,12 @@
             <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
 =======
             <li class="active"><a href="?r=/site/index">Inicio <span class="sr-only">(current)</span></a></li>
+<<<<<<< HEAD
 >>>>>>> 8fac4e8427c70af79aedd102932bbe52dccb1688
             <li><a href="?r=articulo/create">Articulos</a></li>
+=======
+            <li><a href="?r=articulo/agregar">Articulos</a></li>
+>>>>>>> d6f4b950a745d83fe77b6fc64056c9f811e786b1
             <li><a href="?r=revista/create">Revistas</a></li>
             <li><a href="?r=autor/create">Autores</a></li>
           </ul>
