@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 /* @var $this SiteController */
 
@@ -18,3 +19,22 @@ $this->pageTitle=Yii::app()->name;
 the <a href="http://www.yiiframework.com/doc/">documentation</a>.
 Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
 should you have any questions.</p>
+=======
+
+
+
+
+
+<?php
+
+$this->widget('zii.widgets.CListView', array(
+    'dataProvider'=>$dataProvider,
+    'itemView'=>'_post',   // refers to the partial view named '_post'
+    'sortableAttributes'=>array(
+        'title',
+        'create_time'=>'Post Time',
+    ),
+));
+?>
+
+>>>>>>> 8fac4e8427c70af79aedd102932bbe52dccb1688

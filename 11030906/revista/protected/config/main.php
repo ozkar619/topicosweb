@@ -7,7 +7,11 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
+<<<<<<< HEAD
 	'name'=>'revista',
+=======
+	'name'=>'Revista',
+>>>>>>> 8fac4e8427c70af79aedd102932bbe52dccb1688
 
 	// preloading 'log' component
 	'preload'=>array('log'),

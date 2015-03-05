@@ -15,4 +15,8 @@ $this->menu=array(
 
 <h1>Create Articulo</h1>
 
+<<<<<<< HEAD
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
+=======
+<?php $this->renderPartial('_form', array('model'=>$model, 'modelStatus'=>$modelStatus)); ?>
+>>>>>>> 8fac4e8427c70af79aedd102932bbe52dccb1688

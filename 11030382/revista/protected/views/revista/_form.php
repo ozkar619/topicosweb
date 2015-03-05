@@ -27,7 +27,7 @@
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'portada'); ?>
-		<?php echo $form->textField($model,'portada',array('size'=>60,'maxlength'=>100, 'class'=>'form-control')); ?>
+		<?php echo CHtml::activeFileField($model, 'portada'); ?>
 		<?php echo $form->error($model,'portada'); ?>
 	</div>
 

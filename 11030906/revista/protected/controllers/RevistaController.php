@@ -63,6 +63,10 @@ class RevistaController extends Controller
 	public function actionCreate()
 	{
 		$model=new Revista;
+<<<<<<< HEAD
+=======
+		$modelStatus = Status::model()->findAll();
+>>>>>>> 8fac4e8427c70af79aedd102932bbe52dccb1688
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -76,6 +80,10 @@ class RevistaController extends Controller
 
 		$this->render('create',array(
 			'model'=>$model,
+<<<<<<< HEAD
+=======
+			'modelStatus'=>$modelStatus,
+>>>>>>> 8fac4e8427c70af79aedd102932bbe52dccb1688
 		));
 	}
 
@@ -100,6 +108,10 @@ class RevistaController extends Controller
 
 		$this->render('update',array(
 			'model'=>$model,
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8fac4e8427c70af79aedd102932bbe52dccb1688
 		));
 	}
 

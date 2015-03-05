@@ -63,6 +63,11 @@ class RevistaController extends Controller
 	public function actionCreate()
 	{
 		$model=new Revista;
+		$modelStatus = Status::model()->findAll();
+		 $path_picture = realpath( Yii::app( )->getBasePath( )."/../../images/uploads/" );
+
+		 //echo print_r($path_picture);
+		 //die();
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -70,12 +75,23 @@ class RevistaController extends Controller
 		if(isset($_POST['Revista']))
 		{
 			$model->attributes=$_POST['Revista'];
+			$uploadedFile=CUploadedFile::getInstance($model,'portada');
+			$fileName = "{$uploadedFile}";
+
+			if(!empty($uploadedFile))  // check if uploaded file is set or not
+            {
+                //$uploadedFile->saveAs(Yii::app()->basePath.'/../banner/'.$fileName);  // image will uplode to rootDirectory/banner/
+                $uploadedFile->saveAs($path_picture.$fileName);
+                $model->portada= $fileName;
+            }
+
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id_revista));
 		}
 
 		$this->render('create',array(
 			'model'=>$model,
+		    'modelStatus'=>$modelStatus,
 		));
 	}
 

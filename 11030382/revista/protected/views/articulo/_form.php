@@ -55,11 +55,11 @@
 		<?php echo $form->error($model,'contenido'); ?>
 	</div>
 
-	<div class="form-group">
+	<!---<div class="form-group">
 		<?php echo $form->labelEx($model,'fecha_creacion'); ?>
 		<?php echo $form->textField($model,'fecha_creacion',array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'fecha_creacion'); ?>
-	</div>
+	</div>-->
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'archivo_pdf'); ?>

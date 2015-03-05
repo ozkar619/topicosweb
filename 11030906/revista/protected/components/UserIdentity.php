@@ -15,6 +15,7 @@ class UserIdentity extends CUserIdentity
 	 * against some persistent user identity storage (e.g. database).
 	 * @return boolean whether authentication succeeds.
 	 */
+<<<<<<< HEAD
 	public function authenticate()
 	{
 		$users=array(
@@ -30,4 +31,25 @@ class UserIdentity extends CUserIdentity
 			$this->errorCode=self::ERROR_NONE;
 		return !$this->errorCode;
 	}
+=======
+     private $_id;
+	public function authenticate()
+	{
+		
+		$user=Users::model()->find("LOWER(username)=?", array(strtolower($this->username)));
+
+
+		if($user === null )
+			$this->errorCode=self::ERROR_USERNAME_INVALID;
+		elseif($this->password !== $user->password)
+			$this->errorCode=self::ERROR_PASSWORD_INVALID;
+		else
+			#Yii::app()->user->id
+			$this->_id=$user->id_usuario;
+			$this->errorCode=self::ERROR_NONE;
+		return !$this->errorCode;
+	}
+
+	
+>>>>>>> 8fac4e8427c70af79aedd102932bbe52dccb1688
 }
