@@ -65,6 +65,11 @@
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
+            <?php if(Yii::app()->user->isGuest): ?>
+              <li><a href="?r=site/login">Log in</a></li>
+            <?php else: ?>
+              <li><a href="?r=site/logout">Log out</a></li>
+            <?php endif; ?>
           </ul>
         </div><!-- /.nav-collapse -->
       </div><!-- /.container -->
