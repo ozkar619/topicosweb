@@ -64,17 +64,29 @@ class RevistaController extends Controller
 	{
 		$model=new Revista;
 		$modelStatus = Status::model()->findAll();
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+		$path_picture = "images/uploads/";//ruta final de la imagen
 
 		if(isset($_POST['Revista']))
 		{
 			$model->attributes=$_POST['Revista'];
-			$model->portada=CUploadedFile::getInstance($model,'portada');
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id_revista));
-		}
 
+			$rnd = rand(0,9999);  // generate random number between 0-9999
+            $uploadedFile=CUploadedFile::getInstance($model,'picture');
+            $fileName = "{$uploadedFile}";  // random number + file name or puedes usar: $fileName=$uploadedFile->getName();
+            if(!empty($uploadedFile))  // check if uploaded file is set or not
+            {
+                //$uploadedFile->saveAs(Yii::app()->basePath.'/../banner/'.$fileName);  // image will uplode to rootDirectory/banner/
+                $uploadedFile->saveAs($path_picture.$fileName);
+                $model->portada= $fileName;
+            }
+            if($model->save())
+            {
+                 
+                $this->redirect(array('admin'));
+            }
+		}
 		$this->render('create',array(
 			'model'=>$model,
 			'modelStatus'=>$modelStatus,

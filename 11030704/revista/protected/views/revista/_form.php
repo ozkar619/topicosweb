@@ -13,6 +13,7 @@
 	// There is a call to performAjaxValidation() commented in generated controller code.
 	// See class documentation of CActiveForm for details on this.
 	'enableAjaxValidation'=>false,
+	'htmlOptions' => array('enctype' => 'multipart/form-data'),//NO TE OLVIDES DE ASIGNAR ESTO
 )); ?>
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
@@ -24,6 +25,19 @@
 		<?php echo $form->textField($model,'nombre',array('size'=>60,'maxlength'=>500,'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'nombre'); ?>
 	</div>
+
+	<?php
+        echo $form->labelEx($model, 'picture');
+        echo $form->fileField($model, 'picture');
+        echo $form->error($model, 'picture');
+    ?>
+ 
+    <?php if(!$model->isNewRecord){ //mostramos la imagen?>
+    <div class="container">
+            <?php //echo CHtml::image(Yii::app()->params['file_tours'].$model->fotoprincipal,"fotoprincipal",array("width"=>200, 'title'=>$model->fotoprincipal)); ?>
+            <?php echo CHtml::image('C:\xampp\htdocs\imagenes'.$model->portada,"portada",array("width"=>200, 'title'=>$model->portada)); ?>
+    </div>
+    <?php } ?>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'portada'); ?>

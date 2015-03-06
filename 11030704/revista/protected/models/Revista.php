@@ -26,6 +26,7 @@ class Revista extends CActiveRecord
 	/**
 	 * @return string the associated database table name
 	 */
+	public $picture;
 	public function tableName()
 	{
 		return 'revista';
@@ -42,7 +43,8 @@ class Revista extends CActiveRecord
 			array('nombre, fecha, volumen', 'required'),
 			array('numero, id_status', 'numerical', 'integerOnly'=>true),
 			array('nombre', 'length', 'max'=>500),
-			array('portada', 'file', 'types'=>'jpg, gif, png','allowEmpty'=>true, 'on'=>'update'),
+			array('picture', 'file', 'types'=>'jpg, gif, png'),
+			//array('portada', 'file', 'types'=>'jpg, gif, png','allowEmpty'=>true, 'on'=>'update'),
 			array('volumen, clave', 'length', 'max'=>45),
 			array('titulo, subtitulo', 'length', 'max'=>200),
 			array('directorio, editorial', 'safe'),
