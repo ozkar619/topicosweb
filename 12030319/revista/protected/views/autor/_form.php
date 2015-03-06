@@ -37,8 +37,8 @@
 		<?php echo $form->error($model,'email'); ?>
 	</div>
 
-	<div class="form-group">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', array('class'=>'btn btn-primary')); ?>
+	<div class="form-group buttons">
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

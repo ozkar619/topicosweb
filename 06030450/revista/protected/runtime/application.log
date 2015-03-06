@@ -610,3 +610,91 @@ Stack trace:
 #26 {main}
 REQUEST_URI=/topicosweb/06030450/revista/index.php?r=gii
 ---
+2015/03/05 00:51:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "agregar".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('agregar')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('agregar')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('articulo/agrega...')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\06030450\revista\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/06030450/revista/?r=articulo/agregar
+HTTP_REFERER=http://localhost/topicosweb/06030450/revista/
+---
+2015/03/05 00:58:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "agregar".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('agregar')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('agregar')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('articulo/agrega...')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\06030450\revista\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/06030450/revista/index.php?r=articulo/agregar
+HTTP_REFERER=http://localhost/topicosweb/06030450/revista/index.php?r=site/index
+---
+2015/03/05 00:58:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "agregar".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('agregar')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('agregar')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('articulo/agrega...')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\06030450\revista\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/06030450/revista/index.php?r=articulo/agregar
+HTTP_REFERER=http://localhost/topicosweb/06030450/revista/index.php?r=site/index
+---
+2015/03/05 01:01:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "agregar".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('agregar')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('agregar')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('articulo/agrega...')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\06030450\revista\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/06030450/revista/index.php?r=articulo/agregar
+HTTP_REFERER=http://localhost/topicosweb/06030450/revista/index.php?r=site/index
+---
+2015/03/05 01:01:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "agregar".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('agregar')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('agregar')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('articulo/agrega...')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\06030450\revista\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/06030450/revista/index.php?r=articulo/agregar
+HTTP_REFERER=http://localhost/topicosweb/06030450/revista/index.php?r=site/login
+---
+2015/03/05 01:01:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "agregar".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('agregar')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('agregar')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('articulo/agrega...')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\06030450\revista\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/06030450/revista/index.php?r=articulo/agregar
+HTTP_REFERER=http://localhost/topicosweb/06030450/revista/index.php?r=site/index
+---
+2015/03/05 01:01:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "agregar".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('agregar')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('agregar')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('articulo/agrega...')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\06030450\revista\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/06030450/revista/index.php?r=articulo/agregar
+HTTP_REFERER=http://localhost/topicosweb/06030450/revista/index.php?r=site/index
+---
+2015/03/05 01:13:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "agregar".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('agregar')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('agregar')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('articulo/agrega...')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\06030450\revista\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/06030450/revista/?r=articulo/agregar
+HTTP_REFERER=http://localhost/topicosweb/06030450/revista/
+---

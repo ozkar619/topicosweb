@@ -27,38 +27,32 @@
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'resumen'); ?>
-		<?php echo $form->textArea($model,'resumen',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textArea($model,'resumen',array('rows'=>6, 'cols'=>50,'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'resumen'); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'abstrac'); ?>
-		<?php echo $form->textArea($model,'abstrac',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textArea($model,'abstrac',array('rows'=>6, 'cols'=>50,'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'abstrac'); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'introduccion'); ?>
-		<?php echo $form->textArea($model,'introduccion',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textArea($model,'introduccion',array('rows'=>6, 'cols'=>50,'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'introduccion'); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'metodologia'); ?>
-		<?php echo $form->textArea($model,'metodologia',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textArea($model,'metodologia',array('rows'=>6, 'cols'=>50,'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'metodologia'); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'contenido'); ?>
-		<?php echo $form->textArea($model,'contenido',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textArea($model,'contenido',array('rows'=>6, 'cols'=>50,'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'contenido'); ?>
-	</div>
-
-	<div class="form-group">
-		<?php echo $form->labelEx($model,'fecha_creacion'); ?>
-		<?php echo $form->textField($model,'fecha_creacion'); ?>
-		<?php echo $form->error($model,'fecha_creacion'); ?>
 	</div>
 
 	<div class="form-group">
@@ -69,40 +63,37 @@
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'id_status'); ?>
-		<?//php echo $form->textField($model,'id_status'); 
-		   echo $form->dropDownList($model,'id_status',
-		   CHtml::listData($modelStatus,'id_status','status'),
-		   array('empty' => 'Selecciona un estatus...','class'=>'form-control' ); );
-		  ?>
+		<?php 
+			echo $form->dropDownList($model,'id_status',
+			  	CHtml::listData($modelStatus,'id_status','status'),
+		  		array('empty'=>'Selecciona un estatus...',
+		  			'class'=>'form-control')
+		  	);
+		?>
 		<?php echo $form->error($model,'id_status'); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'conclusiones'); ?>
-		<?php echo $form->textArea($model,'conclusiones',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textArea($model,'conclusiones',array('rows'=>6, 'cols'=>50,'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'conclusiones'); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'agradecimientos'); ?>
-		<?php echo $form->textArea($model,'agradecimientos',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textArea($model,'agradecimientos',array('rows'=>6, 'cols'=>50,'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'agradecimientos'); ?>
 	</div>
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'referencias'); ?>
-		<?php echo $form->textArea($model,'referencias',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textArea($model,'referencias',array('rows'=>6, 'cols'=>50,'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'referencias'); ?>
 	</div>
 
-	<div class="form-group">
-		<?php echo $form->labelEx($model,'id_indice_articulo'); ?>
-		<?php echo $form->textField($model,'id_indice_articulo'); ?>
-		<?php echo $form->error($model,'id_indice_articulo'); ?>
-	</div>
 
 	<div class="form-group">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', array('class'=>'btn btn-primary')); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save',array('class'=>'btn btn-primary')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

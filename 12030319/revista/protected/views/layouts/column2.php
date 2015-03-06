@@ -1,9 +1,11 @@
 <?php $this->beginContent('//layouts/main'); ?>
+
 <div>
 	<?php echo $content; ?>
 </div>
+
 <div>
-	<?php
+<?php
 		$this->beginWidget('zii.widgets.CPortlet', array(
 			'title'=>'Operations',
 		));
@@ -12,7 +14,8 @@
 			'htmlOptions'=>array('class'=>'operations'),
 		));
 		$this->endWidget();
-	?>
+?>
 </div>
+
 
 <?php $this->endContent(); ?>
