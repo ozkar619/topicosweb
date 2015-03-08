@@ -65,6 +65,13 @@
 		<?php echo $form->labelEx($model,'archivo_pdf'); ?>
 		<?php echo CHtml::activeFileField($model, 'archivo_pdf'); ?>
 		<?php echo $form->error($model,'archivo_pdf'); ?>
+
+		<?php if(!$model->isNewRecord){ //mostramos la imagen?>
+    	<div class="container">
+            <?php //echo CHtml::image(Yii::app()->params['file_tours'].$model->fotoprincipal,"fotoprincipal",array("width"=>200, 'title'=>$model->fotoprincipal)); ?>
+            <?php echo CHtml::image('images/uploads'.$model->portada,"portada",array("width"=>200, 'title'=>$model->portada)); ?>
+    	</div>
+    	<?php } ?>
 	</div>
 
 	<div class="form-group">

@@ -29,6 +29,7 @@ class Articulo extends CActiveRecord
 	/**
 	 * @return string the associated database table name
 	 */
+	public $articuloPDF;
 	public function tableName()
 	{
 		return 'articulo';
@@ -45,7 +46,7 @@ class Articulo extends CActiveRecord
 			array('nombre, fecha_creacion, id_status', 'required'),
 			array('id_status, id_indice_articulo', 'numerical', 'integerOnly'=>true),
 			array('nombre', 'length', 'max'=>500),
-			array('archivo_pdf', 'file','types'=>'pdf', 'allowEmpty'=>true, 'on'=>'update'),
+			array('archivo_pdf', 'file','types'=>'pdf'),
 			array('resumen, abstrac, introduccion, metodologia, contenido, conclusiones, agradecimientos, referencias', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.

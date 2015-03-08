@@ -37,7 +37,7 @@ class RevistaController extends Controller
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -64,7 +64,7 @@ class RevistaController extends Controller
 	{
 		$model=new Revista;
 		$modelStatus = Status::model()->findAll();
-		$path_picture = "images/uploads/";//ruta final de la imagen
+		$path_portada = "images/uploads/";//ruta final de la imagen
 
 		if(isset($_POST['Revista']))
 		{
@@ -73,17 +73,17 @@ class RevistaController extends Controller
 				$this->redirect(array('view','id'=>$model->id_revista));
 
 			$rnd = rand(0,9999);  // generate random number between 0-9999
-            $uploadedFile=CUploadedFile::getInstance($model,'picture');
+            $uploadedFile=CUploadedFile::getInstance($model,'portada');
             $fileName = "{$uploadedFile}";  // random number + file name or puedes usar: $fileName=$uploadedFile->getName();
             if(!empty($uploadedFile))  // check if uploaded file is set or not
             {
                 //$uploadedFile->saveAs(Yii::app()->basePath.'/../banner/'.$fileName);  // image will uplode to rootDirectory/banner/
-                $uploadedFile->saveAs($path_picture.$fileName);
+                $uploadedFile->saveAs($path_portada.$fileName);
                 $model->portada= $fileName;
             }
             if($model->save())
             {
-                 
+                  $uploadedFile->saveAs($path_portada.$fileName);
                 $this->redirect(array('admin'));
             }
 		}

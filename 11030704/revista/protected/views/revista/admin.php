@@ -61,6 +61,19 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		*/
 		array(
 			'class'=>'CButtonColumn',
+			'template'=>'{view}',
+			'header'=>'Ver índices',
+			'buttons'=>array(
+				'view'=>array(
+					'url'=>'Yii::app()->createUrl("indice/admin",array(
+							"id_revista"=>$data->id_revista
+						))'
+				)
+			),
+		),
+		array(
+			'class'=>'CButtonColumn',
+			'template'=>'{view}{update}',
 		),
 	),
 )); ?>

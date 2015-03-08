@@ -64,6 +64,7 @@ class ArticuloController extends Controller
 	{
 		$model=new Articulo;
 		$modelStatus = Status::model()->findAll();
+		$path_articuloPDF = "pdf/uploads/";//ruta final de la imagen
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
@@ -72,6 +73,21 @@ class ArticuloController extends Controller
 			$model->attributes=$_POST['Articulo'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id_articulo));
+
+			$rnd = rand(0,9999);  // generate random number between 0-9999
+            $uploadedFile=CUploadedFile::getInstance($model,'archivo_pdf');
+            $fileName = "{$uploadedFile}";  // random number + file name or puedes usar: $fileName=$uploadedFile->getName();
+            if(!empty($uploadedFile))  // check if uploaded file is set or not
+            {
+                //$uploadedFile->saveAs(Yii::app()->basePath.'/../banner/'.$fileName);  // image will uplode to rootDirectory/banner/
+                $uploadedFile->saveAs($path_articuloPDF.$fileName);
+                $model->articuloPDF= $fileName;
+            }
+            if($model->save())
+            {
+                 
+                $this->redirect(array('admin'));
+            }
 		}
 
 		$this->render('create',array(
