@@ -85,7 +85,7 @@
           </p>
           <div class="jumbotron">
             <h1><?php echo CHtml::encode(Yii::app()->name); ?></h1>
-            <p>This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.</p>
+            <p>¡Bienvenidos a nuestra página principal! Aquí podrán ver todo el contenido con el que contamos, sólo seleccionen lo que sea de su interés.</p>
           </div>
           <div class="row">
             <?php echo $content; ?>
