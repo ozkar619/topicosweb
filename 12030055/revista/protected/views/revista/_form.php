@@ -40,7 +40,7 @@
 				  	array('model'=>$model,
 				  		  'attribute'=>'fecha',
 				  		  'language'=>'es',
-				  		  'options'=>array('showAnim'=>'fold'),
+				  		  'options'=>array('showAnim'=>'fold','dateFormat'=>'yy-mm-dd'),
 				  		  'htmlOptions'=>array('class'=>'form-control')),
 				  	      true); 
 

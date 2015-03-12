@@ -40,7 +40,7 @@ class Revista extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('nombre,portada,fecha, volumen', 'required'),
+			array('nombre,picture,fecha, volumen', 'required'),
 			array('picture', 'file', 'types'=>'jpg, gif, png'),
 			array('numero, id_status', 'numerical', 'integerOnly'=>true),
 			array('nombre', 'length', 'max'=>500),
@@ -50,7 +50,7 @@ class Revista extends CActiveRecord
 			array('directorio, editorial', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id_revista, nombre, portada, fecha, volumen, titulo, subtitulo, numero, clave, directorio, editorial, id_status', 'safe', 'on'=>'search'),
+			array('id_revista, nombre, picture, fecha, volumen, titulo, subtitulo, numero, clave, directorio, editorial, id_status', 'safe', 'on'=>'search'),
 		);
 	}
 

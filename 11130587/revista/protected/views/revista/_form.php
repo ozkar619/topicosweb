@@ -13,7 +13,9 @@
 	// There is a call to performAjaxValidation() commented in generated controller code.
 	// See class documentation of CActiveForm for details on this.
 	'enableAjaxValidation'=>false,
+	'htmlOptions' => array('enctype' => 'multipart/form-data'),//NO TE OLVIDES DE ASIGNAR ESTO
 )); ?>
+
 
 	<p class="note">Los campos con <span class="required">*</span> son requeridos.</p>
 
@@ -25,9 +27,9 @@
 		<?php echo $form->error($model,'nombre'); ?>
 	</div>
 
-	<div class="form-group">
+		<div class="form-group">
 		<?php echo $form->labelEx($model,'portada'); ?>
-    <?php echo CHtml::activeFileField($model, 'portada'); ?>
+        <?php echo CHtml::activeFileField($model, 'portada'); ?>
 		<?php echo $form->error($model,'portada'); ?>
 	</div>
 
@@ -35,16 +37,14 @@
 		<?php echo $form->labelEx($model,'fecha'); ?>
 		<?php 
 		echo $this->widget('zii.widgets.jui.CJuiDatePicker',
-			array(
-				'model'=>$model,
-				'attribute'=>'fecha',
-				'language'=>'es',
-				'options'=>array(),
-				'htmlOptions'=>array(
-					'class'=>'form-control'
-					)
-					)
-					,true);
+
+		    array('model'=>$model,
+		    'attribute'=>'fecha',
+			'language'=>'es',
+			'options'=>array('showAnim'=>'fold','dateFormat'=>'yy-mm-dd'),
+			'htmlOptions'=>array('class'=>'form-control')),
+			true); 
+
 					?>
 		<?php echo $form->error($model,'fecha'); ?>
 	</div>

@@ -32,12 +32,12 @@ class ArticuloController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('agregar','update'),
-				'users'=>array('*'),
+				'actions'=>array('create','update'),
+				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('*'),
+				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -60,24 +60,25 @@ class ArticuloController extends Controller
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
-	public function actionAgregar()
+	public function actionCreate()
 	{
 		$model=new Articulo;
+		$modelStatus = Status::model()->findAll();
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['Articulo']))
 		{
-
 			$model->attributes=$_POST['Articulo'];
-			
+			$model->fecha_creacion = date('Y-m-d');
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id_articulo));
 		}
 
 		$this->render('create',array(
 			'model'=>$model,
+			'modelStatus'=>$modelStatus,
 		));
 	}
 

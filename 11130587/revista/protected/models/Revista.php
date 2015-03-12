@@ -41,7 +41,7 @@ class Revista extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('nombre, portada, fecha, volumen', 'required'),
-			array('portada','file', 'types'=>'jpg,gif,png', 'on'=>'insert, update'),
+			array('portada','file', 'types'=>'jpg,gif,png'),
 			array('numero, id_status', 'numerical', 'integerOnly'=>true),
 			array('nombre', 'length', 'max'=>500),
 			array('portada', 'length', 'max'=>100),
