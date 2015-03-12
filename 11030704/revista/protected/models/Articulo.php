@@ -29,7 +29,7 @@ class Articulo extends CActiveRecord
 	/**
 	 * @return string the associated database table name
 	 */
-	public $articuloPDF;
+	public $picture;
 	public function tableName()
 	{
 		return 'articulo';
@@ -43,10 +43,10 @@ class Articulo extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('nombre, fecha_creacion, id_status', 'required'),
+			array('nombre, fecha_creacion, id_status, archivo_pdf', 'required'),
 			array('id_status, id_indice_articulo', 'numerical', 'integerOnly'=>true),
 			array('nombre', 'length', 'max'=>500),
-			array('archivo_pdf', 'file','types'=>'pdf'),
+			array('picture', 'file', 'types'=>'jpg, gif, png, jpeg, Pdf'),
 			array('resumen, abstrac, introduccion, metodologia, contenido, conclusiones, agradecimientos, referencias', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.

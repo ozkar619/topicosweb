@@ -33,7 +33,7 @@ class SiteController extends Controller
 		
 		$dataProvider = new  CActiveDataProvider('Revista');
 		$dataProviderArti = new  CActiveDataProvider('Articulo');
-	
+	    
 
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,

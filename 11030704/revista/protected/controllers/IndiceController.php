@@ -64,8 +64,6 @@ class IndiceController extends Controller
 	{
 		$model=new Indice;
 		$modelRevistas = Revista::model()->findAll();
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['Indice']))
 		{

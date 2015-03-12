@@ -7,12 +7,11 @@
 <div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
-	'id'=>'articulo-form',
-	// Please note: When you enable ajax validation, make sure the corresponding
-	// controller action is handling ajax validation correctly.
-	// There is a call to performAjaxValidation() commented in generated controller code.
-	// See class documentation of CActiveForm for details on this.
-	'enableAjaxValidation'=>false,
+	
+//***********************************************************************************************
+    'id'=>'revista-form',
+    'enableAjaxValidation'=>false,
+    'htmlOptions' => array('enctype' => 'multipart/form-data'),//NO TE OLVIDES DE ASIGNAR ESTO
 )); ?>
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
@@ -54,24 +53,45 @@
 		<?php echo $form->textArea($model,'contenido',array('rows'=>6, 'cols'=>50,'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'contenido'); ?>
 	</div>
-
+<!--
 	<div class="form-group">
+		<?php// echo $form->labelEx($model,'fecha_creacion'); ?>
+		<?php //echo $form->textField($model,'fecha_creacion',array('class'=>'form-control')); ?>
+		<?php //echo $form->error($model,'fecha_creacion'); ?>
+	</div>-->
+<!-------------------------------------------------------------------------------------------------------------------------------->
+    <div class="form-group">
 		<?php echo $form->labelEx($model,'fecha_creacion'); ?>
-		<?php echo $form->textField($model,'fecha_creacion',array('class'=>'form-control')); ?>
+		<?php 
+			echo $this->widget('zii.widgets.jui.CJuiDatePicker',
+					array(
+						'model'=>$model,
+						'attribute'=>'fecha_creacion',
+						'language'=>'es',
+						'options'=>array(),
+						'htmlOptions'=>array(
+							'class'=>'form-control'
+						)
+					)
+				,true);				
+
+		 ?>
 		<?php echo $form->error($model,'fecha_creacion'); ?>
 	</div>
-
+<!-------------------------------------------------------------------------------------------------------------------------------->
 	<div class="form-group">
-		<?php echo $form->labelEx($model,'archivo_pdf'); ?>
-		<?php echo CHtml::activeFileField($model, 'archivo_pdf'); ?>
-		<?php echo $form->error($model,'archivo_pdf'); ?>
-
-		<?php if(!$model->isNewRecord){ //mostramos la imagen?>
-    	<div class="container">
+		<?php
+        echo $form->labelEx($model, 'archivo_pdf');
+        echo $form->fileField($model, 'picture');
+        echo $form->error($model, 'picture');
+    ?>
+ 
+    <?php if(!$model->isNewRecord){ //mostramos la imagen?>
+    <div class="container">
             <?php //echo CHtml::image(Yii::app()->params['file_tours'].$model->fotoprincipal,"fotoprincipal",array("width"=>200, 'title'=>$model->fotoprincipal)); ?>
-            <?php echo CHtml::image('images/uploads'.$model->portada,"portada",array("width"=>200, 'title'=>$model->portada)); ?>
-    	</div>
-    	<?php } ?>
+            <?php echo CHtml::image('pdf/uploads'.$model->archivo_pdf,"archivo_pdf",array("width"=>200, 'title'=>$model->archivo_pdf)); ?>
+    </div>
+    <?php } ?>
 	</div>
 
 	<div class="form-group">
