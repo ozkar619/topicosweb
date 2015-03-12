@@ -28,39 +28,67 @@ $('.search-form form').submit(function(){
 
 <h1>Manage Revistas</h1>
 
-<p>
-You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
-</p>
+<div class="row">
+    <div class="col-md-7">
+        
 
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
-<div class="search-form" style="display:none">
-<?php $this->renderPartial('_search',array(
-	'model'=>$model,
-)); ?>
-</div><!-- search-form -->
 
-<?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'revista-grid',
-	'dataProvider'=>$model->search(),
-	'filter'=>$model,
-	'columns'=>array(
-		'id_revista',
-		'nombre',
-		'portada',
-		'fecha',
-		'volumen',
-		'titulo',
-		/*
-		'subtitulo',
-		'numero',
-		'clave',
-		'directorio',
-		'editorial',
-		'id_status',
-		*/
-		array(
-			'class'=>'CButtonColumn',
-		),
-	),
-)); ?>
+		<?php $this->widget('zii.widgets.grid.CGridView', array(
+			'id'=>'revista-grid',
+			'dataProvider'=>$modelGrid->search(),
+			'filter'=>$modelGrid,
+			'columns'=>array(
+				'id_revista',
+				'nombre',
+				'portada',
+				'fecha',
+				'volumen',
+				'titulo',
+				/*
+				'subtitulo',
+				'numero',
+				'clave',
+				'directorio',
+				'editorial',
+				'id_status',
+				*/
+				array(
+					'class'=>'CButtonColumn',
+					'template'=>'{view}',
+					'header'=>'Ver indices',	
+					'buttons'=>array(
+						'view'=>array(
+							'url'=>'Yii::app()->createUrl("indice/admin",array(
+								"id_revista"=>$data->id_revista
+							))'
+						)
+					),		
+				),
+				array(
+					'class'=>'CButtonColumn',
+					'template'=>'{view}{update}',	
+
+				),
+			),
+		)); ?>
+
+
+    </div>
+    <div class="col-md-5">
+
+    		<div class="panel panel-primary">
+    		  <div class="panel-heading">
+    		    <h3 class="panel-title">Nueva revista</h3>
+    		  </div>
+    		  <div class="panel-body">
+    	    		
+				<?php 
+					$this->renderPartial('_form', 
+						array('model'=>$model,'modelStatus'=>$modelStatus)); 
+				?>
+    		  </div>
+    		</div>
+        
+    </div>
+</div>
+

@@ -1,6 +1,6 @@
 <?php
 
-class RevistaController extends Controller
+class IndiceController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -62,18 +62,21 @@ class RevistaController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Revista;
-		$modelStatus = Status::model()->findAll();
-		if(isset($_POST['Revista']))
+		$model=new Indice;
+		$modelRevistas = Revista::model()->findAll();
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+
+		if(isset($_POST['Indice']))
 		{
-			$model->attributes=$_POST['Revista'];
+			$model->attributes=$_POST['Indice'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id_revista));
+				$this->redirect(array('view','id'=>$model->id_indice));
 		}
 
 		$this->render('create',array(
 			'model'=>$model,
-			'modelStatus'=>$modelStatus
+			'modelRevistas'=>$modelRevistas,
 		));
 	}
 
@@ -89,11 +92,11 @@ class RevistaController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Revista']))
+		if(isset($_POST['Indice']))
 		{
-			$model->attributes=$_POST['Revista'];
+			$model->attributes=$_POST['Indice'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id_revista));
+				$this->redirect(array('view','id'=>$model->id_indice));
 		}
 
 		$this->render('update',array(
@@ -120,7 +123,7 @@ class RevistaController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Revista');
+		$dataProvider=new CActiveDataProvider('Indice');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -129,45 +132,30 @@ class RevistaController extends Controller
 	/**
 	 * Manages all models.
 	 */
-	public function actionAdmin()
+	public function actionAdmin( $id_revista= 'null')
 	{
+		$model=new Indice('search');
+		$model->unsetAttributes();  // clear any default values
+		if(isset($_GET['Indice']))
+			$model->attributes=$_GET['Indice'];
 		
-		// vista de crear
-		$model=new Revista;
-		$modelStatus = Status::model()->findAll();
-		if(isset($_POST['Revista']))
-		{
-			$model->attributes=$_POST['Revista'];
-			$model->save();
-				//$this->redirect(array('view','id'=>$model->id_revista));
-		}
-
-		// vista de admin
-		$modelGrid=new Revista('search');
-		$modelGrid->unsetAttributes();  // clear any default values
-		if(isset($_GET['Revista']))
-			$modelGrid->attributes=$_GET['Revista'];
-
+		$model->id_revista = $id_revista;
 
 		$this->render('admin',array(
-			'modelGrid'=>$modelGrid,
 			'model'=>$model,
-			'modelStatus'=>$modelStatus
-
 		));
-
 	}
 
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return Revista the loaded model
+	 * @return Indice the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=Revista::model()->findByPk($id);
+		$model=Indice::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -175,11 +163,11 @@ class RevistaController extends Controller
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param Revista $model the model to be validated
+	 * @param Indice $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='revista-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='indice-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
