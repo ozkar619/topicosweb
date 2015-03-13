@@ -18,4 +18,4 @@ $this->menu=array(
 
 <h1>Update Revista <?php echo $model->id_revista; ?></h1>
 
-<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+<?php $this->renderPartial('_form', array('model'=>$model,'modelStatus'=>$modelStatus)); ?>

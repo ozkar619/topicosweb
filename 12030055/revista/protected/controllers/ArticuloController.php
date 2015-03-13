@@ -37,7 +37,7 @@ class ArticuloController extends Controller
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -71,7 +71,17 @@ class ArticuloController extends Controller
 		if(isset($_POST['Articulo']))
 		{
 			$model->attributes=$_POST['Articulo'];
-			$model->fecha_creacion = date('Y-m-d');
+			//$model->fecha_creacion = date('Y-m-d');
+			$uploadedFile=CUploadedFile::getInstance($model,'archivo_pdf');
+			$fileName = "{$uploadedFile}";
+
+			if(!empty($uploadedFile))  // check if uploaded file is set or not
+            {
+                
+                $uploadedFile->saveAs("doc/".$fileName);
+                $model->archivo_pdf= $fileName;
+            }
+
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id_articulo));
 		}
@@ -135,15 +145,21 @@ class ArticuloController extends Controller
 	/**
 	 * Manages all models.
 	 */
-	public function actionAdmin()
+	public function actionAdmin($id_indice_articulo='null',$id_nombre='null')
 	{
+		$nombre=Revista::model()->findByPk($id_nombre);
+		$indice=Indice::model()->findByPk($id_indice_articulo);
 		$model=new Articulo('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Articulo']))
 			$model->attributes=$_GET['Articulo'];
 
+		$model->id_indice_articulo = $id_indice_articulo;
+
 		$this->render('admin',array(
 			'model'=>$model,
+			'nombre'=>$nombre,
+			'indice'=>$indice,
 		));
 	}
 

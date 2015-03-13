@@ -13,6 +13,7 @@
 	// There is a call to performAjaxValidation() commented in generated controller code.
 	// See class documentation of CActiveForm for details on this.
 	'enableAjaxValidation'=>false,
+	'htmlOptions' => array('enctype' => 'multipart/form-data'),
 )); ?>
 
 	<p class="note">Campos con <span class="required">*</span> son necesarios.</p>
@@ -45,7 +46,17 @@
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'fecha_creacion'); ?>
-		<?php echo $form->textField($model,'fecha_creacion'); ?>
+		<?php 
+	
+		 echo $this->widget('zii.widgets.jui.CJuiDatePicker',
+				  	array('model'=>$model,
+				  		  'attribute'=>'fecha_creacion',
+				  		  'language'=>'es',
+				  		  'options'=>array('showAnim'=>'fold','dateFormat'=>'yy-mm-dd'),
+				  		  'htmlOptions'=>array('class'=>'form-control')),
+				  	      true); 
+
+		 ?>
 		<?php echo $form->error($model,'fecha_creacion'); ?>
 	</div>
 
@@ -63,7 +74,7 @@
 
 	<div class="form-group">
 		<?php echo $form->labelEx($model,'archivo_pdf'); ?>
-		<?php echo $form->textField($model,'archivo_pdf',array('size'=>60,'maxlength'=>100,'class'=>'form-control')); ?>
+		<?php echo $form->Filefield($model,'archivo_pdf',array('size'=>60,'maxlength'=>100,'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'archivo_pdf'); ?>
 	</div>
 
@@ -91,6 +102,12 @@
 		<?php echo $form->labelEx($model,'referencias'); ?>
 		<?php echo $form->textArea($model,'referencias',array('rows'=>6, 'cols'=>50,'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'referencias'); ?>
+	</div>
+
+	<div class="form-group">
+		<?php echo $form->labelEx($model,'id_indice_articulo'); ?>
+		<?php echo $form->textField($model,'id_indice_articulo',array('class'=>'form-control')); ?>
+		<?php echo $form->error($model,'id_indice_articulo'); ?>
 	</div>
 
 
