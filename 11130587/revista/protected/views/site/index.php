@@ -40,6 +40,16 @@ $this->pageTitle=Yii::app()->name;
       </div><!-- /.container -->
     </nav><!-- /.navbar -->
 
+    <h3>Revistas</h3>
+    <?php
+    $this->widget('zii.widgets.CListView', array(
+    'dataProvider'=>$dataProviderRevista,
+    'itemView'=>'_revista',   // refers to the partial view named '_post'
+    'sortableAttributes'=>array(
+    ),
+));
+?>
+    <h3>Articulos</h3>
     <?php
     $this->widget('zii.widgets.CListView', array(
     'dataProvider'=>$dataProvider,
@@ -49,14 +59,6 @@ $this->pageTitle=Yii::app()->name;
 ));
 ?>
 
-    <?php
-    $this->widget('zii.widgets.CListView', array(
-    'dataProvider'=>$dataProviderRevista,
-    'itemView'=>'_revista',   // refers to the partial view named '_post'
-    'sortableAttributes'=>array(
-    ),
-));
-?>
 
 
     <!-- Bootstrap core JavaScript

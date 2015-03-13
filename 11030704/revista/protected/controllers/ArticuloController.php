@@ -37,7 +37,7 @@ class ArticuloController extends Controller
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -64,16 +64,31 @@ class ArticuloController extends Controller
 	{
 		$model=new Articulo;
 		$modelStatus = Status::model()->findAll();
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-
+//**************************************************************************************************************
+        $path_picture = realpath( Yii::app( )->getBasePath( )."/../pdf/uploads" )."/";//ruta final de la imagen 
+        
 		if(isset($_POST['Articulo']))
 		{
 			$model->attributes=$_POST['Articulo'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id_articulo));
-		}
 
+			 $rnd = rand(0,9999);  // generate random number between 0-9999
+            $uploadedFile=CUploadedFile::getInstance($model,'picture');
+            $fileName = "{$uploadedFile}";  // random number + file name or puedes usar: $fileName=$uploadedFile->getName();
+             
+            if(!empty($uploadedFile))  // check if uploaded file is set or not
+            {
+                //$uploadedFile->saveAs(Yii::app()->basePath.'/../banner/'.$fileName);  // image will uplode to rootDirectory/banner/
+                $uploadedFile->saveAs($path_picture.$fileName);
+                $model->archivo_pdf= $fileName;
+            }
+            if($model->save())
+            {
+                 
+                $this->redirect(array('admin'));
+            }
+		}
 		$this->render('create',array(
 			'model'=>$model,
 			'modelStatus'=>$modelStatus,

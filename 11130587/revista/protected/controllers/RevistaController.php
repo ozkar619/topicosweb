@@ -68,21 +68,26 @@ class RevistaController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-        
+		$path_picture = realpath( Yii::app( )->getBasePath( )."/../img/" )."/";
 
 		if(isset($_POST['Revista']))
 		{
 			$model->attributes=$_POST['Revista']; 
+			$uploadedFile=CUploadedFile::getInstance($model,'portada');
+			$fileName = "{$uploadedFile}";
+
+			if(!empty($uploadedFile))  // check if uploaded file is set or not
+            {
+                //$uploadedFile->saveAs(Yii::app()->basePath.'/../banner/'.$fileName);  // image will uplode to rootDirectory/banner/
+                $uploadedFile->saveAs("img/".$fileName);
+                $model->portada= $fileName;
+            }
+
 
 		//$path_picture = realpath(Yii::app()->getBasePath()."/../img/")."/";
-		$uploadedFile=CUploadedFile::getInstance($model,'portada');
-		$fileName = "{$uploadedFile}";  //nombre de archivo
-        $model->portada = $fileName;
-
-
-			if($model->save())
+	if($model->save())
 				$this->redirect(array('view','id'=>$model->id_revista));
-			    $uploadedFile->saveAs(Yii::app()->basePath.'/../img/'.$fileName);
+
         }
 
 		$this->render('create',array(
@@ -106,17 +111,12 @@ class RevistaController extends Controller
 
 		if(isset($_POST['Revista']))
 		{
-			$_POST['Revista']['portada'] = $model->portada;
-			$model->attributes=$_POST['Revista'];
 
-			$uploadedFile=CUploadedFile::getInstance($model,'portada');
+			$model->attributes=$_POST['Revista'];
 
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id_revista));
-			if(!empty($uploadedFile))  // checkeamos si el archivo subido esta seteado o no
-                {
-                    $uploadedFile->saveAs(Yii::app()->basePath.'/../img/'.$model->portada);
-                }
+
 		}
 
 		$this->render('update',array(

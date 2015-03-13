@@ -70,7 +70,7 @@ class RevistaController extends Controller
 //echo Yii::app( )->getBasePath( )."/../images/uploads" ;
 //die();
        //$model=new Item;  // this is my model related to table
-        $path_picture = realpath( Yii::app( )->getBasePath( )."/../images/uploads" )."/";//ruta final de la imagen
+        $path_picture = realpath( Yii::app( )->getBasePath( )."/../img/" )."/";//ruta final de la imagen
  
         
 		if(isset($_POST['Revista']))
