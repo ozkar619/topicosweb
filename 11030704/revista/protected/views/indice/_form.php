@@ -19,26 +19,28 @@
 
 	<?php echo $form->errorSummary($model); ?>
 
-	<div class="row">
+	<div class="form-group">
 		<?php echo $form->labelEx($model,'titulo'); ?>
-		<?php echo $form->textField($model,'titulo',array('size'=>60,'maxlength'=>500)); ?>
+		<?php echo $form->textField($model,'titulo',array('size'=>60,'maxlength'=>500,'class'=>'form-control')); ?>
 		<?php echo $form->error($model,'titulo'); ?>
 	</div>
 
-	<div class="row">
+	<div class="form-group">
 		<?php echo $form->labelEx($model,'numero'); ?>
-		<?php echo $form->textField($model,'numero'); ?>
+		<?php echo $form->textField($model,'numero',array('class'=>'form-control')); ?>
 		<?php echo $form->error($model,'numero'); ?>
 	</div>
 
-	<div class="row">
+	<div class="form-group">
 		<?php echo $form->labelEx($model,'id_revista'); ?>
-		<?php echo $form->textField($model,'id_revista'); ?>
+		<?php echo $form->dropDownList($model,'id_revista',
+					  		CHtml::listData($modelRevistas,'id_revista','nombre'),
+					  		array('empty'=>'Selecciona una revista...','class'=>'form-control')); ?>
 		<?php echo $form->error($model,'id_revista'); ?>
 	</div>
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+	<div class="form-group">
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', array('class'=>'btn btn-primary')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

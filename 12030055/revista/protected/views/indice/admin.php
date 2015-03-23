@@ -26,7 +26,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Administrar Indices</h1>
+<h1>Administrar Indices de esta revista: <?php echo $revista->nombre; ?></h1>
 
 <!--<p>
 You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
@@ -48,9 +48,21 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'id_indice',
 		'titulo',
 		'numero',
-		'id_revista',
+		'idRevista.nombre',
 		array(
 			'class'=>'CButtonColumn',
+			'template'=>'{view}{update}',
+			'header'=>'ver Articulos',
+			'buttons'=>array(
+							'view'=>array(
+										  'url'=>'Yii::app()->createUrl("articulo/admin",
+										  	array(
+										  		"id_indice_articulo"=>$data->id_indice,
+										  		"id_nombre"=>$data->id_revista,
+										  		
+										  		))'
+										 )
+			),
 		),
 	),
 )); ?>
