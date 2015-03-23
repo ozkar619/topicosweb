@@ -48,6 +48,19 @@ o <b>=</b>) al principio de cada una de los valores de su búsqueda para especif
 		'id_indice_articulo',
 		'id_indice',
 		'numero',
+	    array(
+			'class'=>'CButtonColumn',
+			'template'=>'{view}',
+			'header'=>'Ver Articulos',
+			'buttons'=>array(
+				'view'=>array(
+					'url'=>'Yii::app()->createUrl("articulo/admin",array(
+						"id_indice_articulo"=>$data->id_indice_articulo 
+						))'
+					)
+				),
+
+			),
 		array(
 			'class'=>'CButtonColumn',
 		),

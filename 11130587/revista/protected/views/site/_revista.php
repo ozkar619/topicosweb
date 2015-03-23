@@ -1,3 +1,4 @@
+<div class="col-xs-6 col-lg-4">
 <div class="media">
   <div class="media-left media-top">
     <a href="#">
@@ -14,5 +15,8 @@
     <p><?php echo "Número: " . $data->numero; ?></p>
     <p><?php echo "Fecha: " . $data->fecha; ?></p>
     <p><?php echo "Clave: " . $data->clave; ?></p>
+    <p><a href="#" class="btn btn-primary" role="button">Detalles</a> 
+      <!-- <a href="#" class="btn btn-default" role="button">Button</a> --></p>
   </div>
 </div>   
+</div>

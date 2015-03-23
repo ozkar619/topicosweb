@@ -63,6 +63,7 @@ class ArticuloAutorController extends Controller
 	public function actionCreate()
 	{
 		$model=new ArticuloAutor;
+		$modelArticulo = Articulo::model()->findAll();
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -131,12 +132,14 @@ class ArticuloAutorController extends Controller
 	/**
 	 * Manages all models.
 	 */
-	public function actionAdmin()
+	public function actionAdmin($id_articulo)
 	{
 		$model=new ArticuloAutor('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['ArticuloAutor']))
 			$model->attributes=$_GET['ArticuloAutor'];
+
+		$model->id_articulo = $id_articulo;
 
 		$this->render('admin',array(
 			'model'=>$model,

@@ -63,6 +63,7 @@ class AutorController extends Controller
 	public function actionCreate()
 	{
 		$model=new Autor;
+		$modelArAu = ArticuloAutor::model()->findAll();
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -131,14 +132,32 @@ class AutorController extends Controller
 	/**
 	 * Manages all models.
 	 */
-	public function actionAdmin()
+	public function actionAdmin($id_autor)
 	{
-		$model=new Autor('search');
-		$model->unsetAttributes();  // clear any default values
+		//vista crear
+		$model=new Autor;
+		$modelArAu = ArticuloAutor::model()->findAll();
+
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+
+		if(isset($_POST['Autor']))
+		{
+			$model->attributes=$_POST['Autor'];
+			if($model->save())
+				$this->redirect(array('view','id'=>$model->id_autor));
+		}
+
+		//vista admin, aquí se hace la consulta
+		$modelGrid=new Autor('search');
+		$modelGrid->unsetAttributes();  // clear any default values
 		if(isset($_GET['Autor']))
-			$model->attributes=$_GET['Autor'];
+			$modelGrid->attributes=$_GET['Autor'];
+
+		$modelGrid->id_autor = $id_autor;
 
 		$this->render('admin',array(
+			'modelGrid'=>$modelGrid,
 			'model'=>$model,
 		));
 	}

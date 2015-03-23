@@ -63,6 +63,7 @@ class IndiceArticuloController extends Controller
 	public function actionCreate()
 	{
 		$model=new IndiceArticulo;
+		$modelIndice = Indice::model()->findAll();
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -131,12 +132,14 @@ class IndiceArticuloController extends Controller
 	/**
 	 * Manages all models.
 	 */
-	public function actionAdmin()
+	public function actionAdmin($id_indice)
 	{
 		$model=new IndiceArticulo('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['IndiceArticulo']))
 			$model->attributes=$_GET['IndiceArticulo'];
+
+		$model->id_indice = $id_indice;
 
 		$this->render('admin',array(
 			'model'=>$model,
