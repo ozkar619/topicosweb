@@ -18,4 +18,4 @@ $this->menu=array(
 
 <h1>Update Indice <?php echo $model->id_indice; ?></h1>
 
-<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+<?php $this->renderPartial('_form', array('model'=>$model, 'modelRevista'=>$modelRevista)); ?>

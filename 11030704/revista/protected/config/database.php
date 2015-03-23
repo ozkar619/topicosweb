@@ -7,8 +7,8 @@ return array(
 	
 	'connectionString' => 'mysql:host=localhost;dbname=revista',
 	'emulatePrepare' => true,
-	'username' => 'root',
-	'password' => '',
+	'username' => 'revista',
+	'password' => 'revista',
 	'charset' => 'utf8',
 	
 );

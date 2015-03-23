@@ -9,11 +9,11 @@ $this->breadcrumbs=array(
 );
 ?>
 
-<h1>Login</h1>
+<h1>Iniciar sesion</h1>
 
-<p>Please fill out the following form with your login credentials:</p>
+<p>Porfavor introduzca su usuario y contraseña</p>
 
-<div class="form">
+<div class="form-group">
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'login-form',
 	'enableClientValidation'=>true,
@@ -22,20 +22,21 @@ $this->breadcrumbs=array(
 	),
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="note">Estos campos <span class="required">*</span>son requeridos.</p>
 
-	<div class="row">
+	<div class="form-group">
 		<?php echo $form->labelEx($model,'username'); ?>
 		<?php echo $form->textField($model,'username'); ?>
 		<?php echo $form->error($model,'username'); ?>
 	</div>
+	
 
-	<div class="row">
+	<div class="form-group">
 		<?php echo $form->labelEx($model,'password'); ?>
 		<?php echo $form->passwordField($model,'password'); ?>
 		<?php echo $form->error($model,'password'); ?>
 		<p class="hint">
-			Hint: You may login with <kbd>demo</kbd>/<kbd>demo</kbd> or <kbd>admin</kbd>/<kbd>admin</kbd>.
+			Buena suerte
 		</p>
 	</div>
 

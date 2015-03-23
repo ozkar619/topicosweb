@@ -37,7 +37,7 @@ class ArticuloAutorController extends Controller
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -131,15 +131,38 @@ class ArticuloAutorController extends Controller
 	/**
 	 * Manages all models.
 	 */
-	public function actionAdmin()
+	public function actionAdmin($id_articulo='null')
 	{
-		$model=new ArticuloAutor('search');
-		$model->unsetAttributes();  // clear any default values
+		$model=new ArticuloAutor;
+
+		
+		$articulo=Articulo::model()->findByPk($id_articulo);
+		$modelautores = Autor::model()->findAll();
+
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+
+		if(isset($_POST['ArticuloAutor']))
+		{
+			$model->attributes=$_POST['ArticuloAutor'];
+			$model->id_articulo=$id_articulo;
+			$model->save();
+			//if($model->save())
+				//$this->redirect(array('view','id'=>$model->id_articulo_autor));
+		}
+
+		$modelGrid=new ArticuloAutor('search');
+		$modelGrid->unsetAttributes();  // clear any default values
 		if(isset($_GET['ArticuloAutor']))
-			$model->attributes=$_GET['ArticuloAutor'];
+			$modelGrid->attributes=$_GET['ArticuloAutor'];
+
+		$modelGrid->id_articulo = $id_articulo;
 
 		$this->render('admin',array(
+			'modelGrid'=>$modelGrid,
 			'model'=>$model,
+			'modelautores'=>$modelautores,
+			'articulo'=>$articulo
 		));
 	}
 

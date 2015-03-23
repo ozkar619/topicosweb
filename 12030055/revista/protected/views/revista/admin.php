@@ -47,7 +47,13 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'columns'=>array(
 		'id_revista',
 		'nombre',
-		'portada',
+		array(
+			'type'=>'raw',
+            'name'=>'portada',
+            'value'=>'html_entity_decode
+  		                   (CHtml::image(Yii::app()->baseUrl."/img/".$data->portada,"portada",
+  		                   	array("width"=>100,"height"=>150)))',
+			),
 		'fecha',
 		'volumen',
 		'titulo',
@@ -61,6 +67,21 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		*/
 		array(
 			'class'=>'CButtonColumn',
+			'template'=>'{view}',
+			'header'=>'ver indices',
+			'buttons'=>array(
+							'view'=>array(
+										  'url'=>'Yii::app()->createUrl("indice/admin",
+										  	array(
+										  		"id_revista"=>$data->id_revista,
+										  		
+										  		))'
+										 )
+			),
+		),
+		array(
+			'class'=>'CButtonColumn',
+			'template'=>'{view}{update}',
 		),
 	),
 )); ?>

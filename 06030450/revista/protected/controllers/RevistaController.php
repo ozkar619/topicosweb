@@ -64,9 +64,6 @@ class RevistaController extends Controller
 	{
 		$model=new Revista;
 		$modelStatus = Status::model()->findAll();
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-
 		if(isset($_POST['Revista']))
 		{
 			$model->attributes=$_POST['Revista'];
@@ -134,14 +131,31 @@ class RevistaController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Revista('search');
-		$model->unsetAttributes();  // clear any default values
+		
+		// vista de crear
+		$model=new Revista;
+		$modelStatus = Status::model()->findAll();
+		if(isset($_POST['Revista']))
+		{
+			$model->attributes=$_POST['Revista'];
+			$model->save();
+				//$this->redirect(array('view','id'=>$model->id_revista));
+		}
+
+		// vista de admin
+		$modelGrid=new Revista('search');
+		$modelGrid->unsetAttributes();  // clear any default values
 		if(isset($_GET['Revista']))
-			$model->attributes=$_GET['Revista'];
+			$modelGrid->attributes=$_GET['Revista'];
+
 
 		$this->render('admin',array(
+			'modelGrid'=>$modelGrid,
 			'model'=>$model,
+			'modelStatus'=>$modelStatus
+
 		));
+
 	}
 
 	/**
