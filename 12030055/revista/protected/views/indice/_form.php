@@ -32,9 +32,13 @@
 	</div>
 
 	<div class="form-group">
-		<?php echo $form->labelEx($model,'id_revista'); ?>
-		<?php echo $form->textField($model,'id_revista',array('class'=>'form-control')); ?>
-		<?php echo $form->error($model,'id_revista'); ?>
+	    <?php echo $form->labelEx($model,'id_revista'); ?>
+		<?php echo $form->dropDownList($model,'id_revista',
+		                               CHtml::listData($modelRevista,'id_revista','nombre'),
+		                               array('empty'=>'Selecciona una revista','class'=>'form-control')); 
+		                                ?>
+   		<?php echo $form->error($model,'id_revista'); ?>
+		
 	</div>
 
 	<div class="form-group buttons">

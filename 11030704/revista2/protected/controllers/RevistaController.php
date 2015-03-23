@@ -37,7 +37,7 @@ class RevistaController extends Controller
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -66,15 +66,35 @@ class RevistaController extends Controller
 		$modelStatus = Status::model()->findAll();
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-
+//**************************************************************************************************************
+//echo Yii::app( )->getBasePath( )."/../images/uploads" ;
+//die();
+       //$model=new Item;  // this is my model related to table
+        $path_picture = realpath( Yii::app( )->getBasePath( )."/../images/uploads" )."/";//ruta final de la imagen
+ 
+        
 		if(isset($_POST['Revista']))
 		{
 			$model->attributes=$_POST['Revista'];
-			$model->portada=CUploadedFile::getInstance($model,'portada');
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id_revista));
-		}
 
+			 $rnd = rand(0,9999);  // generate random number between 0-9999
+            $uploadedFile=CUploadedFile::getInstance($model,'picture');
+            $fileName = "{$uploadedFile}";  // random number + file name or puedes usar: $fileName=$uploadedFile->getName();
+             
+            if(!empty($uploadedFile))  // check if uploaded file is set or not
+            {
+                //$uploadedFile->saveAs(Yii::app()->basePath.'/../banner/'.$fileName);  // image will uplode to rootDirectory/banner/
+                $uploadedFile->saveAs($path_picture.$fileName);
+                $model->portada= $fileName;
+            }
+            if($model->save())
+            {
+                 
+                $this->redirect(array('admin'));
+            }
+		}
 		$this->render('create',array(
 			'model'=>$model,
 			'modelStatus'=>$modelStatus,
@@ -92,6 +112,46 @@ class RevistaController extends Controller
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
+//******************************************************************************************
+	/*	//$model=$this->loadModel($id);
+    $path_picture = realpath( Yii::app( )->getBasePath( )."/../images/uploads" )."/";//ruta final de la imagen 
+    // Uncomment the following line if AJAX validation is needed
+    // $this->performAjaxValidation($model);
+ 
+//    if(isset($_POST['FotosTipo']))
+    //{
+     $model->attributes=$_POST['Tours'];
+ 
+        ////////////////////////////////////////////////////////////////////
+        $rnd = rand(0,9999);  // generate random number between 0-9999
+        $uploadedFile=CUploadedFile::getInstance($model,'picture');
+ 
+        if ($model->fot_tip_image==''||$model->fot_tip_image==null) {//si el campo de la imagen está vacio o es null
+             
+            $fileName = "{$rnd}-{$uploadedFile}";  // random number + file name or puedes usar: $fileName=$uploadedFile->getName();
+        }
+        else{//ya tenemos una imagen registrada
+            $fileName=$model->fot_tip_image;
+        }
+         
+        if(!empty($uploadedFile))  // check if uploaded file is set or not
+        {
+             
+            $uploadedFile->saveAs($path_picture.$fileName);// image will uplode to rootDirectory/banner/
+            $model->fot_tip_image=$fileName;
+ 
+        }
+        ////////////////////////////////////////////////////////////////////
+ 
+        if($model->save())
+            $this->redirect(array('view','id'=>$model->fot_tip_id));
+ 
+   // }
+ 
+   // $this->render('update',array(
+     //   'model'=>$model,
+    //));*/
+//******************************************************************************************
 
 		if(isset($_POST['Revista']))
 		{

@@ -26,6 +26,7 @@
  */
 class Articulo extends CActiveRecord
 {
+	public $archivo_pdf;
 	/**
 	 * @return string the associated database table name
 	 */
@@ -45,7 +46,7 @@ class Articulo extends CActiveRecord
 			array('nombre, fecha_creacion, id_status', 'required'),
 			array('id_status, id_indice_articulo', 'numerical', 'integerOnly'=>true),
 			array('nombre', 'length', 'max'=>500),
-			array('archivo_pdf', 'length', 'max'=>100),
+			array('archivo_pdf', 'file', 'types'=>'pdf'),
 			array('resumen, abstrac, introduccion, metodologia, contenido, conclusiones, agradecimientos, referencias', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
@@ -64,6 +65,8 @@ class Articulo extends CActiveRecord
 			'idIndiceArticulo' => array(self::BELONGS_TO, 'IndiceArticulo', 'id_indice_articulo'),
 			'idStatus' => array(self::BELONGS_TO, 'Status', 'id_status'),
 			'articuloAutors' => array(self::HAS_MANY, 'ArticuloAutor', 'id_articulo'),
+
+			
 		);
 	}
 
