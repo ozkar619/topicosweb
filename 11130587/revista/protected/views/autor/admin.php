@@ -27,19 +27,7 @@ $('.search-form form').submit(function(){
 ?>
 
 <h1>Administrar Autores</h1>
-
-<p>
-Usted opcionalmente puede escribir un operador de comparación (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-o <b>=</b>) al principio de cada una de los valores de su búsqueda para especificar como debe hacerse la comparación.
-</p>
-
-<?php echo CHtml::link('Búsqueda Avanzada','#',array('class'=>'search-button')); ?>
-<div class="search-form" style="display:none">
-<?php $this->renderPartial('_search',array(
-	'model'=>$model,
-)); ?>
-</div><!-- search-form -->
-
+<div class="col-md-6">
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'autor-grid',
 	'dataProvider'=>$model->search(),
@@ -54,3 +42,18 @@ o <b>=</b>) al principio de cada una de los valores de su búsqueda para especif
 		),
 	),
 )); ?>
+	</div>
+</div>
+
+<div class="col-md-5">
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Nuevo Autor</h3>
+  </div>
+  <div class="panel-body">
+    <?php $this->renderPartial('_form', array('model'=>$model)); ?>
+  </div>
+</div>
+
+</div>
+

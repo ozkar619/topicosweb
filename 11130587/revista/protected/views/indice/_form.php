@@ -33,7 +33,11 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'id_revista'); ?>
-		<?php echo $form->textField($model,'id_revista',array('size'=>60,'maxlength'=>100,'class'=>'form-control')); ?>
+				<?php //echo $form->textField($model,'id_status',array('rows'=>6, 'cols'=>50,'class'=>'form-control')); 
+		echo $form->dropDownList($model,'id_revista',
+			CHtml::listData($modelRevistas,'id_revista','nombre'),
+			array('empty'=>'Selecciona una revista...','class'=>'form-control'));
+		?>
 		<?php echo $form->error($model,'id_revista'); ?>
 	</div>
 

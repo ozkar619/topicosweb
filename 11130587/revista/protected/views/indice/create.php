@@ -15,4 +15,5 @@ $this->menu=array(
 
 <h1>Crear Indice</h1>
 
-<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+<?php $this->renderPartial('_form', array('model'=>$model,
+	'modelRevistas'=>$modelRevistas)); ?>

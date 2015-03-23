@@ -15,4 +15,6 @@ $this->menu=array(
 
 <h1>Crear ArticuloAutor</h1>
 
-<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+<?php $this->renderPartial('_form', array('model'=>$model,
+	'modelArticulo' =>$modelArticulo
+	)); ?>

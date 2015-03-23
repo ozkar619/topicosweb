@@ -64,15 +64,28 @@ class ArticuloController extends Controller
 	{
 		$model=new Articulo;
 		$modelStatus = Status::model()->findAll();
+		$modelInAr = IndiceArticulo::model()->findAll();
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
+
+		$path_picture = realpath( Yii::app( )->getBasePath( )."/../pdf/" )."/";
 
 		if(isset($_POST['Articulo']))
 		{
 
 			$model->attributes=$_POST['Articulo'];
 			$model->fecha_creacion = date('Y-m-d'); 
+			$uploadedFile=CUploadedFile::getInstance($model,'archivo_pdf');
+			$fileName = "{$uploadedFile}";
+
+			if(!empty($uploadedFile))  // check if uploaded file is set or not
+            {
+                //$uploadedFile->saveAs(Yii::app()->basePath.'/../banner/'.$fileName);  // image will uplode to rootDirectory/banner/
+                $uploadedFile->saveAs("pdf/".$fileName);
+                $model->archivo_pdf= $fileName;
+            }
+
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id_articulo));
 		}
@@ -137,13 +150,45 @@ class ArticuloController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Articulo('search');
-		$model->unsetAttributes();  // clear any default values
+	//vista de crear
+	$model=new Articulo;
+		$modelStatus = Status::model()->findAll();
+		$modelInAr = IndiceArticulo::model()->findAll();
+
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+
+		$path_picture = realpath( Yii::app( )->getBasePath( )."/../pdf/" )."/";
+
+		if(isset($_POST['Articulo']))
+		{
+
+			$model->attributes=$_POST['Articulo'];
+			$model->fecha_creacion = date('Y-m-d'); 
+			$uploadedFile=CUploadedFile::getInstance($model,'archivo_pdf');
+			$fileName = "{$uploadedFile}";
+
+			if(!empty($uploadedFile))  // check if uploaded file is set or not
+            {
+                //$uploadedFile->saveAs(Yii::app()->basePath.'/../banner/'.$fileName);  // image will uplode to rootDirectory/banner/
+                $uploadedFile->saveAs("pdf/".$fileName);
+                $model->archivo_pdf= $fileName;
+            }
+
+			if($model->save())
+				$this->redirect(array('view','id'=>$model->id_articulo));
+		}
+
+		//vista de admin, esto hace la consulta		
+		$modelGrid=new Articulo('search');
+		$modelGrid->unsetAttributes();  // clear any default values
 		if(isset($_GET['Articulo']))
-			$model->attributes=$_GET['Articulo'];
+			$modelGrid->attributes=$_GET['Articulo'];
 
 		$this->render('admin',array(
+			'modelGrid'=>$modelGrid,
 			'model'=>$model,
+			'modelStatus'=>$modelStatus
 		));
 	}
 

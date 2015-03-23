@@ -50,6 +50,19 @@ o <b>=</b>) al principio de cada una de los valores de su búsqueda para especif
 		'id_autor',
 		array(
 			'class'=>'CButtonColumn',
+			'template'=>'{view}',
+			'header'=>'Ver Autor',
+			'buttons'=>array(
+				'view'=>array(
+					'url'=>'Yii::app()->createUrl("autor/admin",array(
+						"id_autor"=>$data->id_autor
+						))'
+					)
+				),
+
+			),
+		array(
+			'class'=>'CButtonColumn',
 		),
 	),
 )); ?>
