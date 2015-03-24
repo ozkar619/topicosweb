@@ -154,13 +154,45 @@ class RevistaController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Revista('search');
-		$model->unsetAttributes();  // clear any default values
+		//vista de crear
+		$model=new Revista;
+		$modelStatus = Status::model()->findAll();
+
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+
+		$path_picture = realpath( Yii::app( )->getBasePath( )."/../img/" )."/";
+
+		if(isset($_POST['Revista']))
+		{
+			$model->attributes=$_POST['Revista']; 
+			$uploadedFile=CUploadedFile::getInstance($model,'portada');
+			$fileName = "{$uploadedFile}";
+
+			if(!empty($uploadedFile))  // check if uploaded file is set or not
+            {
+                //$uploadedFile->saveAs(Yii::app()->basePath.'/../banner/'.$fileName);  // image will uplode to rootDirectory/banner/
+                $uploadedFile->saveAs("img/".$fileName);
+                $model->portada= $fileName;
+            }
+
+
+		//$path_picture = realpath(Yii::app()->getBasePath()."/../img/")."/";
+	$model->save();
+				//$this->redirect(array('view','id'=>$model->id_revista));
+
+        }
+
+        //vista de admin, esto hace la consulta
+		$modelGrid=new Revista('search');
+		$modelGrid->unsetAttributes();  // clear any default values
 		if(isset($_GET['Revista']))
-			$model->attributes=$_GET['Revista'];
+			$modelGrid->attributes=$_GET['Revista'];
 
 		$this->render('admin',array(
+			'modelGrid'=>$modelGrid,
 			'model'=>$model,
+			'modelStatus'=>$modelStatus
 		));
 	}
 

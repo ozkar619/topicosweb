@@ -709,3 +709,256 @@ Stack trace:
 REQUEST_URI=/topicosweb/11030802/revista/index.php?r=site/login
 HTTP_REFERER=http://localhost:8080/topicosweb/11030802/revista/index.php?r=site/login
 ---
+2015/03/07 01:03:41 [error] [php] Undefined variable: modelRevistas (C:\xampp\htdocs\topicosweb\11030802\revista\protected\views\indice\_form.php:37)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): IndiceController->renderFile()
+#1 C:\xampp\htdocs\topicosweb\11030802\revista\protected\views\indice\create.php(18): IndiceController->renderPartial()
+#2 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(95): IndiceController->renderInternal()
+#4 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): IndiceController->renderFile()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(782): IndiceController->renderPartial()
+#6 C:\xampp\htdocs\topicosweb\11030802\revista\protected\controllers\IndiceController.php(80): IndiceController->render()
+#7 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): IndiceController->actionCreate()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): IndiceController->runAction()
+#10 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): IndiceController->filterAccessControl()
+#13 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): IndiceController->runActionWithFilters()
+#16 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): IndiceController->run()
+#17 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\topicosweb\11030802\revista\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11030802/revista/index.php?r=indice/create
+in C:\xampp\htdocs\topicosweb\11030802\revista\protected\views\indice\_form.php (37)
+in C:\xampp\htdocs\topicosweb\11030802\revista\protected\views\indice\create.php (18)
+in C:\xampp\htdocs\topicosweb\11030802\revista\protected\controllers\IndiceController.php (80)
+2015/03/07 01:04:28 [error] [php] Undefined variable: modelRevistas (C:\xampp\htdocs\topicosweb\11030802\revista\protected\views\indice\_form.php:37)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): IndiceController->renderFile()
+#1 C:\xampp\htdocs\topicosweb\11030802\revista\protected\views\indice\create.php(18): IndiceController->renderPartial()
+#2 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(95): IndiceController->renderInternal()
+#4 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): IndiceController->renderFile()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(782): IndiceController->renderPartial()
+#6 C:\xampp\htdocs\topicosweb\11030802\revista\protected\controllers\IndiceController.php(80): IndiceController->render()
+#7 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): IndiceController->actionCreate()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): IndiceController->runAction()
+#10 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): IndiceController->filterAccessControl()
+#13 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): IndiceController->runActionWithFilters()
+#16 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): IndiceController->run()
+#17 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\topicosweb\11030802\revista\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11030802/revista/index.php?r=indice/create
+in C:\xampp\htdocs\topicosweb\11030802\revista\protected\views\indice\_form.php (37)
+in C:\xampp\htdocs\topicosweb\11030802\revista\protected\views\indice\create.php (18)
+in C:\xampp\htdocs\topicosweb\11030802\revista\protected\controllers\IndiceController.php (80)
+2015/03/07 01:18:10 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\topicosweb\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('indice/admin')
+#9 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\topicosweb\11030802\revista\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/topicosweb/11030802/revista/index.php?r=indice/admin
+---
+2015/03/07 01:26:44 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('admin')
+#9 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('indice/admin')
+#10 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\topicosweb\11030802\revista\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/topicosweb/11030802/revista/index.php?r=indice/admin
+---
+2015/03/07 01:26:51 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('admin')
+#9 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('indice/admin')
+#10 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\topicosweb\11030802\revista\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/topicosweb/11030802/revista/index.php?r=indice/admin
+---
+2015/03/07 01:26:53 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('admin')
+#9 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('indice/admin')
+#10 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\topicosweb\11030802\revista\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/topicosweb/11030802/revista/index.php?r=indice/admin
+---
+2015/03/07 01:27:02 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('admin')
+#9 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('indice/admin')
+#10 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\topicosweb\11030802\revista\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/topicosweb/11030802/revista/index.php?r=indice/admin
+---
+2015/03/07 01:27:08 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('admin')
+#9 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('indice/admin')
+#10 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\topicosweb\11030802\revista\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/topicosweb/11030802/revista/index.php?r=indice/admin
+---
+2015/03/07 01:31:34 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:336
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('admin')
+#9 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('indice/admin')
+#10 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\topicosweb\11030802\revista\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/topicosweb/11030802/revista/index.php?r=indice/admin
+---
+2015/03/12 00:29:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('create')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('create')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('articulo/create')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\11030802\revista\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/11030802/revista/?r=articulo/create
+HTTP_REFERER=http://localhost:8080/topicosweb/11030802/revista/
+---
+2015/03/12 00:29:29 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\topicosweb\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('articulo/admin')
+#9 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\topicosweb\11030802\revista\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/topicosweb/11030802/revista/index.php?r=articulo/admin
+HTTP_REFERER=http://localhost:8080/topicosweb/11030802/revista/?r=articulo/agregar
+---
+2015/03/16 22:12:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('create')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('create')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('articulo/create')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\11030802\revista\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/11030802/revista/index.php?r=articulo/create
+HTTP_REFERER=http://localhost:8080/topicosweb/11030802/revista/index.php
+---
+2015/03/16 22:12:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('create')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('create')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('articulo/create')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\11030802\revista\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/11030802/revista/index.php?r=articulo/create
+HTTP_REFERER=http://localhost:8080/topicosweb/11030802/revista/index.php
+---
+2015/03/17 03:10:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('create')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('create')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('articulo/create')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\11030802\revista\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/11030802/revista/?r=articulo/create
+HTTP_REFERER=http://localhost:8080/topicosweb/11030802/revista/?r=site/index
+---
+2015/03/17 03:35:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('create')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('create')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('articulo/create')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\11030802\revista\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/11030802/revista/index.php?r=articulo/create
+HTTP_REFERER=http://localhost:8080/topicosweb/11030802/revista/index.php?r=/site/index
+---
+2015/03/17 03:35:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('create')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('create')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('articulo/create')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\11030802\revista\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/11030802/revista/index.php?r=articulo/create
+HTTP_REFERER=http://localhost:8080/topicosweb/11030802/revista/index.php?r=/site/index
+---

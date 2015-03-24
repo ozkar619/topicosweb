@@ -51,6 +51,19 @@ o <b>=</b>) al principio de cada una de los valores de su búsqueda para especif
 		'id_revista',
 		array(
 			'class'=>'CButtonColumn',
+			'template'=>'{view}',
+			'header'=>'Ver Indices Articulos',
+			'buttons'=>array(
+				'view'=>array(
+					'url'=>'Yii::app()->createUrl("indiceArticulo/admin",array(
+						"id_indice"=>$data->id_indice 
+						))'
+					)
+				),
+
+			),
+		array(
+			'class'=>'CButtonColumn',
 		),
 	),
 )); ?>

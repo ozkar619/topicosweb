@@ -1,0 +1,1102 @@
+2015/03/17 00:18:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii/default/login".' in C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/default/log...')
+#1 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=gii/default/login
+---
+2015/03/17 03:00:08 [error] [php] include(Articulo.php): failed to open stream: No such file or directory (C:\xampp\htdocs\topicosweb\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\db\ar\CActiveRecord.php(395): spl_autoload_call()
+#1 C:\xampp\htdocs\topicosweb\framework\web\CActiveDataProvider.php(165): model()
+#2 C:\xampp\htdocs\topicosweb\framework\web\CActiveDataProvider.php(87): CActiveDataProvider->getModel()
+#3 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\SiteController.php(33): CActiveDataProvider->__construct()
+#4 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(286): SiteController->runAction()
+#7 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): SiteController->run()
+#9 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\SiteController.php (33)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php (13)
+2015/03/17 03:01:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('evento/admin')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=evento/admin
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/index.php?r=participante/create
+---
+2015/03/17 03:01:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "participanteEvento/admin".' in C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('participanteEve...')
+#1 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=participanteEvento/admin
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/index.php?r=tipoParticipante/admin
+---
+2015/03/17 03:01:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('evento/admin')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=evento/admin
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/index.php?r=participante/create
+---
+2015/03/17 03:01:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('evento/admin')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=evento/admin
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/index.php?r=participante/create
+---
+2015/03/17 03:03:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('evento/admin')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=evento/admin
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/index.php?r=evento/admin
+---
+2015/03/17 03:03:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "participanteEvento/admin".' in C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('participanteEve...')
+#1 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=participanteEvento/admin
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/index.php?r=tipoParticipante/admin
+---
+2015/03/17 03:04:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "participantseEvento/admin".' in C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('participantseEv...')
+#1 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=participantseEvento/admin
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/index.php?r=participante/create
+---
+2015/03/17 03:04:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('evento/admin')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=evento/admin
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/index.php?r=participantesEvento/admin
+---
+2015/03/17 03:05:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('create')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('create')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('evento/create')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=evento/create
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/index.php?r=participante/create
+---
+2015/03/17 03:05:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('evento/admin')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=evento/admin
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/index.php?r=participante/create
+---
+2015/03/17 03:05:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('evento/admin')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=evento/admin
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/index.php?r=participante/create
+---
+2015/03/17 03:05:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('evento/admin')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=evento/admin
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/index.php?r=participantesEvento/admin
+---
+2015/03/17 03:06:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('evento/admin')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=evento/admin
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/index.php?r=participantesEvento/admin
+---
+2015/03/17 03:06:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('create')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('create')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('evento/create')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=evento/create
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/index.php?r=participante/create
+---
+2015/03/17 03:06:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('create')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('create')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('evento/create')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=evento/create
+---
+2015/03/17 03:18:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('evento/admin')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/?r=evento/admin
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/?r=participante/create
+---
+2015/03/17 03:18:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('evento/admin')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/?r=evento/admin
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/?r=participantesEvento/admin
+---
+2015/03/17 03:18:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('evento/admin')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/?r=evento/admin
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/?r=participante/create
+---
+2015/03/17 03:19:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin2".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('admin2')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('admin2')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('evento/admin2')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/?r=evento/admin2
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/?r=participante/create
+---
+2015/03/17 03:19:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('evento/admin')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/?r=evento/admin
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/?r=participante/create
+---
+2015/03/17 03:22:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('evento/admin')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=evento/admin
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/index.php?r=participante/create
+---
+2015/03/17 03:22:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('evento/admin')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=evento/admin
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/index.php?r=participante/create
+---
+2015/03/17 03:26:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('evento/admin')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=evento/admin
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/index.php?r=participante/create
+---
+2015/03/17 03:50:46 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\topicosweb\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('participante/cr...')
+#9 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=participante/create
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/index.php?r=site/login
+---
+2015/03/17 03:51:29 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\topicosweb\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('participante/cr...')
+#9 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=participante/create
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/index.php?r=participante/create
+---
+2015/03/17 03:51:41 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\topicosweb\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('participante/cr...')
+#9 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=participante/create
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/index.php?r=site/login
+---
+2015/03/17 03:54:02 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\topicosweb\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('participante/cr...')
+#9 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=participante/create
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/index.php?r=participante/create
+---
+2015/03/17 03:54:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\topicosweb\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('participante/cr...')
+#9 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=participante/create
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/index.php?r=participantesEvento/admin
+---
+2015/03/17 03:54:09 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\topicosweb\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('participante/cr...')
+#9 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=participante/create
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/index.php?r=site/index
+---
+2015/03/17 03:54:21 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\topicosweb\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('participante/cr...')
+#9 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=participante/create
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/index.php?r=participante/create
+---
+2015/03/17 03:54:24 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\topicosweb\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('participante/cr...')
+#9 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=participante/create
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/index.php?r=participantesEvento/admin
+---
+2015/03/17 03:54:37 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\topicosweb\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('participante/cr...')
+#9 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=participante/create
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/index.php?r=site/login
+---
+2015/03/17 04:01:04 [error] [exception.CException] exception 'CException' with message 'Property "Participante.resumen" is not defined.' in C:\xampp\htdocs\topicosweb\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\db\ar\CActiveRecord.php(145): CComponent->__get('resumen')
+#1 C:\xampp\htdocs\topicosweb\framework\web\helpers\CHtml.php(2728): CActiveRecord->__get('resumen')
+#2 C:\xampp\htdocs\topicosweb\framework\web\helpers\CHtml.php(1833): CHtml::resolveValue(Object(Participante), 'resumen')
+#3 C:\xampp\htdocs\topicosweb\framework\web\widgets\CActiveForm.php(853): CHtml::activeTextArea(Object(Participante), 'resumen', Array)
+#4 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\participante\_form.php(30): CActiveForm->textArea(Object(Participante), 'resumen', Array)
+#5 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\participante\create.php(20): CController->renderPartial('_form', Array)
+#9 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#11 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\topicosweb\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#13 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php(57): CController->render('create', Array)
+#14 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): ParticipanteController->actionCreate()
+#15 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#22 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('create')
+#24 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('participante/cr...')
+#25 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#26 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=participante/create
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/index.php?r=site/login
+---
+2015/03/17 04:04:45 [error] [php] Undefined variable: modelStatus (C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\participante\_form.php:28)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): ParticipanteController->renderFile()
+#1 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\participante\create.php(20): ParticipanteController->renderPartial()
+#2 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(95): ParticipanteController->renderInternal()
+#4 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): ParticipanteController->renderFile()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(782): ParticipanteController->renderPartial()
+#6 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php(57): ParticipanteController->render()
+#7 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): ParticipanteController->actionCreate()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): ParticipanteController->runAction()
+#10 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): ParticipanteController->filterAccessControl()
+#13 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): ParticipanteController->runActionWithFilters()
+#16 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): ParticipanteController->run()
+#17 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=participante/create
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\participante\_form.php (28)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\participante\create.php (20)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php (57)
+2015/03/17 04:06:32 [error] [php] include(Tipo.php): failed to open stream: No such file or directory (C:\xampp\htdocs\topicosweb\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php(42): spl_autoload_call()
+#1 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): ParticipanteController->actionCreate()
+#2 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): ParticipanteController->runAction()
+#4 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): ParticipanteController->filterAccessControl()
+#7 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): ParticipanteController->runActionWithFilters()
+#10 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): ParticipanteController->run()
+#11 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=participante/create
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php (42)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php (13)
+2015/03/17 04:07:51 [error] [php] include(Tipo.php): failed to open stream: No such file or directory (C:\xampp\htdocs\topicosweb\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php(42): spl_autoload_call()
+#1 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): ParticipanteController->actionCreate()
+#2 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): ParticipanteController->runAction()
+#4 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): ParticipanteController->filterAccessControl()
+#7 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): ParticipanteController->runActionWithFilters()
+#10 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): ParticipanteController->run()
+#11 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=participante/create
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php (42)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php (13)
+2015/03/17 04:07:53 [error] [php] include(Tipo.php): failed to open stream: No such file or directory (C:\xampp\htdocs\topicosweb\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php(42): spl_autoload_call()
+#1 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): ParticipanteController->actionCreate()
+#2 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): ParticipanteController->runAction()
+#4 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): ParticipanteController->filterAccessControl()
+#7 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): ParticipanteController->runActionWithFilters()
+#10 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): ParticipanteController->run()
+#11 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=participante/create
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php (42)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php (13)
+2015/03/17 04:07:55 [error] [php] include(Tipo.php): failed to open stream: No such file or directory (C:\xampp\htdocs\topicosweb\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php(42): spl_autoload_call()
+#1 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): ParticipanteController->actionCreate()
+#2 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): ParticipanteController->runAction()
+#4 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): ParticipanteController->filterAccessControl()
+#7 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): ParticipanteController->runActionWithFilters()
+#10 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): ParticipanteController->run()
+#11 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=participante/create
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php (42)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php (13)
+2015/03/17 04:09:45 [error] [php] include(Tipo.php): failed to open stream: No such file or directory (C:\xampp\htdocs\topicosweb\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php(43): spl_autoload_call()
+#1 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): ParticipanteController->actionCreate()
+#2 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): ParticipanteController->runAction()
+#4 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): ParticipanteController->filterAccessControl()
+#7 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): ParticipanteController->runActionWithFilters()
+#10 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): ParticipanteController->run()
+#11 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=participante/create
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php (43)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php (13)
+2015/03/17 04:11:35 [error] [php] Undefined variable: modelStatus (C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\participante\_form.php:28)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): ParticipanteController->renderFile()
+#1 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\participante\create.php(21): ParticipanteController->renderPartial()
+#2 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(95): ParticipanteController->renderInternal()
+#4 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): ParticipanteController->renderFile()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(782): ParticipanteController->renderPartial()
+#6 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php(60): ParticipanteController->render()
+#7 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): ParticipanteController->actionCreate()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): ParticipanteController->runAction()
+#10 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): ParticipanteController->filterAccessControl()
+#13 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): ParticipanteController->runActionWithFilters()
+#16 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): ParticipanteController->run()
+#17 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=participante/create
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\participante\_form.php (28)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\participante\create.php (21)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php (60)
+2015/03/17 04:17:05 [error] [php] Undefined variable: modelTipo (C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php:37)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): ParticipanteController->runAction()
+#1 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): ParticipanteController->filterAccessControl()
+#4 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): ParticipanteController->runActionWithFilters()
+#7 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): ParticipanteController->run()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=participante/admin
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php (37)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php (13)
+2015/03/17 04:17:15 [error] [php] Undefined variable: modelTipo (C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php:37)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): ParticipanteController->runAction()
+#1 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): ParticipanteController->filterAccessControl()
+#4 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): ParticipanteController->runActionWithFilters()
+#7 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): ParticipanteController->run()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=participante/admin
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php (37)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php (13)
+2015/03/17 21:55:04 [error] [php] Undefined variable: modelTipo (C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php:37)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): ParticipanteController->runAction()
+#1 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): ParticipanteController->filterAccessControl()
+#4 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): ParticipanteController->runActionWithFilters()
+#7 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): ParticipanteController->run()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=participante/admin
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php (37)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php (13)
+2015/03/17 21:57:23 [error] [php] Undefined variable: modelTipo (C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php:37)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): ParticipanteController->runAction()
+#1 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): ParticipanteController->filterAccessControl()
+#4 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): ParticipanteController->runActionWithFilters()
+#7 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): ParticipanteController->run()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=participante/admin
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php (37)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php (13)
+2015/03/17 21:57:57 [error] [php] Undefined variable: modelTipo (C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php:37)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): ParticipanteController->runAction()
+#1 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): ParticipanteController->filterAccessControl()
+#4 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): ParticipanteController->runActionWithFilters()
+#7 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): ParticipanteController->run()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=participante/admin
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php (37)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php (13)
+2015/03/17 21:58:28 [error] [php] Undefined variable: modelTipo (C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php:37)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): ParticipanteController->runAction()
+#1 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): ParticipanteController->filterAccessControl()
+#4 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): ParticipanteController->runActionWithFilters()
+#7 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): ParticipanteController->run()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=participante/admin
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php (37)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php (13)
+2015/03/17 22:26:26 [error] [php] Undefined variable: modelTipo (C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\participante\_form.php:26)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): ParticipanteController->renderFile()
+#1 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\participante\create.php(18): ParticipanteController->renderPartial()
+#2 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(95): ParticipanteController->renderInternal()
+#4 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): ParticipanteController->renderFile()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(782): ParticipanteController->renderPartial()
+#6 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php(79): ParticipanteController->render()
+#7 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): ParticipanteController->actionCreate()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): ParticipanteController->runAction()
+#10 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): ParticipanteController->filterAccessControl()
+#13 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): ParticipanteController->runActionWithFilters()
+#16 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): ParticipanteController->run()
+#17 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=participante/create
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\participante\_form.php (26)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\participante\create.php (18)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php (79)
+2015/03/17 22:28:43 [error] [php] Undefined variable: modelTipo (C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\participante\_form.php:26)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): ParticipanteController->renderFile()
+#1 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\participante\create.php(18): ParticipanteController->renderPartial()
+#2 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(95): ParticipanteController->renderInternal()
+#4 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): ParticipanteController->renderFile()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(782): ParticipanteController->renderPartial()
+#6 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php(81): ParticipanteController->render()
+#7 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): ParticipanteController->actionCreate()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): ParticipanteController->runAction()
+#10 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): ParticipanteController->filterAccessControl()
+#13 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): ParticipanteController->runActionWithFilters()
+#16 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): ParticipanteController->run()
+#17 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=participante/create
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\participante\_form.php (26)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\participante\create.php (18)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php (81)
+2015/03/17 22:28:45 [error] [php] Undefined variable: modelTipo (C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\participante\_form.php:26)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): ParticipanteController->renderFile()
+#1 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\participante\create.php(18): ParticipanteController->renderPartial()
+#2 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(95): ParticipanteController->renderInternal()
+#4 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): ParticipanteController->renderFile()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(782): ParticipanteController->renderPartial()
+#6 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php(81): ParticipanteController->render()
+#7 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): ParticipanteController->actionCreate()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): ParticipanteController->runAction()
+#10 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): ParticipanteController->filterAccessControl()
+#13 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): ParticipanteController->runActionWithFilters()
+#16 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): ParticipanteController->run()
+#17 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=participante/create
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\participante\_form.php (26)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\participante\create.php (18)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php (81)
+2015/03/17 22:28:46 [error] [php] Undefined variable: modelTipo (C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\participante\_form.php:26)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): ParticipanteController->renderFile()
+#1 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\participante\create.php(18): ParticipanteController->renderPartial()
+#2 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(95): ParticipanteController->renderInternal()
+#4 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): ParticipanteController->renderFile()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(782): ParticipanteController->renderPartial()
+#6 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php(81): ParticipanteController->render()
+#7 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): ParticipanteController->actionCreate()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): ParticipanteController->runAction()
+#10 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): ParticipanteController->filterAccessControl()
+#13 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): ParticipanteController->runActionWithFilters()
+#16 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): ParticipanteController->run()
+#17 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=participante/create
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\participante\_form.php (26)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\participante\create.php (18)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php (81)
+2015/03/17 22:28:48 [error] [php] Undefined variable: modelTipo (C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\participante\_form.php:26)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): ParticipanteController->renderFile()
+#1 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\participante\create.php(18): ParticipanteController->renderPartial()
+#2 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(95): ParticipanteController->renderInternal()
+#4 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): ParticipanteController->renderFile()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(782): ParticipanteController->renderPartial()
+#6 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php(81): ParticipanteController->render()
+#7 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): ParticipanteController->actionCreate()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): ParticipanteController->runAction()
+#10 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): ParticipanteController->filterAccessControl()
+#13 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): ParticipanteController->runActionWithFilters()
+#16 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): ParticipanteController->run()
+#17 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=participante/create
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\participante\_form.php (26)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\participante\create.php (18)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php (81)
+2015/03/17 23:29:29 [error] [php] Undefined variable: dataProviderEvento (C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\site\index.php:43)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\topicosweb\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\SiteController.php(33): SiteController->render()
+#3 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=site/index
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\site\index.php (43)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\SiteController.php (33)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php (13)
+2015/03/17 23:31:09 [error] [php] Undefined variable: dataProvider (C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\site\index.php:43)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\topicosweb\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\SiteController.php(33): SiteController->render()
+#3 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=site/index
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\site\index.php (43)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\SiteController.php (33)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php (13)
+2015/03/17 23:36:25 [error] [php] Undefined variable: dataProvider (C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\site\index.php:43)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\topicosweb\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\SiteController.php(33): SiteController->render()
+#3 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=site/index
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\site\index.php (43)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\SiteController.php (33)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php (13)
+2015/03/17 23:36:28 [error] [php] Undefined variable: dataProvider (C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\site\index.php:43)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\topicosweb\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\SiteController.php(33): SiteController->render()
+#3 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=site/index
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\site\index.php (43)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\SiteController.php (33)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php (13)
+2015/03/17 23:36:31 [error] [php] Undefined variable: dataProvider (C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\site\index.php:43)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\topicosweb\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\SiteController.php(33): SiteController->render()
+#3 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=site/index
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\site\index.php (43)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\SiteController.php (33)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php (13)
+2015/03/17 23:41:01 [error] [php] Undefined variable: dataProvider (C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\site\index.php:43)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\xampp\htdocs\topicosweb\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\SiteController.php(33): SiteController->render()
+#3 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=site/index
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\site\index.php (43)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\SiteController.php (33)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php (13)
+2015/03/18 03:39:09 [error] [php] include(Users.php): failed to open stream: No such file or directory (C:\xampp\htdocs\topicosweb\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\components\UserIdentity.php(23): spl_autoload_call()
+#1 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#2 C:\xampp\htdocs\topicosweb\framework\validators\CInlineValidator.php(42): LoginForm->authenticate()
+#3 C:\xampp\htdocs\topicosweb\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute()
+#4 C:\xampp\htdocs\topicosweb\framework\base\CModel.php(159): CInlineValidator->validate()
+#5 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\SiteController.php(96): LoginForm->validate()
+#6 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#7 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CController.php(286): SiteController->runAction()
+#9 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): SiteController->run()
+#11 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=site/login
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\components\UserIdentity.php (23)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\models\LoginForm.php (52)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\SiteController.php (96)
+2015/03/18 03:39:43 [error] [exception.CException] exception 'CException' with message 'Property "UserIdentity.nombre" is not defined.' in C:\xampp\htdocs\topicosweb\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\components\UserIdentity.php(23): CComponent->__get('nombre')
+#1 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#2 C:\xampp\htdocs\topicosweb\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#3 C:\xampp\htdocs\topicosweb\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 C:\xampp\htdocs\topicosweb\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#5 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\SiteController.php(96): CModel->validate()
+#6 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#7 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\topicosweb\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('login')
+#11 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#12 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=site/login
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/index.php?r=site/login
+---
+2015/03/18 03:40:11 [error] [exception.CException] exception 'CException' with message 'Property "UserIdentity.nombre" is not defined.' in C:\xampp\htdocs\topicosweb\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\components\UserIdentity.php(23): CComponent->__get('nombre')
+#1 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#2 C:\xampp\htdocs\topicosweb\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#3 C:\xampp\htdocs\topicosweb\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 C:\xampp\htdocs\topicosweb\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#5 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\SiteController.php(96): CModel->validate()
+#6 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#7 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\topicosweb\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('login')
+#11 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#12 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=site/login
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/index.php?r=site/login
+---
+2015/03/18 03:40:35 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'where clause'. The SQL statement executed was: SELECT * FROM `usuarios` `t` WHERE LOWER(username)=? LIMIT 1.
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\components\UserIdentity.php (23)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\models\LoginForm.php (52)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\SiteController.php (96)
+2015/03/18 03:40:35 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'where clause'. The SQL statement executed was: SELECT * FROM `usuarios` `t` WHERE LOWER(username)=? LIMIT 1' in C:\xampp\htdocs\topicosweb\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\xampp\htdocs\topicosweb\framework\db\ar\CActiveRecord.php(1356): CDbCommand->queryRow()
+#2 C:\xampp\htdocs\topicosweb\framework\db\ar\CActiveRecord.php(1461): CActiveRecord->query(Object(CDbCriteria))
+#3 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\components\UserIdentity.php(23): CActiveRecord->find('LOWER(username)...', Array)
+#4 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#5 C:\xampp\htdocs\topicosweb\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#6 C:\xampp\htdocs\topicosweb\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#7 C:\xampp\htdocs\topicosweb\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#8 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\SiteController.php(96): CModel->validate()
+#9 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#10 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\topicosweb\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('login')
+#14 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#15 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=site/login
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/index.php?r=site/login
+---
+2015/03/18 03:41:18 [error] [exception.CException] exception 'CException' with message 'Property "UserIdentity.nombre" is not defined.' in C:\xampp\htdocs\topicosweb\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\components\UserIdentity.php(23): CComponent->__get('nombre')
+#1 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#2 C:\xampp\htdocs\topicosweb\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#3 C:\xampp\htdocs\topicosweb\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 C:\xampp\htdocs\topicosweb\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#5 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\SiteController.php(96): CModel->validate()
+#6 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#7 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\topicosweb\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('login')
+#11 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#12 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=site/login
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/index.php?r=site/login
+---
+2015/03/18 03:44:08 [error] [exception.CException] exception 'CException' with message 'Property "Usuarios.id" is not defined.' in C:\xampp\htdocs\topicosweb\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\db\ar\CActiveRecord.php(145): CComponent->__get('id')
+#1 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\components\UserIdentity.php(32): CActiveRecord->__get('id')
+#2 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\topicosweb\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 C:\xampp\htdocs\topicosweb\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\xampp\htdocs\topicosweb\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\SiteController.php(96): CModel->validate()
+#7 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\topicosweb\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('login')
+#12 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=site/login
+HTTP_REFERER=http://localhost/topicosweb/11130587/SITEC/index.php?r=site/login
+---
+2015/03/18 04:27:43 [error] [php] Undefined variable: modelTipo (C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\participante\_form.php:26)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): ParticipanteController->renderFile()
+#1 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\participante\admin.php(56): ParticipanteController->renderPartial()
+#2 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\topicosweb\framework\web\CBaseController.php(95): ParticipanteController->renderInternal()
+#4 C:\xampp\htdocs\topicosweb\framework\web\CController.php(869): ParticipanteController->renderFile()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(782): ParticipanteController->renderPartial()
+#6 C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php(161): ParticipanteController->render()
+#7 C:\xampp\htdocs\topicosweb\framework\web\actions\CInlineAction.php(49): ParticipanteController->actionAdmin()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): ParticipanteController->runAction()
+#10 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#12 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): ParticipanteController->filterAccessControl()
+#13 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#14 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#15 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): ParticipanteController->runActionWithFilters()
+#16 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): ParticipanteController->run()
+#17 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#18 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=participante/admin
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\participante\_form.php (26)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\views\participante\admin.php (56)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipanteController.php (161)
+2015/03/18 05:56:39 [error] [php] Undefined variable: modelTipo (C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipantesEventoController.php:157)
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(133): ParticipantesEventoController->runAction()
+#1 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\topicosweb\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\topicosweb\framework\web\filters\CInlineFilter.php(58): ParticipantesEventoController->filterAccessControl()
+#4 C:\xampp\htdocs\topicosweb\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\topicosweb\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\topicosweb\framework\web\CController.php(265): ParticipantesEventoController->runActionWithFilters()
+#7 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): ParticipantesEventoController->run()
+#8 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php(13): CWebApplication->run()
+REQUEST_URI=/topicosweb/11130587/SITEC/index.php?r=participantesEvento/admin
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\protected\controllers\ParticipantesEventoController.php (157)
+in C:\xampp\htdocs\topicosweb\11130587\SITEC\index.php (13)

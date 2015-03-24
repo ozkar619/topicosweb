@@ -37,7 +37,7 @@ class IndiceController extends Controller
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -63,7 +63,7 @@ class IndiceController extends Controller
 	public function actionCreate()
 	{
 		$model=new Indice;
-
+         $modelRevistas= Revista::model()->findAll();
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
@@ -76,6 +76,7 @@ class IndiceController extends Controller
 
 		$this->render('create',array(
 			'model'=>$model,
+			'modelRevistas'=>$modelRevistas,
 		));
 	}
 
@@ -131,12 +132,14 @@ class IndiceController extends Controller
 	/**
 	 * Manages all models.
 	 */
-	public function actionAdmin()
+	public function actionAdmin($id_revista= 'null')
 	{
 		$model=new Indice('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Indice']))
 			$model->attributes=$_GET['Indice'];
+         
+          $model->id_revista=$id_revista;
 
 		$this->render('admin',array(
 			'model'=>$model,

@@ -62,10 +62,13 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Help</a></li>
+            
+           <?php if (Yii::app()->user->isGuest): ?>
+           <li><a href="?r=site/login"></a>LogIn</li>
+           <?php else: ?>
+            <li><a href="?r=site/logout"></a>LogOut</li>
+             <?php endif; ?>
+
           </ul>
           <form class="navbar-form navbar-right">
             <input type="text" class="form-control" placeholder="Search...">
