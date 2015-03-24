@@ -16,3 +16,11 @@ Stack trace:
 REQUEST_URI=/topicosweb/11030704/congreso/?r=evento/admin
 HTTP_REFERER=http://localhost/topicosweb/11030704/congreso/
 ---
+2015/03/24 00:49:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site=index".' in C:\xampp\htdocs\topicos\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\topicos\framework\web\CWebApplication.php(141): CWebApplication->runController('site=index')
+#1 C:\xampp\htdocs\topicos\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\topicos\congreso\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/topicos/congreso/index.php?r=site=index
+---
