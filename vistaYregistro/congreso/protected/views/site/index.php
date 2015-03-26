@@ -8,7 +8,7 @@
       <div class="info-img">
         <img src="themes/img/calendar.png" ></div>
         <h4>¿Cuándo?</h4>
-        <p>Aquí pondremos la fecha cuando la sepamos XD asdadasd
+        <p>Aquí pondremos la fecha cuando la sepamos XD 
         <?php echo $evento->nombre; ?>
         </p>
       </div>
@@ -377,34 +377,46 @@
     <div class="row"> 
     <div class="span8">
       
-      <form class="form-horizontal">
+      <?php $form=$this->beginWidget('CActiveForm', array(
+        'id'=>'participantes-form',
+        'enableAjaxValidation'=>false,
+      )); ?>
+
         <fieldset>
           <div class="control-group">
           
           <div class="controls">
-            <input type="text" class="input-xlarge" id="input01" >
+            <?php echo $form->labelEx($model,'nombres'); ?>
+            <?php echo $form->textField($model,'nombres',array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Nombre')); ?>
+            <?php echo $form->error($model,'nombres'); ?>
            
           </div>
           </div>
            <div class="control-group">
           
-          <div class="controls">
-            <input type="text" class="input-xlarge" id="input11">
-           
-          </div>
+            <div class="controls">
+              <?php echo $form->labelEx($model,'apellidos'); ?>
+              <?php echo $form->textField($model,'apellidos',array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Apellidos')); ?>
+              <?php echo $form->error($model,'apellidos'); ?>
+             
+            </div>
           </div>
            <div class="control-group">
           
-          <div class="controls">
-            <textarea class="input-xlarge" id="textarea" rows="3" style="height:210px"></textarea>
-          </div>
+            <div class="controls">
+              <?php echo $form->labelEx($model,'email'); ?>
+              <?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Email')); ?>
+              <?php echo $form->error($model,'email'); ?>
+            </div>
+
           </div>
           
          
           <button type="submit" class="btn btn-large btn-primary disabled">Enviar</button>
           
         </fieldset>
-        </form>
+       
+<?php $this->endWidget(); ?>
     </div> 
     
     
